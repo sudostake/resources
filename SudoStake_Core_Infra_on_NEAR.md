@@ -1,6 +1,8 @@
 # SudoStake as Core Infrastructure on NEAR
 
-**Audience:** NEAR Protocol Rewards Team & Infrastructure Committee\1**Date:** September 3, 2025\1**Prepared by:** SudoStake
+**Audience:** NEAR Protocol Rewards Team & Infrastructure Committee  
+**Date:** September 3, 2025  
+**Prepared by:** SudoStake
 
 ---
 
@@ -64,7 +66,8 @@ SudoStake defines a **standard contract primitive**—a staking‑backed **credi
 ---
 
 ## Current Status (M1)
-**Delivered:** Connect NEAR wallet; vaults dashboard; deposit/withdraw; delegate/undelegate/claim‑unstaked.\1**September target:** Request loan; accept loan; repay before deadline.
+**Delivered:** Connect NEAR wallet; vaults dashboard; deposit/withdraw; delegate/undelegate/claim‑unstaked.  
+**September target:** Request loan; accept loan; repay before deadline.
 
 ---
 
@@ -74,7 +77,10 @@ SudoStake defines a **standard contract primitive**—a staking‑backed **credi
 - Independent security review of the core contracts and guidance on disclosure process.
 
 ## Metrics for Rewards Review
-- **Adoption:** # of vaults; total NEAR staked in vaults.\1- **Credit throughput:** USDC borrowed/repayed; repay vs. liquidation ratio.\1- **Integrations:** # of wallets/agents/dApps using the primitive.\1- **Reliability:** Successful settlement rate; time‑to‑finality for repay/liquidate.
+- **Adoption:** # of vaults; total NEAR staked in vaults.
+- **Credit throughput:** USDC borrowed/repayed; repay vs. liquidation ratio.
+- **Integrations:** # of wallets/agents/dApps using the primitive.
+- **Reliability:** Successful settlement rate; time‑to‑finality for repay/liquidate.
 
 ---
 
@@ -86,7 +92,13 @@ SudoStake defines a **standard contract primitive**—a staking‑backed **credi
 - Kept **Requests to Infra/Rewards** and added a security/indexing bullet.
 
 ## References (NEAR Official)
-- NEAR Intents Overview — https://docs.near.org/chain-abstraction/intents/overview\1- NEAR Intents (developer) — https://docs.near-intents.org/near-intents\1- Chain Signatures — https://docs.near.org/chain-abstraction/chain-signatures\1- Staking: epochs, delegation, withdrawal — https://docs.near.org/protocol/network/staking\1- Staking‑Pool Core Contract — https://github.com/near/core-contracts/tree/master/staking-pool\1- NEP‑141 FT Standard — https://nomicon.io/Standards/Tokens/FungibleToken/Core\1- Native USDC on NEAR — https://pages.near.org/blog/usdc-launches-natively-on-the-near-protocol/
+- NEAR Intents Overview — https://docs.near.org/chain-abstraction/intents/overview
+- NEAR Intents (developer) — https://docs.near-intents.org/near-intents
+- Chain Signatures — https://docs.near.org/chain-abstraction/chain-signatures
+- Staking: epochs, delegation, withdrawal — https://docs.near.org/protocol/network/staking
+- Staking‑Pool Core Contract — https://github.com/near/core-contracts/tree/master/staking-pool
+- NEP‑141 FT Standard — https://nomicon.io/Standards/Tokens/FungibleToken/Core
+- Native USDC on NEAR — https://pages.near.org/blog/usdc-launches-natively-on-the-near-protocol/
 
 ---
 
