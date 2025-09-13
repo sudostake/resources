@@ -4,6 +4,7 @@ This repository collects the core planning and reference materials for SudoStake
 
 Quick links
 - Core infrastructure overview — SudoStake as Core Infrastructure on NEAR (audience: NEAR Protocol Rewards Team & Infrastructure Committee): [SudoStake_Core_Infra_on_NEAR.md](./SudoStake_Core_Infra_on_NEAR.md)
+- Written pitch deck — concise investor/partner narrative: [PITCH_DECK_SudoStake_NEAR.md](./PITCH_DECK_SudoStake_NEAR.md)
 
 Product and planning
 - Lean Canvas — high-level problem, segments, UVP, solution, metrics: [LEAN_CANVAS_SudoStake_NEAR.md](./LEAN_CANVAS_SudoStake_NEAR.md)
