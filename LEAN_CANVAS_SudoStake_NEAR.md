@@ -1,5 +1,11 @@
 # 🧩 LEAN CANVAS – SudoStake on NEAR
 
+Note: For a chain‑agnostic Lean Canvas that captures SudoStake’s core primitive across chains, see LEAN_CANVAS_SudoStake_Generic.md.
+
+Status update (Sep 26, 2025)
+- M1 (Web Testnet Feature‑Complete) completed on Sep 23, 2025.
+- M2 (Factory Optimization • Optimized Path) in progress; near‑sdk‑rs PR #1369 merged, proceeding with code‑hash registry and global vault contract behind flags.
+
 **"The liquidity protocol for NEAR stakers."**  
 *Access liquidity without unbonding. Borrow and lend with native staked NEAR — no oracles, no wrapping, no custodians.*
 
@@ -37,28 +43,28 @@
 
 ## 4. Solution
 
-- **Vaults**: Users mint non-custodial vaults (10 NEAR fee) to manage staking directly.
+- **Vaults**: Users mint non-custodial vaults (configurable creation fee) to manage staking directly.
 - **Delegation**: Vaults delegate NEAR to validators under owner control.
-- **Liquidity Requests**: Vaults request USDC loans by locking staked NEAR as collateral.
-- **Counter-Offer System**: Lenders compete by submitting offers; the best is accepted.
-- **Manual Liquidation**: If repayment is missed, liquidation can be triggered without oracles or external feeds.
+- **Liquidity Requests**: Vaults request USDC loans by locking staked NEAR as collateral; lenders accept via NEP‑141 transfers with JSON messages.
+- **Deterministic Liquidation**: If repayment is missed, anyone can trigger liquidation; repayment proceeds in strict order (liquid → matured unstaked → targeted unstake) and halts exactly at the owed amount. No oracles.
+- **Marketplace & Offers**: Marketplace lists open requests for discovery. Counter‑offers (amount‑only) deferred beyond M1.
 
 ---
 
 ## 5. Channels
 
-- **Web App**: Full-featured React interface for managing vaults, staking, and lending.
-- **AI Agent Interface**: NEAR-native chatbot interface for vault management via BOS.
-- **NEAR Ecosystem**: Twitter, Discord, hackathons, and community partnerships.
-- **Protocol Rewards Program**: Visibility through official NEAR Foundation channels.
+- **Web App**: Full-featured Next.js/React interface for managing vaults, staking, and lending.
+- **Agent Interfaces**: NEAR agent tooling and integrations for intent-driven management (wallets/agents).
+- **NEAR Ecosystem**: Social, Discord, hackathons, validator and wallet partnerships.
+- **Protocol Rewards Program**: Visibility through NEAR Foundation channels.
 
 ---
 
 ## 6. Revenue Streams
 
-- **Vault Creation Fee**: 10 NEAR per vault, paid once at minting.
-- **Validator Commissions** *(optional)*: Revenue earned if vaults delegate to a SudoStake-operated validator.
-- No protocol fees on borrowing, lending, or liquidations.
+- **Vault Creation Fee**: Configurable one-time fee at Factory.
+- **Validator Commissions** (optional): If users choose a SudoStake-operated validator.
+- No protocol fees on borrowing/lending/liquidations in MVP.
 
 ---
 
@@ -77,17 +83,23 @@
 - **Total NEAR Staked** via SudoStake vaults.
 - **Number of Vaults** created and active.
 - **Loan Volume** issued and repayment rate.
-- **Average Time to Fund** liquidity requests.
-- **Offer Competition** per request.
+- **Time to Fund** liquidity requests and repayment lead time.
+- **Offer Competition** per request (when enabled).
 - **Repeat Usage** and vault retention rate.
-- **USDC Liquidity Pool Size** from lenders.
+- **USDC Liquidity Depth** provided by lenders.
 
 ---
 
 ## 9. Unfair Advantage
 
 - **First native NEAR protocol** to offer direct, non-custodial borrowing against staked NEAR.
-- **Oracle-less liquidation logic** ensures simplicity, transparency, and resilience.
+- **Oracle-less, deterministic liquidation** for simplicity and resilience.
 - Vault architecture mirrors NEAR's smart account model — composable and user-owned.
 - Supported by **NEAR Protocol Rewards Cohort 2** with direct ecosystem alignment.
 - No synthetic assets, token wrappers, or hidden dependencies.
+
+—
+
+Notes
+- Traction: Prior chain model validated (~231 vaults). NEAR testnet now feature-complete for M1 flows.
+- Next: Optimized factory/global vault contract (M2), behind flags, with migration plan.

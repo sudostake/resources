@@ -16,7 +16,8 @@ This repository houses SudoStake’s planning and reference materials for work o
  - Project one‑pager — succinct product, value, status, and ask: [PROJECT_ONE_PAGER_SudoStake_NEAR.md](./PROJECT_ONE_PAGER_SudoStake_NEAR.md)
 
 ## Product & Planning
-- Lean Canvas — problem, segments, UVP, solution, metrics: [LEAN_CANVAS_SudoStake_NEAR.md](./LEAN_CANVAS_SudoStake_NEAR.md)
+- Lean Canvas (generic, chain‑agnostic) — core problem, segments, UVP, solution, metrics: [LEAN_CANVAS_SudoStake_Generic.md](./LEAN_CANVAS_SudoStake_Generic.md)
+- Lean Canvas (NEAR variant) — chain‑specific details for NEAR: [LEAN_CANVAS_SudoStake_NEAR.md](./LEAN_CANVAS_SudoStake_NEAR.md)
 - Project Charter — scope, objectives, deliverables, stakeholders: [sudostake_project_charter.md](./sudostake_project_charter.md)
 
 ## Status & Roadmap
