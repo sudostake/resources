@@ -1,22 +1,22 @@
 # SudoStake NEAR MVP — M1 (Milestone 1) Progress
 
-**Date:** Aug 27, 2025  
+**Date:** Sep 23, 2025  
 **Reference:** Product Roadmap (M1)  
 **Definition:** M1 = Milestone 1 (not “month”). Target close: September 2025.
 
-## M1: Done
+## M1: Done (Completed Sep 23, 2025)
 - Connect NEAR wallet
 - Vaults dashboard
 - Vault page: deposit, withdraw
 - Stake management: delegate, undelegate, claim unstaked
+- Request loan — vault must have staked NEAR ≥ collateral
+- Accept loan — lender transfers requested USDC to vault
+- Repay before deadline — principal + interest
+- Liquidate after missed deadline — liquid → matured unstaked → targeted unstake; stops exactly at owed amount
+- Lender discovery — marketplace of open loan requests linking to vault pages
 
-## September 2025 (remaining to close M1)
-- **Request loan** — Open from vault; require staked NEAR ≥ collateral.
-- **Accept loan** — Lender calls accept and transfers the requested USDC; funds become available to the vault owner.
-- **Repay before deadline** — Principal + interest.
-- **Liquidate after missed deadline** — Explicit trigger; process in order: liquid balance → matured unstaked → fallback unstake; stop exactly at the collateral amount.
-- **Lender discovery** — Marketplace of open loan requests linking to vault pages.
-- **Counter‑offers (stretch)** — Amount‑only; keep top 10; evict lowest with refund; track failed refunds for retry.
+## Exceptions/Deferred (M1)
+- Counter‑offers (amount‑only) — Deferred (scoped as time‑permitting; not required for M1 completion)
 
 ## Spec guardrails
 - Oracle‑less; actions are explicit (no background automation in M1).

@@ -20,8 +20,10 @@ This repository houses SudoStake’s planning and reference materials for work o
 - Project Charter — scope, objectives, deliverables, stakeholders: [sudostake_project_charter.md](./sudostake_project_charter.md)
 
 ## Status & Roadmap
+- Current status: M1 Completed (Sep 23, 2025); M2 In Progress (target Nov 15, 2025)
 - Roadmap (NEAR MVP → Launch) — milestones and timelines: [sudostake-roadmap-near-mvp.md](./sudostake-roadmap-near-mvp.md)
-- M1 Progress — current milestone status and remaining items: [sudostake_m1_progress.md](./sudostake_m1_progress.md)
+- M1 Progress — milestone completion report: [sudostake_m1_progress.md](./sudostake_m1_progress.md)
+- Progress Report 3 — latest status summary: [progress-report-3.md](./progress-report-3.md)
 
 ## UX & Systems
 - Personas & Flows — user journeys, states, and execution rules for the NEAR MVP: [PERSONAS_AND_FLOWS.md](./PERSONAS_AND_FLOWS.md)

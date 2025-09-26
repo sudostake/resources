@@ -1,14 +1,18 @@
 # SudoStake Roadmap — NEAR MVP & Launch
 
+Status (as of Sep 26, 2025)
+- M1 — Web Testnet Feature‑Complete: Completed on Sep 23, 2025 (ahead of target)
+- M2 — Factory Optimization (Optimized Path): In progress; target Nov 15, 2025 (near-sdk-rs PR #1369 merged)
+
 ## Quarterly Summary
 
 **Q3 2025**
 
-- **M1 — Web Testnet Feature‑Complete** *(Target: Sep 30, 2025)*
+- **M1 — Web Testnet Feature‑Complete** — Completed ahead of target (Sep 23, 2025)
 
 **Q4 2025**
 
-- **M2 — Factory Optimization • Complete or Fallback Decision** *(Target: Nov 15, 2025; **blocked on** near-sdk-rs PR #1369)*
+- **M2 — Factory Optimization • Optimized Path** *(Target: Nov 15, 2025; blocker resolved — near-sdk-rs PR #1369 merged)*
 - **M3 — Mainnet Candidate Behind Flags** *(Target: Nov 30, 2025; after M2)*
 - **M4 — Year‑End Beta Stability** *(Target: Dec 20, 2025; after M3)*
 
@@ -26,7 +30,7 @@
 
 ### **M1 — Web Testnet Feature‑Complete**
 
-**Target:** **Sep 30, 2025**
+**Target:** **Sep 30, 2025**  •  **Status:** Completed Sep 23, 2025 (ahead of target)
 
 **Scope:** Ship the SudoStake **web app** for NEAR **testnet** end‑to‑end: mint vault → delegate/undelegate → request liquidity → accept best offer (amount‑only) → **repay loan** (before deadline) → process claims (liquid → matured unstaked → fallback unstake).
 
@@ -40,22 +44,20 @@
   7. **Repay** a loan (before the deadline).
   8. **Liquidate collateral** (after a missed deadline).
   9. **Marketplace** for lenders to discover open loan requests.
-  10. **Counter‑offers** (amount‑only), time permitting.
+  10. **Counter‑offers** (amount‑only), time permitting — Deferred (not required for M1 completion).
 
 
 ---
 
-### **M2 — Factory Optimization • Complete or Fallback Decision**
+### **M2 — Factory Optimization • Optimized Path**
 
-**Target:** **Nov 15, 2025**
+**Target:** **Nov 15, 2025**  •  **Status:** In progress (blocker resolved)
 
-**Scope:** Complete **Factory** optimization (code‑hash registry, WASM size reductions). Upstream **near‑sdk-rs PR #1369** is a **blocker** (https://github.com/near/near-sdk-rs/pull/1369). Plan around it with two tracks:
-- **Optimized path:** if PR #1369 merges in time, implement the code‑hash registry and size reductions, then migrate.
-- **Fallback path:** if PR #1369 is not merged by the checkpoint, proceed with the embedded `vault.wasm` in the **Factory** pattern and document the rationale.
+**Scope:** Proceed via the optimized path now that **near‑sdk‑rs PR #1369** has merged. Implement the **code‑hash registry** and WASM size reductions; deploy the **SudoStake Vault** as a global contract and provide a smooth migration from per‑vault instances, with changes rolled out behind flags.
 
-**Checkpoint:** Decide path **two weeks before** the target date to preserve the M3 candidate timeline.
+**Checkpoint:** Nov 1, 2025 readiness check to validate optimized path milestones; fallback to embedded `vault.wasm` in Factory remains documented but is not expected.
 
-- **Includes:** End‑to‑end tests, a before/after size‑and‑cost report, no breaking changes to public views, and a migration plan or fallback note.
+- **Includes:** End‑to‑end tests, before/after size‑and‑cost report, no breaking changes to public views, migration plan from per‑vault instances to the global vault contract, and feature flags for safe rollout.
 
 ---
 
