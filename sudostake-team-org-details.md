@@ -1,120 +1,72 @@
 
-# SudoStake — Team & Organizational Details
+# SudoStake — Team & Org Details
 
-**One‑liner:** *Stake. Earn. Trade.* Native staking, composable credit.
+One‑liner: Native staking, composable credit.
+Current focus: Archway (active); expanding to NEAR (Rust/NEAR‑SDK) with Next.js/React frontend.
 
-**Current focus:** Active on **Archway**; expanding to **NEAR** (Rust/NEAR‑SDK contracts) with a **Next.js/React** frontend.
+TL;DR
+- Open‑source, non‑custodial protocol (Vaults; no price oracles).
+- Solo‑maintained by Muhammed Ali; contributors via GitHub.
+- Proven on Archway (~231 vaults). NEAR‑native MVP in progress.
+- Security: reproducible builds, signed releases, integration tests; audit + bounty pre‑scale.
 
----
+At a glance
+- Name: SudoStake
+- Status: Open‑source protocol (no client funds held)
+- Entity: None yet; incorporation planned
+- Maintainer: Muhammed Ali
+- Location/Timezone: Africa/Lagos (UTC+1)
+- Contact: codemuhammed@gmail.com • hello@sudostake.com • Telegram: https://t.me/palingram
+- Website: https://sudostake.com • GitHub: https://github.com/sudostake
 
-## TL;DR
-- Open‑source, non‑custodial protocol for staked assets using on‑chain **Vaults** (no price oracles).
-- Solo‑maintained by **Muhammed Ali**; contributors welcome via GitHub.
-- Proven usage on Archway (**~231 vaults**). Building a NEAR‑native MVP next.
-- Security first: reproducible builds, signed releases, integration tests; audit + bounty planned before scaling.
+1) Team Summary
+- Headcount: 1 + open‑source collaborators (recruiting)
+- Areas: Rust/NEAR contracts; Next.js/React; DevOps/release; docs/community
+- Model: Public roadmap/issues; PR‑driven; lightweight contributor agreements as needed
 
----
+2) Core Team & Roles
+- Muhammed Ali — Founder/Maintainer/Lead Protocol Engineer
+  - Focus: Protocol architecture; Rust smart contracts (NEAR‑SDK, prior CosmWasm); CI/CD; product/roadmap.
+  - Highlights: oracle‑less vault credit flows; reproducible WASM builds; near‑workspaces tests; Cosmos→NEAR port; governance migration plan (solo → 2‑of‑3 multisig when ≥2 maintainers).
+- Open Contributors (recruiting): contracts, frontend, DevOps, docs/community. Participate via issues/PRs; bounties posted as funding permits.
 
-## At a Glance
-- **Name:** SudoStake  
-- **Status:** Open‑source protocol (no client funds held)  
-- **Entity:** None yet (solo maintainer). Incorporation planned.  
-- **Maintainer:** Muhammed Ali  
-- **Location/Timezone:** Africa/Lagos (UTC+1)  
-- **Contact:** codemuhammed@gmail.com • alt: hello@sudostake.com • Telegram: https://t.me/palingram  
-- **Website:** https://sudostake.com  
-- **GitHub (org):** https://github.com/sudostake  
+3) Advisors & Partners
+- Advisors: none formal; informal ecosystem feedback ongoing.
+- Security reviewers: external Rust/NEAR reviewers per milestone (vendor TBD).
+- Validator partners: evaluating; none finalized.
 
----
+4) Organization
+- Operating: solo maintainer + open‑source PRs/issues.
+- Governance: solo today → 2‑of‑3 multisig when ≥2 maintainers; on‑chain params where feasible.
+- Cadence: public backlog/roadmap; milestone release notes.
+- Licensing: open‑source; CLAs possible for significant contributions.
 
-## 1) Team Summary
-- **Headcount:** 1 (solo maintainer) + open‑source collaborators (recruiting)
-- **Contribution areas:** Rust/NEAR contracts, Next.js/React frontend, DevOps/release, docs/community
-- **Working model:** Public roadmap/issues; PR‑driven; lightweight contributor agreements for significant code
+5) Legal & Compliance
+- Entity: none yet; incorporation planned.
+- Posture: non‑custodial software; no client funds/fiat handling.
+- Data: minimal; privacy‑preserving analytics if added.
+- Jurisdiction: evaluating; will update on registration.
 
----
+6) Security Practices
+- Current: reproducible builds (cargo‑near, GitHub Actions); GPG‑signed commits/tags; protected branches; review‑required PRs; unit/integration tests (near‑workspaces) for vault lifecycle/settlement/liquidation; MEV‑aware design.
+- Planned: third‑party audit; public bug bounty; expanded fuzz/property tests; scenario coverage; incident runbooks.
 
-## 2) Core Team & Roles
-### Muhammed Ali — Founder, Maintainer & Lead Protocol Engineer
-- **Focus:** Protocol architecture; Rust smart contracts (NEAR‑SDK, prior CosmWasm); CI/CD; product & roadmap
-- **Highlights:**
-  - Oracle‑less vault‑based credit flows (state + staking rewards; no external price oracles).
-  - Reproducible WASM builds with `cargo-near` + GitHub Actions; GPG‑signed commits/tags.
-  - Unit/integration tests with `near-workspaces` for vault lifecycle and settlement paths; basic gas profiling.
-  - Ported core logic from CosmWasm → NEAR SDK while keeping deterministic build/test pipelines.
-  - Governance migration path documented (single maintainer → 2‑of‑3 multi‑sig when ≥2 maintainers join).
+7) Track Record
+- Archway: ~231 vaults created (agg staked TBD).
+- NEAR: MVP development; CosmWasm → NEAR SDK port; deterministic builds/CI tests.
+- Tooling: near‑workspaces tests; Actions builds; GPG‑signed releases.
 
-### Open Contributors (now recruiting)
-- **Smart contracts (Rust/NEAR‑SDK)**
-- **Frontend (Next.js/React/Tailwind/shadcn)**
-- **DevOps/Infra**
-- **Docs & Community**
+8) Responsibility Map
+- Protocol design/specs — Muhammed (R/A); Contributors (C)
+- Smart contracts (NEAR) — Muhammed (R/A); Contributors (C)
+- Front‑end — Muhammed (R/A); Contributors (C)
+- CI/CD & releases — Muhammed (R/A); Contributors (C)
+- Security & audits — Muhammed (R/A); Contributors (C)
+- Partnerships & grants — Muhammed (R/A); Contributors (C)
+- Community & docs — Muhammed (R/A); Contributors (C)
 
-> Participate via GitHub issues/PRs; bounties will be posted as funding permits.
-
----
-
-## 3) Advisors & Partners
-- **Advisors:** None formally engaged to date; receiving informal ecosystem feedback.
-- **Security reviewers:** External Rust/NEAR security reviewers to be contracted per milestone (vendor TBD).
-- **Validator partners:** Evaluating prospective partners; not finalized.
-
----
-
-## 4) Organizational Structure
-- **Operating model:** Solo maintainer + open‑source contributions via PRs/issues
-- **Governance (roadmap):** Single maintainer today → 2‑of‑3 multi‑sig once ≥2 maintainers join; on‑chain parameterization where feasible
-- **Cadence:** Public backlog/roadmap; release notes per milestone
-- **Licensing:** Open‑source; Contributor License Agreements may be requested for significant contributions
-
----
-
-## 5) Legal & Compliance
-- **Entity:** None yet (solo maintainer). Incorporation planned.
-- **Posture:** Non‑custodial software; no client funds or fiat handling by the project.
-- **Data:** Minimal collection; privacy‑preserving analytics only if/when added.
-- **Jurisdiction:** Options under evaluation; will update upon registration.
-
----
-
-## 6) Security Practices
-**Current**
-- Deterministic/reproducible WASM builds with `cargo-near` and GitHub Actions.
-- GPG‑signed commits/tags; protected branches; review‑required PRs.
-- Unit + integration tests using `near-workspaces` covering vault create, borrow/rent, repay/settlement, and liquidation; basic gas profiling.
-- MEV‑aware contract design.
-
-**Planned next**
-- Third‑party security audit (vendors being shortlisted).
-- Public bug bounty after audit.
-- Expand fuzz/property tests; increase scenario coverage; formalize incident runbooks.
-
----
-
-## 7) Track Record & Proof of Execution
-- **Archway (active):** ~231 vaults created (aggregate staked volume TBD).
-- **NEAR (expanding):** MVP under development; CosmWasm → NEAR SDK port; deterministic builds & CI tests in place.
-- **Tooling:** `near-workspaces` integration tests; GitHub Actions builds; GPG‑signed releases.
-
----
-
-## 8) Responsibility Map (current & open)
-| Workstream | Muhammed (current) | External contributors (open) |
-|---|:--:|:--:|
-| Protocol design & specs | R/A | C |
-| Smart contracts (NEAR) | R/A | C |
-| Front‑end (Next.js/React) | R/A | C |
-| CI/CD & releases | R/A | C |
-| Security & audits | R/A | C |
-| Partnerships & grants | R/A | C |
-| Community & docs | R/A | C |
-
-Legend: **R**=Responsible, **A**=Accountable, **C**=Consulted.
-
----
-
-## 9) Contributors & Future Hiring
-- **Open‑source contributors:** Welcoming contributions in Rust/NEAR, Next.js/React, DevOps, and documentation/community.
-- **Good‑first‑issues & bounties:** To be posted in the GitHub org; milestones/grants may fund discrete bounties.
-- **Future hires (as funding allows):** Smart Contract Engineer (Rust/NEAR), Front‑end Engineer (Next.js/React), DevOps/Infra.
-- **Budget approach:** Milestone‑backed grants + protocol revenue; transparent rates/deliverables.
+9) Contributors & Future Hiring
+- Open‑source contributions in Rust/NEAR, Next.js/React, DevOps, docs/community.
+- Good‑first‑issues & bounties in the org; milestones/grants may fund bounties.
+- Future hires (as funding allows): Smart Contract (Rust/NEAR), Front‑end (Next.js/React), DevOps/Infra.
+- Budget: milestone‑backed grants + protocol revenue; transparent rates/deliverables.

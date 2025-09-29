@@ -1,84 +1,76 @@
-Title: SudoStake on NEAR — Written Pitch Deck
+Title: SudoStake on NEAR — Written Pitch
 
 1) One‑liner
-- Stake. Earn. Borrow. Native NEAR staking meets simple, oracle‑less credit. Borrow against your staked NEAR without unbonding or custodians.
+- Stake. Earn. Borrow. Native NEAR staking with oracle‑less credit. Borrow against staked NEAR without unbonding or custodians.
 
 2) Problem
-- Stakers must unbond (and wait epochs) to access liquidity, or rely on wrapped/synthetic solutions that add risk and complexity.
-- Lenders on NEAR lack a simple, non‑custodial way to deploy capital against productive, on‑chain collateral.
-- Existing approaches depend on price oracles, pooled custody, or off‑chain coordination, increasing operational and security risk.
+- Unbonding delays or wrapped/synthetic risk for liquidity.
+- Lenders lack non‑custodial, productive collateral access.
+- Many designs depend on oracles/pools/off‑chain coordination.
 
 3) Solution
-- User‑owned Vault contracts that delegate NEAR to validators and expose a deterministic, oracle‑less credit flow: request → accept → repay →, if needed, liquidate.
-- Borrowers post a request for USDC with fixed terms (amount, interest, duration, collateral in staked NEAR). Lenders accept by transferring tokens to the vault.
-- If the borrower misses the deadline, anyone can trigger liquidation. The vault pays in strict order: liquid NEAR → matured unstaked → targeted unstake, then stops exactly at the collateral amount.
+- User‑owned Vaults delegate NEAR and expose deterministic credit: request → accept → repay → liquidate (if needed).
+- Borrowers post USDC terms; lenders accept via token transfer.
+- On missed deadline, anyone can trigger liquidation: liquid → matured → targeted unstake; stop at collateral.
 
-4) Product (MVP scope)
-- Web app (Next.js/React) for vault management: mint vault, deposit/withdraw, delegate/undelegate, claim unstaked, request liquidity, accept/repay, and view liquidation status.
-- AI/agent interface (NEAR agent tooling) to drive the same flows via chat/intents for hands‑off management.
-- Open, permissionless contracts (Factory + Vault) published with tests, stable interfaces, and integration docs.
+4) Product (MVP)
+- Web app: mint, deposit/withdraw, delegate/undelegate, claim‑unstaked, request, accept/repay, view liquidation.
+- Agent interface: same flows via chat/intents.
+- Contracts (Factory + Vault): tests, stable interfaces, integration docs.
 
-5) How it Works (overview)
-- Factory contract deploys per‑user Vaults as subaccounts and initializes them with owner, index, and version; fee is configurable by the factory owner.
-- Vault contract holds NEAR/FTs for the owner, supports validator delegation via the official staking‑pool interface, tracks unstake epochs, and manages the credit lifecycle.
-- Offers and acceptances use standard NEP‑141 ft_on_transfer hooks with JSON messages; all state transitions emit indexable EVENT_JSON logs for off‑chain observers.
+5) How it Works
+- Factory: deploys per‑user Vaults (owner, index, version); configurable fee.
+- Vault: NEAR/FT custody for owner; staking‑pool delegation; unstake tracking; full credit lifecycle.
+- Offers: NEP‑141 ft_on_transfer with JSON messages; EVENT_JSON logs for indexing.
 
-6) Why now (NEAR fit)
-- Native USDC on NEAR enables simple, fiat‑pegged lending legs without bridges.
-- NEAR’s staking‑pool standard and predictable epoch rules allow oracle‑less collateral management with deterministic liquidation sequencing.
-- Ecosystem push for agents/intents aligns with SudoStake’s automation‑friendly design.
+6) Why NEAR now
+- Native USDC; staking‑pool standard + predictable epochs; agents/intents momentum.
 
 7) Differentiation
-- Oracle‑less. No price feeds or synthetic wrappers; simple, auditable rules.
-- Non‑custodial. Users own their vault accounts and choose validators; no pooled custody.
-- Deterministic liquidation. Transparent, priority‑ordered repayment that halts exactly at the owed amount.
-- Composable. Clean interfaces, stable events; easy to embed in wallets, agents, and dApps.
+- Oracle‑less; non‑custodial; deterministic liquidation; composable interfaces/events.
 
-8) Market and Users
-- NEAR stakers and validators seeking liquidity without unbonding.
-- Lenders and treasuries wanting secured yield in USDC against staked NEAR.
-- Wallets/super‑apps aiming to offer “Borrow against stake” as a first‑class action.
-- Protocols that want a shared, audited, reusable collateral primitive.
+Quick comparison
+|  | SudoStake | Pooled MM | CDP | Custodial |
+|---|---|---|---|---|
+| Collateral control | Your vault | Pool/LST | Collateral contract | Custodian |
+| Oracles/peg needed | No | Yes | Yes | Off-chain marks |
+| Settlement trigger | Time/expiry | Price/health | Price/peg | Off-chain |
+| Systemic risk | Per-vault only | Pool contagion | Peg/system | Counterparty |
+| Day-1 depth | Moderate | High | Medium | High |
+| Fees on credit | 0 | Often > 0 | Often > 0 | Fees/spread |
 
-9) Traction and Status
-- Prior chain (Archway): ~231 vaults created (proof of execution for the vault model).
-- NEAR MVP: contracts ported to NEAR SDK (Rust), integration tests with near‑workspaces, web app in active development.
-- M1 (Q3 2025): wallet connect, vaults dashboard, deposit/withdraw, delegate/undelegate/claim‑unstaked complete; remaining: request/accept/repay/liquidate and marketplace view.
+8) Market & Users
+- NEAR stakers/validators; lenders/treasuries; wallets/super‑apps; protocols needing a reusable collateral primitive.
+
+9) Traction & Status
+- Prior chain: ~231 vaults created.
+- NEAR MVP: Rust/NEAR SDK; near‑workspaces tests; web in active development.
+- M1: core flows complete; marketplace view in scope per roadmap.
 
 10) Business Model
-- Protocol keeps it simple: configurable vault minting fee at the Factory (one‑time on creation).
-- Optional validator commissions if users choose a SudoStake‑operated validator.
-- No protocol fee on borrow/lend flows in MVP; room for future opt‑in value capture if aligned with users.
+- Vault mint fee (Factory). Optional validator commissions. No protocol fee on borrow/lend in MVP.
 
 11) Go‑to‑Market
-- Launch on NEAR testnet → closed beta on mainnet behind flags → staged mainnet rollout.
-- Integrations with wallets/agents for one‑tap “Borrow against stake.”
-- Developer path: clear docs, examples, and event indexing; bounty‑backed integrations.
+- Testnet → mainnet candidate behind flags → staged rollout. Wallet/agent integrations; dev examples and bounties.
 
-12) Technology and Architecture (concise)
-- Contracts: Rust/near‑sdk 5.11.0; Factory (subaccount deploy + fee) and Vault (staking + credit lifecycle). Deterministic, event‑rich, with global processing lock to serialize async flows safely.
-- Integrations: NEP‑141 ft_transfer/ft_on_transfer, staking‑pool (deposit_and_stake, unstake, withdraw_all), near‑workspaces for integration tests.
-- Web: Next.js/React app with reusable UI primitives; Firebase supported for auth/ops where needed.
-- Agent: near‑ai CLI workflows with environment profiles for owners and lenders; designed to map intents → on‑chain settlement.
+12) Tech & Architecture
+- Contracts: Rust/near‑sdk; Factory (subaccount deploy + fee), Vault (staking + credit lifecycle); deterministic, event‑rich, global processing lock for async safety.
+- Integrations: NEP‑141; staking‑pool ops; near‑workspaces tests. Web: Next.js/React. Agent: near‑ai workflows.
 
-13) Security and Risk
-- Deterministic flows; minimized external dependencies.
-- Storage reserve and processing lock guard long‑running operations; failed refunds are persisted and retryable.
-- Reproducible builds and integration tests; third‑party audits planned before scale; public bug bounty to follow.
+13) Security & Risk
+- Deterministic flows; minimal dependencies; storage reserve + processing lock; retryable refunds; reproducible builds; integration tests; audits/bounty pre‑scale.
 
-14) Roadmap (high level)
-- M1 (Q3 2025): Testnet feature‑complete web + contracts (request/accept/repay/liquidate, marketplace).
-- M2 (Q4 2025): Factory optimization or fallback decision (code‑hash registry vs embedded WASM), pending upstream SDK changes.
-- M3–M4 (Q4 2025): Mainnet candidate behind flags; year‑end beta stability.
-- M5–M6 (2026): Staged mainnet rollout and stability.
+14) Roadmap (high‑level)
+- M1: Testnet feature‑complete (request/accept/repay/liquidate, marketplace).
+- M2: Factory optimization (code‑hash registry vs embedded WASM) — now unblocked.
+- M3–M4: Mainnet candidate; beta stability.
+- M5–M6: Staged mainnet rollout.
 
 15) Team
-- Solo maintainer: Muhammed Ali (protocol/engineering). Recruiting open‑source contributors in Rust/NEAR, Next.js/React, DevOps.
-- Governance roadmap: single maintainer → 2‑of‑3 multi‑sig as contributors join; transparent milestones and reviews.
+- Maintainer: Muhammed Ali; recruiting contributors (Rust/NEAR, Next.js/React, DevOps). Governance: solo → 2‑of‑3 multisig as team grows.
 
-16) The Ask
-- Ecosystem support to reach mainnet: security review, indexing guidance, and distribution via NEAR wallets/agents.
-- Early partners (validators, wallets, agent frameworks) to co‑design onboarding and recovery playbooks.
+16) Ask
+- Support to reach mainnet: security review, indexing guidance, wallet/agent distribution. Early partners for onboarding/recovery playbooks.
 
 17) Contact
 - hello@sudostake.com • https://sudostake.com • GitHub: https://github.com/sudostake

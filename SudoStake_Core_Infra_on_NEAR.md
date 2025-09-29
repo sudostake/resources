@@ -1,105 +1,68 @@
-# SudoStake as Core Infrastructure on NEAR
+# SudoStake: Core Infrastructure on NEAR
 
-**Audience:** NEAR Protocol Rewards Team & Infrastructure Committee  
-**Date:** September 3, 2025  
-**Prepared by:** SudoStake
-
----
+Audience: NEAR Protocol Rewards Team & Infra Committee  •  Date: 2025-09-03  •  Author: SudoStake
 
 ## Executive Summary
-SudoStake defines a **standard contract primitive**—a staking‑backed **credit‑vault smart‑contract suite**—that wallets, agents, and apps can reuse via **stable, permissionless interfaces**. A separate **reference implementation** (UI/agent flows) demonstrates integration but is *not* part of the infrastructure scope.
+A reusable staking-backed credit-vault contract suite with stable, permissionless interfaces. Reference UI/agent flows exist for illustration only (non-core).
 
-### Scope: Infrastructure vs Reference Product
+## Scope
+- Core (delivered):
+  1) Contracts: factory + vault (public-good license)
+  2) Interfaces: stable entrypoints/events (lifecycle, repay, liquidation)
+  3) Compliance: official staking-pool APIs and epoch rules
+  4) Composability: neutral, integrator-friendly
+- Non-core: reference UI, agent scripts, example intents flows
 
-**Core Infrastructure (delivered by this proposal)**
-1. **Contracts:** Factory + vault contracts for staking‑backed credit, open‑sourced under a public‑good license.
-2. **Interfaces:** Stable, documented entrypoints/events for integration (vault lifecycle, repayments, liquidation).
-3. **Compliance:** Strict use of NEAR staking‑pool flows and epoch rules; no custom staking semantics.
-4. **Composability:** Designed to be embedded by wallets, agents, and other protocols without opinionated UI or policy.
+## Why It’s Infra
+- Open, permissionless credit-vault suite; oracle-less collateral; clear state machine (request → accept → repay → liquidate).
+- Stable interfaces with docs, test vectors, versioned releases.
+- Standards-first: official staking-pool interface; deterministic NEAR/USDC accounting.
+- Intents-native settlement examples for integrators (illustrative only).
 
-**Reference Implementation (non‑core)**
-- Minimal UI, agent scripts, and example “intents → settlement” paths to demonstrate integration. These are illustrative and outside the infra scope.
+## How It Works
+- Vaults: owner-controlled, delegate via staking-pool.
+- Credit: borrower locks staked NEAR; lender funds USDC; fixed, oracle-less terms.
+- Liquidation order: liquid → matured-unstaked → targeted unstake across validators until paid.
 
-## Why This Is Core Infrastructure
-**What’s infrastructure**
-- An open, permissionless **credit‑vault contract suite** that turns staked NEAR into reusable, oracle‑less collateral with a clear state machine (**request → accept → repay → liquidate**).
-- **Stable interfaces** designed for neutral reuse by wallets, agents, and protocols; published as a **public good** with documentation, test vectors, and versioned releases.
-- **Standards‑first:** Compliant with NEAR’s **official staking‑pool interface** (`deposit_and_stake`, `unstake`, `withdraw`) and epoch semantics; deterministic accounting in NEAR/USDC terms.
-- **Intents‑native settlement:** Clear mapping from user intent to on‑chain settlement so external solvers/agents can integrate. Intents examples are provided as **reference**, not as product scope.
-
-**What’s not infrastructure**
-- Product/UI choices, agent scripts, and specific marketplace flows. These are examples that prove the primitive’s utility and remain optional for integrators.
-
-## How It Works (Concise)
-- **Vaults:** Owner‑controlled contracts that delegate NEAR via the official staking‑pool.
-- **Credit:** Borrowers lock a portion of staked NEAR as collateral; lenders transfer USDC to fund the loan; terms are fixed and oracle‑less.
-- **Liquidation order:** (1) Vault liquid NEAR → (2) matured unstaked → (3) targeted unstake across validators until debt is satisfied; strict stop once paid.
-
----
-
-## Intents Mapping (SudoStake ⇄ NEAR Intents)
-
-> *Note:* The following mappings are **examples** for integrators and are not part of the infrastructure scope.
-
-| User outcome | Intent (example) | Settlement on NEAR |
-|---|---|---|
-| Borrow against stake | “Provide X USDC for Y days, collateral Z NEAR.” | USDC to vault; collateral lock set; state updated |
-| Lend to a vault | “Accept this loan request.” | USDC in; acceptance recorded; lock active |
-| Repay | “Repay principal + interest.” | USDC back to lender; collateral lock released |
-| Liquidate | “Recover owed USDC by liquidating collateral.” | Process liquid → matured → unstake until satisfied |
-
----
+## Intents Mapping (examples)
+- Borrow against stake → USDC to vault; collateral lock set.
+- Lend to vault → USDC in; acceptance and lock recorded.
+- Repay → USDC to lender; release collateral.
+- Liquidate → consume liquid → matured → unstake until satisfied.
 
 ## Security & Operations
-- **Oracle‑less:** All amounts are deterministic in NEAR/USDC terms.
-- **Validator hygiene:** Tracks active/unbonding validators; respects epoch unlocks; avoids idle balances.
-- **Deterministic rules:** Clear, auditable liquidation priority and completion conditions.
-- **Automation‑friendly:** Manual calls work today; agents/cron can drive the same flows without special privileges.
-
----
+- Oracle-less amounts in NEAR/USDC.
+- Validator hygiene; respect epoch unlocks; no idle balances.
+- Deterministic liquidation rules; auditable completion.
+- Automation-friendly; no special privileges required.
 
 ## Ecosystem Impact
-- **Wallets & super‑apps:** One‑tap “Borrow against stake” via intents; seamless repay/refinance.
-- **Agent frameworks:** High‑value, repeatable tasks (monitor, refinance, repay, liquidate) that showcase NEAR’s agentic roadmap.
-- **Protocols:** Shared, audited collateral primitive reduces bespoke lending code and concentrates liquidity around native staking.
+- Wallets/super-apps: one-tap borrow against stake; simple repay/refinance.
+- Agents: repeatable tasks (monitor, refinance, repay, liquidate).
+- Protocols: shared audited collateral primitive; focuses liquidity around native staking.
 
----
+## Status (M1)
+- Delivered: connect wallet; vaults dashboard; deposit/withdraw; delegate/undelegate/claim-unstaked.
+- Sep target (achieved per reports): request; accept; repay.
 
-## Current Status (M1)
-**Delivered:** Connect NEAR wallet; vaults dashboard; deposit/withdraw; delegate/undelegate/claim‑unstaked.  
-**September target:** Request loan; accept loan; repay before deadline.
+## Requests to Infra/Rewards
+- Intent registry entries for credit actions (create vault, accept, repay, liquidate).
+- Indexing/observability guidance for lifecycle and settlement events.
+- Independent security review; disclosure guidance.
 
----
+## Metrics (for Rewards)
+- Adoption: vault count; total staked in vaults.
+- Credit throughput: USDC borrowed/repayed; repay vs liquidation.
+- Integrations: wallets/agents/dApps using the primitive.
+- Reliability: settlement success rate; repay/liquidate time-to-finality.
 
-## Requests to Infra/Rewards (Alignment)
-- Example intents registry entries for common credit actions (create vault, accept credit, repay, liquidate).
-- Recommended indexing/observability patterns for vault lifecycle and settlement events.
-- Independent security review of the core contracts and guidance on disclosure process.
-
-## Metrics for Rewards Review
-- **Adoption:** # of vaults; total NEAR staked in vaults.
-- **Credit throughput:** USDC borrowed/repayed; repay vs. liquidation ratio.
-- **Integrations:** # of wallets/agents/dApps using the primitive.
-- **Reliability:** Successful settlement rate; time‑to‑finality for repay/liquidate.
-
----
-
-## Change Log — September 3, 2025
-- Scoped “core infrastructure” strictly to the **credit‑vault contracts** (public good, stable interfaces).
-- Rewrote the **Executive Summary** to separate infra from the reference app.
-- Replaced **Why This Is Core Infrastructure** with standards‑first, intents‑native framing.
-- Marked **Intents Mapping** as examples; clarified **Scope** section.
-- Kept **Requests to Infra/Rewards** and added a security/indexing bullet.
-
-## References (NEAR Official)
+## References
 - NEAR Intents Overview — https://docs.near.org/chain-abstraction/intents/overview
 - NEAR Intents (developer) — https://docs.near-intents.org/near-intents
 - Chain Signatures — https://docs.near.org/chain-abstraction/chain-signatures
-- Staking: epochs, delegation, withdrawal — https://docs.near.org/protocol/network/staking
-- Staking‑Pool Core Contract — https://github.com/near/core-contracts/tree/master/staking-pool
-- NEP‑141 FT Standard — https://nomicon.io/Standards/Tokens/FungibleToken/Core
-- Native USDC on NEAR — https://pages.near.org/blog/usdc-launches-natively-on-the-near-protocol/
+- Staking — https://docs.near.org/protocol/network/staking
+- Staking-Pool Core Contract — https://github.com/near/core-contracts/tree/master/staking-pool
+- NEP-141 FT Standard — https://nomicon.io/Standards/Tokens/FungibleToken/Core
+- Native USDC — https://pages.near.org/blog/usdc-launches-natively-on-the-near-protocol/
 
----
-
-*Contact: hello@sudostake.com | https://sudostake.com*
+Contact: hello@sudostake.com • https://sudostake.com

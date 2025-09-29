@@ -1,51 +1,40 @@
 # SudoStake — Personas & Flows (NEAR MVP)
 
-**Overview**
+Overview
+- Date: 2025-08-20; Context: NEAR MVP.
+- Summary: Non‑custodial, oracle‑less vaults. Manual or agent execution. USDC (NEP‑141) liquidity; staked NEAR collateral. No loan fees. Vault mint fee: 10 NEAR.
 
-- Original date: 2025-08-20
-- Context: NEAR MVP
-- Summary: Non-custodial vaults with oracle-less logic. Actions can be executed manually or by an agent. USDC (NEP-141) provides liquidity. Staked NEAR is the collateral. No loan fees. Vault creation fee is exactly **10 NEAR**.
-
-**Key terms**
-
-- **owed (USDC):** Principal plus agreed interest to repay before the deadline.
-- **liquidation_target_near (NEAR):** Maximum NEAR that may be transferred to the lender during default recovery.
-- **liquidated (NEAR):** Total NEAR transferred so far in the liquidation process.
+Key terms
+- owed (USDC): principal + interest due before deadline.
+- liquidation_target_near (NEAR): max NEAR transferable to lender during recovery.
+- liquidated (NEAR): NEAR transferred so far in liquidation.
 
 ---
 
 ## At a glance
-
-- **What:** Borrow USDC against staked NEAR via non-custodial, oracle-less vaults.
-- **Who:** NEAR stakers (owners) and USDC lenders.
-- **How:** Open a request -> accept best offer -> repay USDC by deadline **or** anyone runs deterministic liquidation.
-- **Defaults:** Vault mint fee **10 NEAR**; offers are **amount-only**; the vault keeps only the **best 10** offers at any time. When a new, better offer arrives, the lowest-ranked offer is removed and its escrowed USDC is refunded (or recorded for retry if refund fails); unstake unlock in **4 epochs**; rewards auto-restake.
-- **Triggers:** Owner, lender, or automation agent can execute key actions. No price oracles.
-- **Fees:** Zero loan fees (network/storage fees still apply).
+- What: Borrow USDC against staked NEAR via non‑custodial, oracle‑less vaults.
+- Who: NEAR stakers (owners) and USDC lenders.
+- How: Open request → accept best offer → repay by deadline or anyone runs deterministic liquidation.
+- Defaults: Vault mint fee 10 NEAR; offers amount‑only; keep top‑10 offers with eviction + refund (or retry log); unstake unlock in 4 epochs; rewards auto‑restake.
+- Triggers: Owner, lender, or agent can execute; no price oracles.
+- Fees: Zero loan fees (network/storage fees still apply).
 
 ---
 
-## Table of contents
-
-1. [Purpose & scope](#purpose--scope)
-2. [At a glance](#at-a-glance)
-3. [System rules (MVP)](#system-rules-mvp)
-4. [Personas](#personas)
-   - [Vault owner (NEAR staker)](#vault-owner-near-staker)
-   - [Lender (USDC provider)](#lender-usdc-provider)
-5. [User needs](#user-needs)
-6. [Key entities & states](#key-entities--states)
-7. [Core user flows](#core-user-flows)
-   - [Owner journey: vault -> loan](#owner-journey--vault--loan)
-   - [Lender journey: offer -> outcome](#lender-journey--offer--outcome)
-8. [Control flow](#control-flow)
-   - [Lifecycle: repay vs liquidate](#lifecycle-repay-vs-liquidate)
-   - [Executor: `process_claims`](#executor-process_claims)
-9. [Lender discovery & offer (sequence)](#lender-discovery--offer-sequence)
-10. [System context diagram](#system-context-diagram)
-11. [UI state model](#ui-state-model)
-12. [Edge cases & recovery](#edge-cases--recovery)
-13. [KPIs](#kpis)
+## Contents
+1) Purpose & scope
+2) At a glance
+3) System rules (MVP)
+4) Personas (Owner, Lender)
+5) User needs
+6) Entities & states
+7) Core user flows
+8) Control flow (repay vs liquidate; process_claims)
+9) Lender discovery & offer (sequence)
+10) System context diagram
+11) UI state model
+12) Edge cases & recovery
+13) KPIs
 
 ---
 
@@ -56,78 +45,36 @@ This document summarizes (a) **user personas** and (b) **system/user flows** for
 ---
 
 ## System rules (MVP)
-
-- **Self-custody:** Vaults are **non-upgradable**, **keyless** contracts that track owner **in state**; minted via Factory for **exact 10 NEAR**.
-- **Delegation only via** NEAR `staking_pool.wasm`; rewards auto-restake.
-- **Liquidity request** fields: `{ token: USDC, amount, interest, duration, collateral: staked NEAR }`.
-- **Counter-offers:** amount-only; funds escrowed via `ft_transfer_call`. The vault maintains only the **best 10** offers at any moment. If a new, better offer arrives, it evicts the lowest-ranked offer and refunds its escrowed USDC (or adds a retry entry if refund fails).
-- **Acceptance:** best offer locked; all others refunded.
-- **Repayment:** owner repays **owed (USDC)** before deadline.
-- **Default & liquidation:** once `accepted_at + duration` elapses, **anyone** may run recovery in order: **(1)** use available NEAR; **(2)** withdraw matured unstaked; **(3)** fallback to unstake the remainder; stop when `liquidated == liquidation_target_near`.
-- **Fees:** Zero protocol fees on loan activities.
+- Self‑custody: non‑upgradable, keyless vaults; owner stored in state; mint via Factory for 10 NEAR.
+- Delegation via NEAR `staking_pool.wasm`; rewards auto‑restake.
+- Liquidity request: { token: USDC, amount, interest, duration, collateral: staked NEAR }.
+- Counter-offers: amount-only; escrow via `ft_transfer_call`; keep top-10; evict lowest with refund or retry log.
+- Acceptance: best offer locked; others refunded.
+- Repayment: owner repays owed (USDC) before deadline.
+- Default/liquidation: after `accepted_at + duration`, anyone may recover: liquid → matured‑unstaked → unstake remainder; stop at `liquidation_target_near`.
+- Fees: zero protocol fees on loan activities.
 
 ---
 
 ## Personas
 
 ### Vault owner (NEAR staker)
-
-**Profile:** Self-custody NEAR holder, comfortable with wallets and validator selection.  
-**Goals:** Keep staking yield; unlock USDC quickly; clear deadlines; preserve validator autonomy; minimize fees.
-
-**Key actions**
-
-- Mint vault (exact **10 NEAR**).
-- Delegate/undelegate via `staking_pool.wasm` (auto-restake).
-- Open request (USDC amount, interest, duration, collateral).
-- Review **amount-only** offers (escrowed), accept best; repay on time or allow liquidation.
-
-**Decisions**
-
-- Pick duration to match cash flow.
-- Ensure **total staked ≥ collateral**.
-- Choose reliable validators; avoid idle unstaked balances.
-
-**Risks**
-
-- Validator performance/slashing.
-- Missed deadlines (mitigate with automation).
-
-**Owner metrics**
-
-- Time to mint.
-- Time request -> acceptance.
-- On-time repay rate.
-- Liquidation incidence.
+Profile: Self‑custody NEAR holder; comfortable with wallets/validators.
+Goals: Keep yield; unlock USDC; clear deadlines; preserve validator autonomy; minimize fees.
+Key actions: Mint (10 NEAR); delegate/undelegate; open request (amount, interest, duration, collateral); review amount‑only offers; accept best; repay or allow liquidation.
+Decisions: Duration fit; staked ≥ collateral; validator reliability; avoid idle balances.
+Risks: Validator performance/slashing; missed deadlines (use automation).
+Owner metrics: time to mint; request→accept; on‑time repay; liquidation incidence.
 
 ---
 
 ### Lender (USDC provider)
-
-**Profile:** USDC holder seeking deterministic, rules-based yield backed by staked NEAR.  
-**Goals:** Predictable APR; transparent recovery on default; low operational overhead.
-
-**Key actions**
-
-- Browse requests; submit **amount-only** counter-offer via `ft_transfer_call` (escrow).
-- If accepted, escrow becomes loan; non-winners refunded (or queued for retry).
-- Before deadline: expect **USDC + interest**. After deadline: call `process_claims` to recover from NEAR.
-
-**Decisions**
-
-- Check collateral coverage, duration, rate; size exposure.
-
-**Risks**
-
-- Temporarily stuck funds (mitigated by self-triggered recovery).
-- Oracle risk (none; rules-based).
-
-**Lender metrics**
-
-- Fill rate.
-- Realized vs quoted APR.
-- Default recovery time.
-- Principal recovery rate.
+Profile: USDC holder seeking rules‑based yield backed by staked NEAR.
+Goals: Predictable APR; transparent recovery; low overhead.
+Key actions: Browse requests; submit amount‑only counter‑offer via `ft_transfer_call` (escrow); if accepted, escrow becomes loan; others refunded/queued; pre‑deadline expect USDC+interest; post‑deadline call `process_claims`.
+Decisions: Collateral coverage, duration, rate, exposure sizing.
+Risks: Temporarily stuck funds (self‑triggered recovery); oracle risk (none).
+Lender metrics: fill rate; realized vs quoted APR; recovery time; principal recovery rate.
 
 ---
 
@@ -237,7 +184,7 @@ sequenceDiagram
     UI-->>Lender: Show terms and collateral coverage
     Lender->>USDC: ft_transfer_call amount with CounterOffer
     USDC-->>Vault: ft_on_transfer escrow received
-    Vault-->>Lender: Refund escrow when evicted or not accepted
+    Vault-->>Lender: Refund escrow if evicted/not accepted
     Vault-->>Lender: Loan funded when owner accepts best offer
 ```
 
@@ -265,7 +212,6 @@ graph TD
     Agent -- Trigger repay or liquidation --> Vault
     Vault -- Transfers NEAR / Refunds USDC --> Lender
 ```
-
 ---
 
 ## UI state model

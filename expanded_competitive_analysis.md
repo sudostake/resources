@@ -1,36 +1,24 @@
 # SudoStake Competitive Analysis
 
-Date: September 1, 2025 | Contact: hello@sudostake.com
+Date: 2025-09-01 | Contact: hello@sudostake.com
 
----
+1) One-liner
+- Stakers get stablecoin working capital via lender offers; your own vault is time‑bound collateral. No price oracles.
 
-## 1) One-liner
-SudoStake gives stakers working capital in stablecoins via offers from lenders, using your own vault as time-bound collateral. No price oracles.
+2) Who it's for
+- Borrowers (stakers/validators): stablecoins without losing validator control.
+- Lenders (USDC suppliers): per‑deal risk with on‑chain repayment.
 
----
+3) Why it's different
+- Oracle‑less (per‑vault risk, no cascades). User‑owned vaults (escrowed offers). Time‑based settlement (repay pre‑expiry; liquidate post‑expiry).
 
-## 2) Who it's for
-- Borrowers (stakers/validators): Need stablecoins without giving up validator control.
-- Lenders (USDC suppliers): Want clear, per-deal risk and on-chain repayment.
+4) When to pick what
+- SudoStake: need working capital without giving up validator control; want deterministic timelines.
+- Pooled MM: want immediate, large size; accept oracle/pool risk.
+- CDP stablecoin: prefer self‑mint; accept peg/oracle/system risks.
+- Custodial credit: need fiat rails + KYC under off‑chain terms.
 
----
-
-## 3) Why it's different
-- Oracle-less: No price-feed cascades; risk is scoped to each vault.
-- User-owned vaults: Your stake stays in your contract; lenders fund escrowed offers.
-- Time-based settlement: Repay anytime before expiry; after expiry, liquidation can be triggered.
-
----
-
-## 4) When to pick SudoStake vs alternatives
-- Pick SudoStake when you want stablecoin working capital without surrendering validator control and you value deterministic timelines.
-- Pick a pooled money market when immediate, very large size is the top priority and you accept oracle risk and pool contagion.
-- Pick a CDP stablecoin when you prefer to self-mint and accept peg/oracle/system risks.
-- Pick custodial credit when you need fiat rails + KYC under an off-chain contract.
-
----
-
-## 5) Quick comparison
+5) Quick comparison
 | | SudoStake | Pooled MM | CDP | Custodial |
 |---|---|---|---|---|
 | Collateral control | Your vault | Pool/LST | Collateral contract | Custodian |
@@ -40,23 +28,15 @@ SudoStake gives stakers working capital in stablecoins via offers from lenders, 
 | Day-1 depth | Moderate | High | Medium | High |
 | Fees on credit | 0 | Often > 0 | Often > 0 | Fees/spread |
 
----
+6) Risks & realities
+- Unbonding latency; partial liquidation only; remaining stake compounds.
+- Supply bootstrapping; early lenders/cohorts seed offers.
+- Explicit expiry triggers; either party or an agent can call.
 
-## 6) Risks & realities
-- Unbonding latency: Liquidations can take time; only the pledged portion is liquidated; remaining stake keeps compounding.
-- Supply bootstrapping: Early markets need lenders; cohorts/market-makers help seed offers.
-- Operational triggers: Expiry actions are explicit; simple agents or either party can call them.
+7) Proof to publish
+- Time‑to‑fill and completion ratio; borrower APR band and lender realized yield; on‑time settlement metrics.
 
----
-
-## 7) Proof we'll publish (trust via data)
-- Time-to-fill for requests & completion ratio.
-- Borrower APR band and lender realized yield after all costs.
-- On-time settlement (pre-expiry repayments; post-expiry resolution times).
-
----
-
-## 8) Real-world comparisons
+8) Real‑world comparisons
 Short protocol cards with dated notes.
 
 Aave v3: multi-chain EVM (Type: pooled money market)
@@ -94,7 +74,7 @@ Rhea (ex-Burrow): NEAR (Type: pooled money market)
 - Docs: [Rhea whitepaper](https://guide.rhea.finance/rhea-finance-white-paper)
 - Notable updates: 2025-07-30 — Ref and Burrow merged/rebranded to Rhea.
 
-Maple Finance: EVM (Type: permissioned/under-collateralized credit)
+Maple Finance: EVM (Type: permissioned/under‑collateralized credit)
 - How it works: KYC institutions borrow from delegate-managed pools under off-chain legal terms. Open-term loans supported.
 - Where it wins: Large ticket sizes; fiat/custody rails; professional underwriting.
 - Where SudoStake wins: Permissionless; on-chain, per-deal settlement; no off-chain enforcement.
@@ -117,7 +97,7 @@ EigenLayer: Ethereum (Type: restaking overlay, not credit)
 
 ---
 
-## References
+9) References
 - Aave v3 documentation: [Liquidations](https://aave.com/docs/developers/liquidations), [Health factor help](https://aave.com/help/borrowing/liquidations), [v3 overview](https://aave.com/docs/developers/aave-v3/overview)
 - MakerDAO documentation: [Liquidation 2.0 (Dog/Clipper)](https://docs.makerdao.com/smart-contract-modules/dog-and-clipper-detailed-documentation), [clip.sol](https://github.com/makerdao/dss/blob/master/src/clip.sol)
 - Liquity documentation: [Stability Pool & liquidations](https://docs.liquity.org/liquity-v1/faq/stability-pool-and-liquidations)
