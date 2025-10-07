@@ -7,7 +7,7 @@ set -euo pipefail
 
 ROOT="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
 
-mapfile -d '' FILES < <(find "$ROOT" \( -name '*.md' -o -name 'README.md' \) -print0)
+mapfile -d '' FILES < <(find "$ROOT" -name '*.md' -print0)
 
 STATUS=0
 
@@ -36,7 +36,7 @@ for FILE in "${FILES[@]}"; do
       echo "BROKEN LINK: $RELFILE -> $URL"
       STATUS=1
     fi
-  done < <(grep -oE '\[[^]]+\]\([^)]+\)' "$FILE" | grep -vE '\]\((http|https|mailto:|tel:)')
+  done < <(grep -oE '\[[^]]+\]\([^)]+\)' "$FILE")
 done
 
 if [[ $STATUS -eq 0 ]]; then
