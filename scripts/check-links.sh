@@ -7,37 +7,35 @@ set -euo pipefail
 
 ROOT="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
 
-mapfile -d '' FILES < <(find "$ROOT" -name '*.md' -print0)
-
 STATUS=0
 
-for FILE in "${FILES[@]}"; do
-  DIR="$(dirname "$FILE")"
-  while IFS= read -r MATCH; do
-    URL="${MATCH#*(}"
-    URL="${URL%)}"
+while IFS=: read -r FILE LINE MATCH; do
+  [[ -z "$FILE" || -z "$MATCH" ]] && continue
 
-    case "$URL" in
-      http://*|https://*|mailto:*|tel:*) continue ;;
-      \#*) continue ;; # Pure anchor links are fine.
-    esac
+  URL="${MATCH#*(}"
+  URL="${URL%)}"
 
-    TARGET_PATH="${URL%%#*}" # Strip any anchor.
-    [[ -z "$TARGET_PATH" ]] && continue
+  case "$URL" in
+    http://*|https://*|mailto:*|tel:*) continue ;;
+    \#*) continue ;;
+  esac
 
-    if [[ "$TARGET_PATH" = /* ]]; then
-      TARGET="$ROOT$TARGET_PATH"
-    else
-      TARGET="$DIR/$TARGET_PATH"
-    fi
+  TARGET_PATH="${URL%%#*}"
+  [[ -z "$TARGET_PATH" ]] && continue
 
-    if [[ ! -e "$TARGET" ]]; then
-      RELFILE="${FILE#$ROOT/}"
-      echo "BROKEN LINK: $RELFILE -> $URL"
-      STATUS=1
-    fi
-  done < <(grep -oE '\[[^]]+\]\([^)]+\)' "$FILE")
-done
+  if [[ "$TARGET_PATH" = /* ]]; then
+    TARGET="$ROOT$TARGET_PATH"
+  else
+    DIR="$(dirname "$FILE")"
+    TARGET="$DIR/$TARGET_PATH"
+  fi
+
+  if [[ ! -e "$TARGET" ]]; then
+    RELFILE="${FILE#$ROOT/}"
+    echo "BROKEN LINK: $RELFILE:$LINE -> $URL"
+    STATUS=1
+  fi
+done < <(grep -R -n -oE '\[[^]]+\]\([^)]+\)' --include='*.md' "$ROOT" || true)
 
 if [[ $STATUS -eq 0 ]]; then
   echo "All Markdown links resolve."
