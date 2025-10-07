@@ -13,11 +13,11 @@ This hub lists the planning, execution, and reference docs for SudoStake on NEAR
 
 | Audience | Start Here | Why |
 | --- | --- | --- |
-| Investors & VCs | [Investor & Partner Brief](./investor-partner-brief.md) · [project-one-pager-sudostake-near.md](./project-one-pager-sudostake-near.md) · [sudostake-roadmap-near-mvp.md](../execution/sudostake-roadmap-near-mvp.md) | Snapshot, traction, roadmap outlook. |
-| Researchers & Technical Reviewers | [sudostake-core-infra-on-near.md](../systems/sudostake-core-infra-on-near.md) · [sudostake-risk-register.md](../execution/sudostake-risk-register.md) · [personas-and-flows.md](../product/personas-and-flows.md) | Architecture, risk posture, flows. |
-| Ecosystem Partners & Builders | [Builder Integration Guide](./builder-integration-guide.md) · [sudostake-core-infra-on-near.md](../systems/sudostake-core-infra-on-near.md) · [lean-canvas-sudostake-near.md](../product/lean-canvas-sudostake-near.md) | Integration checklist, APIs, business context. |
-| Community & Prospective Users | [community-snapshot.md](./community-snapshot.md) · [project-one-pager-sudostake-near.md](./project-one-pager-sudostake-near.md) · [progress-report-3.md](../execution/progress-report-3.md) | High-level value and near-term updates. |
-| Contributors & Team | [contributing.md](../team/contributing.md) · [documentation-strategy.md](../meta/documentation-strategy.md) · [documentation-inventory.md](../meta/documentation-inventory.md) · [information-architecture-plan.md](../meta/information-architecture-plan.md) | Standards, scope, and current action items. |
+| Investors & VCs | [Investor & Partner Brief](./investor-partner-brief.md) · [Project One-Pager](./project-one-pager-sudostake-near.md) · [Roadmap — NEAR MVP & Launch](../execution/sudostake-roadmap-near-mvp.md) | Snapshot, traction, roadmap outlook. |
+| Researchers & Technical Reviewers | [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md) · [Risk Register](../execution/sudostake-risk-register.md) · [Personas & Flows](../product/personas-and-flows.md) | Architecture, risk posture, flows. |
+| Ecosystem Partners & Builders | [Builder Integration Guide](./builder-integration-guide.md) · [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md) · [Lean Canvas — NEAR](../product/lean-canvas-sudostake-near.md) | Integration checklist, APIs, business context. |
+| Community & Prospective Users | [Community Snapshot](./community-snapshot.md) · [Project One-Pager](./project-one-pager-sudostake-near.md) · [Progress Report 3](../execution/progress-report-3.md) | High-level value and near-term updates. |
+| Contributors & Team | [Contributing Guide](../team/contributing.md) · [Documentation Strategy](../meta/documentation-strategy.md) · [Documentation Inventory](../meta/documentation-inventory.md) · [Information Architecture Plan](../meta/information-architecture-plan.md) | Standards, scope, and current action items. |
 
 ## Sources of Truth
 
@@ -33,39 +33,39 @@ This hub lists the planning, execution, and reference docs for SudoStake on NEAR
 ## Document Map
 
 ### Audience Briefs
-- [investor-partner-brief.md](./investor-partner-brief.md)
-- [builder-integration-guide.md](./builder-integration-guide.md)
-- [community-snapshot.md](./community-snapshot.md)
+- [Investor & Partner Brief](./investor-partner-brief.md)
+- [Builder Integration Guide](./builder-integration-guide.md)
+- [Community Snapshot](./community-snapshot.md)
 
 ### Overview & Messaging
-- [project-one-pager-sudostake-near.md](./project-one-pager-sudostake-near.md)
-- [pitch-deck-sudostake-near.md](./pitch-deck-sudostake-near.md)
+- [Project One-Pager](./project-one-pager-sudostake-near.md)
+- [Pitch Deck (Text)](./pitch-deck-sudostake-near.md)
 
 ### Product & Design
-- [sudostake-project-charter.md](../product/sudostake-project-charter.md)
-- [lean-canvas-sudostake-generic.md](../product/lean-canvas-sudostake-generic.md)
-- [lean-canvas-sudostake-near.md](../product/lean-canvas-sudostake-near.md)
-- [personas-and-flows.md](../product/personas-and-flows.md)
+- [Project Charter](../product/sudostake-project-charter.md)
+- [Lean Canvas — Generic](../product/lean-canvas-sudostake-generic.md)
+- [Lean Canvas — NEAR](../product/lean-canvas-sudostake-near.md)
+- [Personas & Flows](../product/personas-and-flows.md)
 
 ### Execution & Status
-- [sudostake-roadmap-near-mvp.md](../execution/sudostake-roadmap-near-mvp.md)
-- [sudostake-m1-progress.md](../execution/sudostake-m1-progress.md)
-- [progress-report-3.md](../execution/progress-report-3.md)
-- [progress-report-2.md](../execution/progress-report-2.md)
-- [sudostake-risk-register.md](../execution/sudostake-risk-register.md)
+- [Roadmap — NEAR MVP & Launch](../execution/sudostake-roadmap-near-mvp.md)
+- [Milestone 1 Progress Review](../execution/sudostake-m1-progress.md)
+- [Progress Report 3](../execution/progress-report-3.md)
+- [Progress Report 2](../execution/progress-report-2.md)
+- [Risk Register](../execution/sudostake-risk-register.md)
 
 ### Systems & Research
-- [sudostake-core-infra-on-near.md](../systems/sudostake-core-infra-on-near.md)
-- [expanded-competitive-analysis.md](../research/expanded-competitive-analysis.md)
+- [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md)
+- [Expanded Competitive Analysis](../research/expanded-competitive-analysis.md)
 
 ### Team & Operations
-- [sudostake-team-org-details.md](../team/sudostake-team-org-details.md)
-- [contributing.md](../team/contributing.md)
+- [Team & Org Details](../team/sudostake-team-org-details.md)
+- [Contributing Guide](../team/contributing.md)
 
 ### Meta & Repository Docs
-- [documentation-strategy.md](../meta/documentation-strategy.md)
-- [documentation-inventory.md](../meta/documentation-inventory.md)
-- [information-architecture-plan.md](../meta/information-architecture-plan.md)
+- [Documentation Strategy](../meta/documentation-strategy.md)
+- [Documentation Inventory](../meta/documentation-inventory.md)
+- [Information Architecture Plan](../meta/information-architecture-plan.md)
 
 ## Keeping Docs Current
 - Start with the [Contributing Guide](../team/contributing.md) for terminology, scope, and review order.
