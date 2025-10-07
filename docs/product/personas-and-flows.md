@@ -7,7 +7,7 @@ Primary Audience: Product, Researchers & Technical Reviewers, Contributors
 
 # SudoStake — Personas & Flows (NEAR MVP)
 
-## Overview
+## TL;DR
 - **Context:** NEAR MVP as of 2025-08-20.
 - **Summary:** Non-custodial, oracle-less vaults with manual or agent execution. USDC (NEP-141) liquidity, staked NEAR collateral, no loan fees, 10 NEAR vault mint fee.
 

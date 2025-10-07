@@ -9,9 +9,8 @@ Primary Audience: Product, Strategy, Contributors
 
 See also the chain-agnostic canvas in [lean-canvas-sudostake-generic.md](./lean-canvas-sudostake-generic.md).
 
-## Status Snapshot (2025-09-29)
-- M1 delivered on 2025-09-23.
-- M2 (factory optimization) in progress: near-sdk-rs PR #1369 merged; code-hash registry and global vault rollout staged behind feature flags.
+## Status (2025-09-29)
+- M1 delivered (2025-09-23). M2 in progress: optimized factory path with code-hash registry and global vault behind flags.
 
 ## Lean Canvas Blocks
 

@@ -7,10 +7,10 @@ Primary Audience: Researchers & Technical Reviewers, Ecosystem Partners & Builde
 
 # SudoStake: Core Infrastructure on NEAR
 
-## Executive Summary
-- SudoStake delivers a reusable, staking-backed credit vault system with deterministic, oracle-less settlement.
-- Core deliverables (factory, vault, lifecycle interfaces) ship under a public-good license; reference UIs and agents illustrate integration paths but remain non-core.
-- The design emphasizes reproducible deployments via code-hash registry, stable NEP-141 interfaces, and rich EVENT_JSON logs for automation.
+## TL;DR
+- Reusable, staking-backed vault credit with deterministic, oracle-less settlement.
+- Factory + Vault are public-good building blocks; UIs/agents are reference integrations.
+- Reproducible releases (code-hash registry), stable NEP-141 flows, and rich `EVENT_JSON` logs power automation.
 
 ## System Overview
 | Component | Responsibility | Key Interfaces |
@@ -32,6 +32,17 @@ Client / Agent
     │                                                        │
     └─ repay / liquidate ──▶ near_vault ── EVENT_JSON ──▶ Indexers / Observability
 ```
+
+## Public Methods — Quick Reference
+| Action | Where | Interface / Notes |
+| --- | --- | --- |
+| Create vault | Factory | Deploy user-owned vault; fee-configurable; tracked in code-hash registry. |
+| Request credit | Vault | NEP-141 `ft_transfer_call` escrow to post terms (amount-only offers). |
+| Accept offer | Vault | Best amount-only offer locks; others refunded or retried as needed. |
+| Repay | Vault | Borrower transfers USDC before deadline via NEP-141 callbacks; collateral released. |
+| Liquidation | Vault | Explicit call after deadline (e.g., “process claims”); order: liquid → matured → targeted unstake. |
+| Staking ops | Staking pool | `deposit_and_stake`, `unstake`, `withdraw_all`; owner-selected validators. |
+| Events | Factory/Vault | Structured `EVENT_JSON` under `sudostake.vault.*` namespaces for indexing. |
 
 ## Lifecycle & State Machine
 1. **Vault Initialization:** Factory deploys a vault with user-specified parameters; code hash tracked for integrity.

@@ -13,10 +13,10 @@ Planning, execution, and reference materials for the SudoStake project on NEAR. 
 
 | Audience | Start Here | Why |
 | --- | --- | --- |
-| Investors & VCs | [project-one-pager-sudostake-near.md](./project-one-pager-sudostake-near.md) · [pitch-deck-sudostake-near.md](./pitch-deck-sudostake-near.md) · [sudostake-roadmap-near-mvp.md](../execution/sudostake-roadmap-near-mvp.md) | Narrative, traction, and milestone commitments. |
+| Investors & VCs | [Investor & Partner Brief](./investor-partner-brief.md) · [project-one-pager-sudostake-near.md](./project-one-pager-sudostake-near.md) · [sudostake-roadmap-near-mvp.md](../execution/sudostake-roadmap-near-mvp.md) | Snapshot, traction, roadmap outlook. |
 | Researchers & Technical Reviewers | [sudostake-core-infra-on-near.md](../systems/sudostake-core-infra-on-near.md) · [sudostake-risk-register.md](../execution/sudostake-risk-register.md) · [personas-and-flows.md](../product/personas-and-flows.md) | Architecture, risk posture, flows. |
-| Ecosystem Partners & Builders | [sudostake-core-infra-on-near.md](../systems/sudostake-core-infra-on-near.md) · [sudostake-roadmap-near-mvp.md](../execution/sudostake-roadmap-near-mvp.md) · [lean-canvas-sudostake-near.md](../product/lean-canvas-sudostake-near.md) | Integration touchpoints and rollout plan. |
-| Community & Prospective Users | [project-one-pager-sudostake-near.md](./project-one-pager-sudostake-near.md) · [progress-report-3.md](../execution/progress-report-3.md) · [progress-report-2.md](../execution/progress-report-2.md) | High-level value and near-term updates. |
+| Ecosystem Partners & Builders | [Builder Integration Guide](./builder-integration-guide.md) · [sudostake-core-infra-on-near.md](../systems/sudostake-core-infra-on-near.md) · [lean-canvas-sudostake-near.md](../product/lean-canvas-sudostake-near.md) | Integration checklist, APIs, business context. |
+| Community & Prospective Users | [community-snapshot.md](./community-snapshot.md) · [project-one-pager-sudostake-near.md](./project-one-pager-sudostake-near.md) · [progress-report-3.md](../execution/progress-report-3.md) | High-level value and near-term updates. |
 | Contributors & Team | [contributing.md](../team/contributing.md) · [documentation-strategy.md](../meta/documentation-strategy.md) · [documentation-inventory.md](../meta/documentation-inventory.md) · [information-architecture-plan.md](../meta/information-architecture-plan.md) | Standards, scope, and current action items. |
 
 ## Sources of Truth
@@ -31,6 +31,11 @@ Planning, execution, and reference materials for the SudoStake project on NEAR. 
 | Team & org | [sudostake-team-org-details.md](../team/sudostake-team-org-details.md) | Roles, responsibilities, and contact routing. |
 
 ## Document Map
+
+### Audience Briefs
+- [investor-partner-brief.md](./investor-partner-brief.md)
+- [builder-integration-guide.md](./builder-integration-guide.md)
+- [community-snapshot.md](./community-snapshot.md)
 
 ### Overview & Messaging
 - [project-one-pager-sudostake-near.md](./project-one-pager-sudostake-near.md)

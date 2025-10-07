@@ -7,10 +7,15 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Pr
 
 # SudoStake on NEAR — One-Pager
 
+## TL;DR
+- Borrow USDC against staked NEAR without unbonding or custodians.
+- Oracle-less, deterministic lifecycle; vaults are user-owned.
+- MVP testnet flows validated end-to-end; roadmap to mainnet behind flags.
+
 ## Summary
-- Borrow USDC against staked NEAR without unbonding, off-chain oracles, or custodians. Vaults remain user-owned with deterministic liquidations.
-- NEAR’s native USDC and predictable epochs allow oracle-less collateral with clear settlement rules.
-- MVP is live on testnet with end-to-end flows validated by agents and reference web clients.
+- Borrow USDC against staked NEAR without unbonding, off-chain oracles, or custodians.
+- NEAR’s native USDC and predictable epochs enable clear settlement rules.
+- MVP is live on testnet with flows validated by agents and the reference web client.
 
 ## Problem & Solution
 | Problem | SudoStake Approach |
@@ -31,10 +36,10 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Pr
 - Wallet, agent, and dApp teams integrating staking-backed credit.
 
 ## MVP Feature Set
-- Mint and manage vaults (deposit/withdraw NEAR, delegate, undelegate, claim unstaked balances).
-- Create loan requests, accept offers, repay before deadlines.
-- Deterministic, permissionless liquidations with clean event logs for tracking.
-- Feature flags and metrics hooks prepared for mainnet rollout.
+- Vaults: deposit/withdraw, delegate/undelegate, claim unstaked.
+- Loans: request, accept, repay before deadline.
+- Liquidations: deterministic, permissionless, event-logged.
+- Rollout: feature flags + metrics hooks.
 
 ## Differentiation Snapshot
 |  | SudoStake | Pooled MM | CDP | Custodial |

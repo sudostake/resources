@@ -11,10 +11,15 @@ Purpose: consolidate the current documentation set, primary audiences, and immed
 
 | Document | Primary Purpose | Primary Audience(s) | Status / Immediate Notes | Last Updated (Git) |
 | --- | --- | --- | --- | --- |
-| overview/readme.md | High-level index of core materials. | All audiences | Quick-start table live; refresh after Phase 2 moves. | 2025-09-29 |
+| overview/readme.md | High-level index of core materials. | All audiences | Quick-start table updated with audience briefs; refresh alongside new guides. | 2025-09-30 |
 | team/contributing.md | Doc contribution standards and workflow. | Contributors | Structure, naming rules, and review checklist refreshed. | 2025-09-29 |
 | overview/project-one-pager-sudostake-near.md | Investor/partner summary of mission and value. | Investors & VCs, Partners | Update traction metrics by 2025-10-15; keep executive summary current. | 2025-09-29 |
 | overview/pitch-deck-sudostake-near.md | Presentation deck content (text version). | Investors & VCs | Sync with latest fundraising narrative; link maintained slides. | 2025-09-29 |
+| overview/investor-partner-brief.md | Role-specific summary for investors and partners. | Investors & VCs, Partners | New landing page; refresh after roadmap reviews and fundraising updates. | 2025-09-30 |
+| overview/builder-integration-guide.md | Integration checklist and API notes for builders. | Ecosystem Partners & Builders | New landing page; update after M2 factory rollout or API changes. | 2025-09-30 |
+| overview/community-snapshot.md | Community-facing status snapshot and calls to action. | Community & Prospective Users | New landing page; refresh after next progress report (2025-10-03). | 2025-09-30 |
+| overview/investor-partner-brief.md | Role-specific summary for investors and partners. | Investors & VCs, Partners | New landing page; refresh after roadmap reviews and fundraising updates. | 2025-09-30 |
+| overview/builder-integration-guide.md | Integration checklist and API notes for builders. | Ecosystem Partners & Builders | New landing page; update after M2 factory rollout or API changes. | 2025-09-30 |
 | product/lean-canvas-sudostake-generic.md | Business model assumptions (generic framing). | Product, Strategy | Highlight deltas vs NEAR-specific canvas before de-duplication. | 2025-09-29 |
 | product/lean-canvas-sudostake-near.md | Business model assumptions tailored to NEAR. | Product, Strategy | Align with roadmap milestones and one-pager language. | 2025-09-29 |
 | product/sudostake-project-charter.md | Project scope, objectives, and governance. | Internal Stakeholders | Front matter + structured sections live; refresh when scope shifts. | 2025-09-29 |

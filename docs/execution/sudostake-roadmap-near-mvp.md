@@ -7,6 +7,9 @@ Primary Audience: Contributors, Investors & VCs, Ecosystem Partners & Builders
 
 # SudoStake Roadmap — NEAR MVP & Launch
 
+## TL;DR
+M1 delivered early; M2 (optimized factory path) in progress; M3 mainnet candidate, M4 stability; staged mainnet waves in Q1/Q2.
+
 ## Snapshot (2025-09-30)
 - **M1 — Web Testnet Feature-Complete:** Delivered Sep 23, 2025 (ahead of target).
 - **M2 — Factory Optimization (Optimized Path):** In progress; target Nov 15, 2025; near-sdk-rs PR #1369 merged.
