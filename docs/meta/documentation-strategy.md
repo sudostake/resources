@@ -48,3 +48,11 @@ Primary Audience: Contributors, Internal Stakeholders
 4. Prioritize deeper refreshes (infra overview, risk register, roadmap summaries) after alignment.
 
 Revisit this strategy once the Phase 2 information architecture proposal is in place to confirm it still holds.
+
+## Related Documents
+- [Documentation Inventory](./documentation-inventory.md)
+- [Information Architecture Plan](./information-architecture-plan.md)
+- [Documentation Refactor Tracker](./documentation-refactor-tracker.md)
+
+## Next Review
+- Validate alignment after Phase 2 standardization or during the next quarterly documentation review.

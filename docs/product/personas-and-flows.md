@@ -1,13 +1,20 @@
+---
+Purpose: Describe SudoStake NEAR MVP personas, flows, and system rules for product and integration planning.
+Owner: Product & Delivery (TBD)
+Last Updated: 2025-09-29
+Primary Audience: Product, Researchers & Technical Reviewers, Contributors
+---
+
 # SudoStake — Personas & Flows (NEAR MVP)
 
-Overview
-- Date: 2025-08-20; Context: NEAR MVP.
-- Summary: Non‑custodial, oracle‑less vaults. Manual or agent execution. USDC (NEP‑141) liquidity; staked NEAR collateral. No loan fees. Vault mint fee: 10 NEAR.
+## Overview
+- **Context:** NEAR MVP as of 2025-08-20.
+- **Summary:** Non-custodial, oracle-less vaults with manual or agent execution. USDC (NEP-141) liquidity, staked NEAR collateral, no loan fees, 10 NEAR vault mint fee.
 
-Key terms
-- owed (USDC): principal + interest due before deadline.
-- liquidation_target_near (NEAR): max NEAR transferable to lender during recovery.
-- liquidated (NEAR): NEAR transferred so far in liquidation.
+## Key Terms
+- **owed (USDC):** principal + interest due before deadline.
+- **liquidation_target_near (NEAR):** maximum NEAR transferable during recovery.
+- **liquidated (NEAR):** NEAR delivered so far during liquidation.
 
 ---
 
@@ -245,3 +252,11 @@ graph TD
 | **Owner** | median mint time; request->accept time; on-time repay rate; % with clear validator sets |
 | **Lender** | fill rate; realized vs quoted APR; median liquidation duration; principal recovery rate |
 | **System** | failed refund rate; automation coverage; revert rate per method |
+
+## Related Documents
+- [SudoStake Roadmap — NEAR MVP & Launch](../execution/sudostake-roadmap-near-mvp.md)
+- [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
+- [Lean Canvas — SudoStake on NEAR](./lean-canvas-sudostake-near.md)
+
+## Next Review
+- Revisit after the 2025-10-15 risk register update or when user flows change materially.

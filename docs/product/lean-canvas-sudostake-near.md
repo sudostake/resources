@@ -1,47 +1,79 @@
-# LEAN CANVAS — SudoStake on NEAR
+---
+Purpose: Document the NEAR-specific lean canvas for SudoStake, reflecting current roadmap progress.
+Owner: Product & Strategy (TBD)
+Last Updated: 2025-09-29
+Primary Audience: Product, Strategy, Contributors
+---
 
-See also: lean-canvas-sudostake-generic.md for chain‑agnostic canvas.
+# Lean Canvas — SudoStake on NEAR
 
-Status (Sep 26, 2025)
-- M1 complete (Sep 23, 2025). M2 in progress (near-sdk-rs PR #1369 merged; code-hash registry + global Vault behind feature flags).
+See also the chain-agnostic canvas in [lean-canvas-sudostake-generic.md](./lean-canvas-sudostake-generic.md).
 
-One‑liner
-- Liquidity for NEAR stakers without unbonding. Borrow/lend on native stake — no oracles, no wrappers, no custodians.
+## Status Snapshot (2025-09-29)
+- M1 delivered on 2025-09-23.
+- M2 (factory optimization) in progress: near-sdk-rs PR #1369 merged; code-hash registry and global vault rollout staged behind feature flags.
 
-1) Problem
-- Unlocking staked NEAR requires unbonding delays or custodial/synthetic solutions.
-- No native borrow‑against‑stake while keeping validator delegation and yield.
-- Lenders lack low‑risk, non‑custodial collateral on NEAR.
+## Lean Canvas Blocks
 
-2) Customer Segments
-- NEAR stakers/validators; lenders/capital providers; NEAR devs/DAOs; onboarding users via wallets/agents.
+### One-Liner
+Liquidity for NEAR stakers without unbonding. Native borrow/lend on staked NEAR—no oracles, wrappers, or custodians.
 
-3) Unique Value Proposition
-- Turn staked NEAR into usable collateral — oracle‑free.
-- User‑owned vaults; validator choice, governance, and rewards preserved.
-- Deterministic, permissionless system.
+### Problem
+- Unlocking staked NEAR requires unbonding delays or custodial/synthetic workarounds.
+- No native borrow-against-stake option that preserves validator delegation and yield.
+- Lenders lack low-risk, non-custodial collateral exposure on NEAR.
 
-4) Solution
-- Vaults: non‑custodial, configurable creation fee; delegate NEAR to validators.
-- Liquidity requests: USDC loans with collateral in staked NEAR; accept via NEP‑141 JSON messages.
-- Liquidation: strict order (liquid → matured → targeted unstake), stop at owed; no oracles.
-- Marketplace: discovery of open requests; counter‑offers (amount‑only) beyond M1.
+### Customer Segments
+- NEAR stakers/validators.
+- USDC lenders and capital providers.
+- NEAR developers, DAOs, and partners integrating staking-backed credit.
+- Wallet/agent providers onboarding end users.
 
-5) Channels
-- Web app; agent interfaces; validator/wallet partnerships; NF protocol‑rewards visibility.
+### Unique Value Proposition
+- Turn staked NEAR into usable collateral with an oracle-less lifecycle.
+- User-owned vaults preserve validator choice, governance, and rewards.
+- Deterministic, permissionless system aligned with NEAR intents and agents.
 
-6) Revenue Streams
-- Vault creation fee (Factory); optional validator commissions; no protocol fees on borrow/lend/liquidate in MVP.
+### Solution
+- **Vaults:** Non-custodial contracts with configurable creation fee; delegate NEAR to chosen validators.
+- **Liquidity requests:** USDC loans collateralized by staked NEAR; accepted via NEP-141 JSON messages.
+- **Liquidation:** Strict order (liquid → matured unstake → targeted unstake), halting when obligations are met; no oracle dependency.
+- **Marketplace:** Discovery of open requests; counter-offers (amount-only) extend beyond M1 scope.
 
-7) Cost Structure
-- Contracts (Rust/NEAR SDK) dev/audit/maint; frontend; agent infra; NEAR tx/storage; docs/support.
+### Channels
+- SudoStake web app (NEAR).
+- Agent interfaces and intents tooling.
+- Validator and wallet partnerships.
+- NEAR Foundation protocol-rewards visibility and community programs.
 
-8) Key Metrics
-- Total NEAR staked; vault count/active; loan volume; repayment rate; time to fund; offer competition; repeat usage; USDC depth.
+### Revenue Streams
+- Vault creation fee (factory contract).
+- Optional validator commissions (post-MVP exploration).
+- No protocol fees on borrow/lend/liquidate during MVP.
 
-9) Unfair Advantage
-- First native NEAR non‑custodial borrow against stake; oracle‑less deterministic liquidation; NEAR smart‑account‑aligned vaults; Rewards Cohort 2 alignment; no synthetic assets.
+### Cost Structure
+- Rust/NEAR SDK contract development, audits, and maintenance.
+- Frontend and agent infrastructure.
+- NEAR transaction/storage costs; observability and support.
 
-Notes
-- Traction: ~231 vaults on prior chain; NEAR testnet feature‑complete for M1 flows.
-- Next: M2 optimized factory/global Vault behind feature flags with a migration plan.
+### Key Metrics
+- Total NEAR staked via vaults; active vault count.
+- Loan volume, repayment rate, and time to fund.
+- Offer competitiveness, repeat usage, and USDC liquidity depth.
+
+### Unfair Advantage
+- First native NEAR non-custodial borrow-against-stake product.
+- Oracle-less deterministic liquidation aligned with NEAR smart accounts.
+- Backing from Protocol Rewards Cohort 2; leverages prior-chain learnings (~231 vaults).
+
+## Notes
+- Traction: Prior-chain release logged ~231 vaults; NEAR testnet MVP flows completed in M1.
+- Next steps: Execute M2 optimized factory/global vault rollout with migration planning and metrics.
+
+## Related Documents
+- [Lean Canvas — SudoStake (Chain-Agnostic)](./lean-canvas-sudostake-generic.md)
+- [SudoStake Roadmap — NEAR MVP & Launch](../execution/sudostake-roadmap-near-mvp.md)
+- [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
+
+## Next Review
+- Refresh after the 2025-10-07 roadmap review or when M2 scope/assumptions change materially.

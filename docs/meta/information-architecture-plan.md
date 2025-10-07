@@ -84,3 +84,11 @@ Primary Audience: Contributors, Internal Stakeholders
 ### Verification
 - Run automated relative-link check (`scripts/check-links.sh`, to be added in Phase 1) immediately after each wave.
 - Update `documentation-inventory.md` and the refactor tracker with completion notes once verification passes.
+
+## Related Documents
+- [Documentation Strategy](./documentation-strategy.md)
+- [Documentation Inventory](./documentation-inventory.md)
+- [Documentation Refactor Tracker](./documentation-refactor-tracker.md)
+
+## Next Review
+- Revisit after Phase 2 standardization or when new folder migrations are scheduled.

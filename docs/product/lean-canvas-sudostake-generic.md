@@ -1,38 +1,65 @@
-# LEAN CANVAS — SudoStake (Chain‑Agnostic)
+---
+Purpose: Capture the chain-agnostic lean canvas for SudoStake’s staking-backed credit model.
+Owner: Product & Strategy (TBD)
+Last Updated: 2025-09-29
+Primary Audience: Product, Strategy, Contributors
+---
 
-One‑liner
-- Borrow against staked assets without unbonding. User‑owned vaults, deterministic flows, simple integrations.
+# Lean Canvas — SudoStake (Chain-Agnostic)
 
-1) Problem
-- Stakers face unbonding delays/penalties or risky wrappers/custody.
-- Lenders lack a simple, non‑custodial path to deploy capital against productive collateral.
+## Overview
+- **One-liner:** Borrow against staked assets without unbonding; user-owned vaults deliver deterministic credit flows and simple integrations.
+- **Context:** Foundation for chain-specific canvases; highlights evergreen problem/solution framing and business model assumptions.
 
-2) Customer Segments
-- Stakers/validators seeking liquidity without unbonding.
-- Lenders/treasuries seeking secured stablecoin yield.
-- Wallets/agents/dApps embedding “Borrow against stake.”
+## Lean Canvas Blocks
 
-3) Unique Value Proposition
-- Turn staked assets into usable collateral — no unbonding, no custodians, simple rules.
-- User‑owned vaults (not pooled); deterministic, oracle‑minimized flow; composable events/interfaces.
+### Problem
+- Stakers face unbonding delays, penalties, or risky wrappers/custody to unlock liquidity.
+- Lenders lack a non-custodial, transparent way to deploy capital against productive collateral.
 
-4) Solution
-- Vaults: mint user‑owned smart vault (one‑time fee) to manage stake/balances.
-- Borrow/Lend: borrower posts terms; lender accepts via token transfer + message.
-- Liquidation: anyone can trigger post‑deadline; priority‑ordered repayment.
-- Integrations: structured events and stable interfaces for wallets/agents.
+### Customer Segments
+- Stakers and validators seeking liquidity while maintaining delegation control.
+- Lenders/treasuries targeting secured stablecoin yield.
+- Wallets, agents, and dApps embedding “borrow against stake” experiences.
 
-5) Channels
-- Web app; agent/wallet integrations; validator/wallet/community partnerships.
+### Unique Value Proposition
+- Turn staked assets into usable collateral without unbonding or custodians.
+- User-owned vaults (no pools), deterministic oracle-minimized lifecycle, composable events/interfaces for automation.
 
-6) Revenue Streams
-- Configurable vault creation fee; optional validator/operator commissions.
+### Solution
+- **Vaults:** Mint user-owned contracts (one-time fee) to manage staking balances.
+- **Borrow/Lend:** Borrower posts terms; lender accepts via token transfer plus message.
+- **Liquidation:** Anyone can trigger post-deadline; repayments follow priority order until obligations are met.
+- **Integrations:** Structured events and stable interfaces to power wallets and agents.
 
-7) Cost Structure
-- Protocol engineering/audits/maintenance; frontend/agent/indexing; deploy/monitoring/support.
+### Channels
+- SudoStake web app.
+- Agent and wallet integrations.
+- Validator, wallet, and community partnerships.
 
-8) Key Metrics
-- Value staked; vaults created/active; loan volume, repayment rate, time‑to‑fund; lender liquidity; integrations.
+### Revenue Streams
+- Configurable vault creation fee.
+- Optional validator/operator commissions (future consideration).
 
-9) Unfair Advantage
-- Oracle‑minimized deterministic design; user‑owned vaults (no pooled custody); modular adapters for staking/tokens/events.
+### Cost Structure
+- Protocol engineering, audits, and maintenance.
+- Frontend/agent development and indexing infrastructure.
+- Deployment, monitoring, and contributor support.
+
+### Key Metrics
+- Total value staked through vaults; active vault count.
+- Loan volume, repayment rate, and time-to-fund.
+- Lender liquidity depth; number of integrations.
+
+### Unfair Advantage
+- Oracle-minimized deterministic design.
+- User-owned vaults (no pooled custody risk).
+- Modular adapters for staking, token flows, and event streams.
+
+## Related Documents
+- [Lean Canvas — SudoStake on NEAR](./lean-canvas-sudostake-near.md)
+- [SudoStake Project Charter](./sudostake-project-charter.md)
+- [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
+
+## Next Review
+- Reassess alongside the NEAR-specific canvas during the next roadmap checkpoint (target 2025-10-07).
