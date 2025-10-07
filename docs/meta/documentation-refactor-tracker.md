@@ -15,7 +15,7 @@ _Current coverage: Muhammed Ali (acting docs lead) owns every phase until collab
 | --- | --- | --- | --- | --- | --- |
 | Phase 0 — Alignment | Confirm scope, publish tracker, outline guardrails. | Muhammed Ali | 2025-10-01 | In progress | Cadence and owner gaps captured below. |
 | Phase 1 — Navigation | Create `docs/` tree, relocate readme.md, update inventory, add link checks. | Muhammed Ali | 2025-10-08 | Completed | Folder migration live; run `scripts/check-links.sh` after future moves. |
-| Phase 2 — Standardization | Apply front matter, add review blocks, publish templates. | Muhammed Ali | 2025-10-15 | In progress | Lean canvases, personas & pitch updated; continue rolling changes repo-wide. |
+| Phase 2 — Standardization | Apply front matter, add review blocks, publish templates. | Muhammed Ali | 2025-10-15 | Completed | Templates applied across docs; link checks automated via `scripts/check-links.sh`. |
 | Phase 3 — Role Guides | Build audience landing pages and cross-links. | Muhammed Ali | 2025-10-29 | Planned | SMEs to be added once aligned. |
 | Phase 4 — Depth & Assets | Enrich technical refs, diagrams, and runbooks. | Muhammed Ali | 2025-11-12 | Planned | Coordinate with future protocol partner. |
 | Phase 5 — Maintenance | Launch changelog, review cadence, update ceremony doc. | Muhammed Ali | 2025-11-22 | Planned | Becomes ongoing once established. |
@@ -40,7 +40,7 @@ _Current coverage: Muhammed Ali (acting docs lead) owns every phase until collab
 
 1. Confirm personal availability for each phase deliverable; document bandwidth risks in the tracker by 2025-09-30.
 2. Announce the completed folder migration and share `scripts/check-links.sh` for ongoing verification.
-3. Circulate the front matter and progress-report templates for feedback; continue standardizing remaining docs (e.g., audience guides) and note target collaborators to onboard.
+3. Circulate the front matter and progress-report templates for feedback; prep audience landing pages for Phase 3 onboarding.
 
 ## Change Log Placeholder
 

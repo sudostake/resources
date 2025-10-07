@@ -70,3 +70,11 @@ Planning, execution, and reference materials for the SudoStake project on NEAR. 
 
 ## Contact
 - [hello@sudostake.com](mailto:hello@sudostake.com) — Primary contact for external inquiries.
+
+## Related Documents
+- [Project One-Pager — SudoStake on NEAR](./project-one-pager-sudostake-near.md)
+- [SudoStake Documentation Strategy](../meta/documentation-strategy.md)
+- [Information Architecture Plan](../meta/information-architecture-plan.md)
+
+## Next Review
+- Update navigation once new audience landing pages ship or at the next quarterly documentation review.
