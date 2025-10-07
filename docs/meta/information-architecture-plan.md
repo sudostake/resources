@@ -1,7 +1,7 @@
 ---
 Purpose: Outline the proposed information architecture for the SudoStake documentation refactor.
 Owner: Docs Lead (TBD)
-Last Updated: 2025-09-29
+Last Updated: 2025-10-01
 Primary Audience: Contributors, Internal Stakeholders
 ---
 
@@ -57,7 +57,7 @@ Primary Audience: Contributors, Internal Stakeholders
 - Add “Related Documents” to long-form files and link the most relevant references.
 - Use consistent heading IDs (lowercase with hyphens) for cross-file anchors.
 - Include a mini-table of contents once documents exceed ~700 words.
-- Cite the source when summarizing data (e.g., “See roadmap §Milestone M2”).
+- Cite the source when summarizing data (e.g., “See roadmap §Milestone 2”).
 
 ## Implementation Checklist
 1. Publish the refreshed README structure before moving files.
@@ -82,7 +82,7 @@ Primary Audience: Contributors, Internal Stakeholders
 - Emergency updates route through the Docs Lead, who coordinates merges after target files relocate.
 
 ### Verification
-- Run automated relative-link check (`scripts/check-links.sh`, to be added in Phase 1) immediately after each wave.
+- Run `scripts/check-links.sh` after each wave to confirm Markdown links resolve.
 - Update `documentation-inventory.md` and the refactor tracker with completion notes once verification passes.
 
 ## Related Documents

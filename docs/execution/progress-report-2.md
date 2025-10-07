@@ -1,38 +1,40 @@
 ---
 Purpose: Summarize milestone status and upcoming work for stakeholders.
 Owner: Muhammed Ali
-Last Updated: 2025-09-29
+Last Updated: 2025-10-01
 Primary Audience: Contributors, Investors & VCs, Community & Prospective Users
 ---
 
 # SudoStake — Progress Report 2
 
-Date: 2025-09-23  •  Roadmap: [sudostake-roadmap-near-mvp.md](./sudostake-roadmap-near-mvp.md)
+Date: 2025-09-23
 
-> The roadmap remains the authoritative source for scope, dates, and dependencies.
+Roadmap link: [SudoStake Roadmap — NEAR MVP & Launch](./sudostake-roadmap-near-mvp.md) — use this for full milestone scope and timelines.
 
-## Summary
-- M1 functionally complete ahead of the 2025-09-30 target; full testnet lifecycle validated.
-- Counter-offers (amount-only) deferred without affecting MVP scope.
-- near-sdk-rs PR #1369 merged, clearing the blocker for the optimized factory path in M2.
+## What Happened
+- Milestone 1 hit feature-complete a week early. The testnet app already covers wallet connect, vault management, staking, loan requests, lender fills, and liquidations.
+- Counter-offers (amount-only) are in the post–Milestone 1 backlog, and the marketplace runs cleanly without them.
+- The merged [near-sdk-rs PR #1369](https://github.com/near/near-sdk-rs/pull/1369) unblocked the shared vault path for Milestone 2 — Factory Optimization.
 
-## Status
-- **Milestone 1 — ✅ Delivered (Target 2025-09-30):** Wallet connect, vault dashboard, staking management, loan lifecycle, liquidation flow, lender marketplace all confirmed on testnet.
-- **Counter-offers:** Deferred to post-M1 backlog; marketplace live without it.
-- **Milestone 2 — 🚧 In preparation (Target 2025-11-15):** Optimized path now unblocked; planning feature flag rollout and size/cost baselines.
+## Where We Are
+- **Milestone 1 — Delivered (Target was 2025-09-30):** All MVP flows run on NEAR testnet and passed manual checks.
+- **Milestone 2 — Factory Optimization (Target 2025-11-15):**
+  - Plan the rollout of the shared vault contract and the code-hash registry.
+  - Collect baseline size and cost numbers before optimizations land.
+  - Keep the feature flag plan ready so we can ship safely once work begins.
 
-## Risks
-- None blocking M1 completion.
-- M2 work will operate behind feature flags to limit regressions as global vault deployment advances.
+## Risks We Are Watching
+- No open risks for Milestone 1.
+- For Milestone 2, all major changes stay behind feature flags, so we can fall back to the current factory if we hit regressions.
 
-## Next (2 Weeks)
-- Kick off optimized factory path work: global vault deployment, code-hash registry, size/cost reporting.
-- Maintain Nov 1 readiness checkpoint; fallback plan documented if optimizations slip.
+## Next Two Weeks
+- Start the shared vault work: registry design, deploy plan, and launch checklist.
+- Record the starting WASM size and gas costs so improvements are easy to see.
+- Hold the Nov 1 readiness checkpoint on the calendar; confirm the fallback plan stays valid.
 
-## Related Documents
-- [sudostake-m1-progress.md](./sudostake-m1-progress.md)
-- [sudostake-roadmap-near-mvp.md](./sudostake-roadmap-near-mvp.md)
-- [progress-report-3.md](./progress-report-3.md)
+## Related Reading
+- [Milestone 1 Progress Review](./sudostake-m1-progress.md) — full write-up of the finished milestone.
+- [Progress Report 3](./progress-report-3.md) — follow-up on Milestone 2 tasks once work kicked off.
 
-## Next Review
-- Target the next public update for 2025-09-26 alongside Progress Report 3.
+## Next Update
+- Next report will land on 2025-09-26 together with Progress Report 3.

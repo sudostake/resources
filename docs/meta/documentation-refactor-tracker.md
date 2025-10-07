@@ -1,7 +1,7 @@
 ---
 Purpose: Track phases, owners, and deadlines for the SudoStake documentation refactor.
 Owner: Docs Lead (TBD)
-Last Updated: 2025-09-29
+Last Updated: 2025-10-01
 Primary Audience: Contributors, Internal Stakeholders
 ---
 
@@ -14,9 +14,9 @@ _Current coverage: Muhammed Ali (acting docs lead) owns every phase until collab
 | Phase | Scope Highlights | Owner | Target Completion | Status | Notes |
 | --- | --- | --- | --- | --- | --- |
 | Phase 0 — Alignment | Confirm scope, publish tracker, outline guardrails. | Muhammed Ali | 2025-10-01 | In progress | Cadence and owner gaps captured below. |
-| Phase 1 — Navigation | Create `docs/` tree, relocate readme.md, update inventory, add link checks. | Muhammed Ali | 2025-10-08 | Completed | Folder migration live; run `scripts/check-links.sh` after future moves. |
-| Phase 2 — Standardization | Apply front matter, add review blocks, publish templates. | Muhammed Ali | 2025-10-15 | Completed | Templates applied across docs; link checks automated via `scripts/check-links.sh`. |
-| Phase 3 — Role Guides | Build audience landing pages and cross-links. | Muhammed Ali | 2025-10-29 | Planned | SMEs to be added once aligned. |
+| Phase 1 — Navigation | Create `docs/` tree, relocate readme.md, update inventory, add link checks. | Muhammed Ali | 2025-10-08 | Completed | Folder migration live; use `scripts/check-links.sh` after future moves. |
+| Phase 2 — Standardization | Apply front matter, add review blocks, publish templates. | Muhammed Ali | 2025-10-15 | Completed | Templates applied across docs; `scripts/check-links.sh` covers link verification. |
+| Phase 3 — Role Guides | Build audience landing pages and cross-links. | Muhammed Ali | 2025-10-29 | In progress | Investor, builder, and community briefs drafted; continue adding SME inputs. |
 | Phase 4 — Depth & Assets | Enrich technical refs, diagrams, and runbooks. | Muhammed Ali | 2025-11-12 | Planned | Coordinate with future protocol partner. |
 | Phase 5 — Maintenance | Launch changelog, review cadence, update ceremony doc. | Muhammed Ali | 2025-11-22 | Planned | Becomes ongoing once established. |
 
@@ -24,10 +24,10 @@ _Current coverage: Muhammed Ali (acting docs lead) owns every phase until collab
 
 | Audience Cluster | Primary Docs | Interim Owner | Cadence |
 | --- | --- | --- | --- |
-| Investors & VCs | `overview/readme.md`, `overview/project-one-pager-sudostake-near.md`, `overview/pitch-deck-sudostake-near.md` | Muhammed Ali | Bi-weekly during fundraising; hand off once GTM lead joins. |
+| Investors & VCs | `overview/investor-partner-brief.md`, `overview/project-one-pager-sudostake-near.md`, `overview/pitch-deck-sudostake-near.md` | Muhammed Ali | Bi-weekly during fundraising; hand off once GTM lead joins. |
 | Researchers & Technical Reviewers | `systems/sudostake-core-infra-on-near.md`, `execution/sudostake-risk-register.md`, technical appendices | Muhammed Ali | Review at milestone checkpoints; recruit protocol partner post-alignment. |
-| Ecosystem Partners & Builders | Integration guides, roadmap snapshots, API references | Muhammed Ali | Review before each integration wave; transition to partner engineering when staffed. |
-| Community & Prospective Users | Progress reports, FAQs, public updates | Muhammed Ali | Align with progress reports; communicate monthly at minimum. |
+| Ecosystem Partners & Builders | `overview/builder-integration-guide.md`, roadmap snapshots, API references | Muhammed Ali | Review before each integration wave; transition to partner engineering when staffed. |
+| Community & Prospective Users | `overview/community-snapshot.md`, progress reports, FAQs | Muhammed Ali | Align with progress reports; communicate monthly at minimum. |
 | Contributors & Internal Stakeholders | Contributing guide, inventory, tracker, future changelog | Muhammed Ali | Bi-weekly self-review plus quarterly ceremony placeholder. |
 
 ## Cadence Commitments
@@ -39,7 +39,7 @@ _Current coverage: Muhammed Ali (acting docs lead) owns every phase until collab
 ## Immediate Actions (Phase 0)
 
 1. Confirm personal availability for each phase deliverable; document bandwidth risks in the tracker by 2025-09-30.
-2. Announce the completed folder migration and share `scripts/check-links.sh` for ongoing verification.
+2. Announce the completed folder migration and point contributors to `scripts/check-links.sh` for ongoing verification.
 3. Circulate the front matter and progress-report templates for feedback; prep audience landing pages for Phase 3 onboarding.
 
 ## Change Log Placeholder
