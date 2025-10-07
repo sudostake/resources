@@ -8,9 +8,9 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Pr
 # SudoStake on NEAR — One-Pager
 
 ## TL;DR
-- Borrow USDC against staked NEAR without unbonding or custodians.
-- Oracle-less, deterministic lifecycle powered by user-owned vaults and NEAR’s predictable epochs plus native USDC.
-- MVP testnet flows validated end-to-end via the reference web client and automation agent; roadmap to mainnet runs behind feature flags.
+- Borrow USDC against staked NEAR without unbonding or handing funds to a custodian.
+- Oracle-free lifecycle with user-owned vaults, predictable NEAR epochs, and native USDC.
+- MVP testnet flows work end to end in the web app and AI Agent; mainnet rollout stays behind feature flags until ready.
 
 ## Problem & Solution
 | Problem | SudoStake Approach |
@@ -20,7 +20,7 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Pr
 | Complex settlement logic introduces integration risk. | Stable interfaces (NEP-141) and EVENT_JSON logs for easy indexing and automation. |
 
 ## How It Works
-1. **Vault Deployment:** Factory contract deploys user-owned vaults (optional creation fee) and registers code hashes for reproducibility.
+1. **Vault Deployment:** Factory contract deploys user-owned vaults, applies the creation fee, and registers code hashes for reproducibility.
 2. **Staking Management:** Vaults delegate/unstake via official staking-pool methods (`deposit_and_stake`, `unstake`, `withdraw_all`); users choose validators.
 3. **Credit Lifecycle:** Borrowers request USDC via `ft_transfer_call`; lenders accept amount-only offers; repayments settle through NEP-141 callbacks.
 4. **Liquidations:** Anyone can liquidate after expiry, following the strict order: liquid balance → matured unstaked → targeted unstake until obligations are met.
@@ -31,10 +31,10 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Pr
 - Wallet, agent, and dApp teams integrating staking-backed credit.
 
 ## MVP Feature Set
-- Vaults: deposit/withdraw, delegate/undelegate, claim unstaked.
-- Loans: request, accept, repay before deadline.
-- Liquidations: deterministic, permissionless, event-logged.
-- Rollout: feature flags + metrics hooks.
+- Vaults: deposit or withdraw NEAR, delegate or undelegate, claim unstaked funds.
+- Loans: request terms, accept offers, repay before the deadline.
+- Liquidations: deterministic, permissionless, and fully logged.
+- Rollout: feature flags and metrics hooks.
 
 ## Differentiation Snapshot
 |  | SudoStake | Pooled MM | CDP | Custodial |
@@ -46,9 +46,9 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Pr
 | Credit fees | 0 (MVP) | Variable spread | Interest/fees | Fees/spread |
 
 ## Traction & Timeline
-- ~231 vaults validated on prior chain; NEAR MVP testnet live with full lifecycle coverage.
-- Milestone 1 — Web Testnet Feature-Complete (delivered Sep 23, 2025); Milestone 2 — Factory Optimization (in progress) with global vault rollout tracked behind feature flags.
-- Go-to-market: testnet pilots → gated mainnet beta → staged mainnet rollout; wallet/agent co-marketing and developer bounties.
+- ~231 vaults validated on the prior chain; NEAR MVP testnet covers the full lifecycle today.
+- Milestone 1 — Web Testnet Feature-Complete delivered on Sep 23, 2025. Milestone 2 — Factory Optimization is in progress with the shared vault rollout behind feature flags.
+- Go-to-market path: testnet pilots → gated mainnet beta → staged mainnet waves with wallet and agent partnerships plus developer bounties.
 
 ## Economics
 - **Revenue Levers:** Vault creation fee (factory), optional validator commissions, future premium automation services.
@@ -56,12 +56,12 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Pr
 
 ## Security & Risk Controls
 - Deterministic state machine prevents surprise execution paths.
-- Processing lock + storage reserve mitigate re-entrancy and rent exhaustion.
-- Dedicated test suites; third-party audit and bounty planned pre-mainnet expansion.
+- Processing lock and storage reserve reduce re-entrancy and rent risks.
+- Dedicated tests today; third-party audit and bounty planned before mainnet expansion.
 
 ## Team & Governance
 - Maintainer: Muhammed Ali (SudoStake).
-- Governance evolves from single maintainer to 2-of-3 multisig as contributor roster expands.
+- Governance plan: move from single maintainer to a 2-of-3 multisig as contributors join.
 
 ## Current Roadmap Highlights
 - **Milestone 1 — Web Testnet Feature-Complete:** Delivered.
@@ -81,4 +81,4 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Pr
 - [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
 
 ## Next Review
-- Schedule review by 2025-10-15 to refresh traction metrics and roadmap statuses.
+- Refresh by 2025-10-15 to update traction numbers and roadmap notes.

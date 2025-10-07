@@ -7,7 +7,7 @@ Primary Audience: All audiences
 
 # SudoStake on NEAR — Documentation Hub
 
-Planning, execution, and reference materials for the SudoStake project on NEAR. Use the quick-start guides below to jump to the resources that match your role.
+This hub lists the planning, execution, and reference docs for SudoStake on NEAR. Use the quick-start table to jump straight to the files that match your role.
 
 ## Quick Start
 
@@ -68,10 +68,10 @@ Planning, execution, and reference materials for the SudoStake project on NEAR. 
 - [information-architecture-plan.md](../meta/information-architecture-plan.md)
 
 ## Keeping Docs Current
-- Follow the [Contributing Guide](../team/contributing.md) for terminology, scope changes, and update order.
-- Update sources of truth before modifying summary materials or collateral.
-- Log meaningful changes in progress reports or roadmap updates to preserve decision history.
-- Use the documentation inventory to track stale files and assign next actions.
+- Start with the [Contributing Guide](../team/contributing.md) for terminology, scope, and review order.
+- Update each source-of-truth document before touching summaries or collateral.
+- Record material changes in the roadmap or progress reports so the history stays clear.
+- Track stale files and follow-ups in the documentation inventory.
 
 ## Contact
 - [hello@sudostake.com](mailto:hello@sudostake.com) — Primary contact for external inquiries.

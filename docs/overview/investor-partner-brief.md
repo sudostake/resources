@@ -8,9 +8,9 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders
 # Investor & Partner Brief — SudoStake on NEAR
 
 ## At a Glance
-- **Model:** Borrow against staked NEAR. Oracle-less, user-owned vaults with deterministic liquidation.
-- **Traction:** Prior chain ~231 vaults; Milestone 1 — Web Testnet Feature-Complete delivered on 2025-09-23.
-- **Focus:** Milestone 2 — Factory Optimization targeting 2025-11-15 for the global vault rollout (behind feature flags).
+- **Model:** Borrow against staked NEAR with user-owned, oracle-free vaults.
+- **Traction:** ~231 vaults on the prior chain; Milestone 1 — Web Testnet Feature-Complete shipped on 2025-09-23.
+- **Focus:** Milestone 2 — Factory Optimization (target 2025-11-15) to launch the shared vault path behind feature flags.
 
 ## Why It Matters
 - Unlock capital for stakers without unbonding or custodians.
@@ -24,13 +24,13 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders
 
 ## Key Metrics (Q3 2025)
 - 231 historical vaults (prior chain benchmark).
-- Testnet validated: request → accept → repay → liquidation; marketplace live.
-- Counter-offers (amount-only) staged after Milestone 1 completion.
+- Testnet flows validated end to end: request → accept → repay → liquidation, marketplace live.
+- Counter-offers (amount-only) queued for follow-up after Milestone 1.
 
 ## Partner Opportunities
-- Security reviewers, indexers, wallet/agent distribution partners.
-- Early lenders/validators for beta cohorts.
-- Observatory/analytics collaborations for EVENT_JSON ingestion.
+- Security reviewers, indexers, and wallet or agent distribution partners.
+- Early lenders and validator cohorts for beta launches.
+- Analytics collaborators to stream `EVENT_JSON` data.
 
 ## Core Resources
 ### Quick Links
@@ -42,7 +42,7 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders
 ## Engagement
 - **Contact:** hello@sudostake.com
 - **Updates:** Progress reports ([progress-report-3.md](../execution/progress-report-3.md), [progress-report-2.md](../execution/progress-report-2.md)).
-- **Calls-to-action:** Schedule investor/partner briefing; join next roadmap review; explore beta participation.
+- **Calls-to-action:** Book a briefing, join the next roadmap review, and flag interest in beta participation.
 
 ## Related Documents
 - [SudoStake Risk Register](../execution/sudostake-risk-register.md)

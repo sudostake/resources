@@ -12,9 +12,9 @@ Date: 2025-09-23
 Roadmap link: [SudoStake Roadmap — NEAR MVP & Launch](./sudostake-roadmap-near-mvp.md) — use this for full milestone scope and timelines.
 
 ## What Happened
-- Milestone 1 hit feature-complete a week early. The testnet app now covers wallet connect, vault management, staking actions, loan requests, lender fills, and liquidations.
-- Counter-offers (amount-only) still exist, but they now live in the post-Milestone 1 backlog. The marketplace runs fine without them.
-- The merged [near-sdk-rs PR #1369](https://github.com/near/near-sdk-rs/pull/1369) unblocked the shared vault path planned for Milestone 2 — Factory Optimization.
+- Milestone 1 hit feature-complete a week early. The testnet app already covers wallet connect, vault management, staking, loan requests, lender fills, and liquidations.
+- Counter-offers (amount-only) are in the post–Milestone 1 backlog, and the marketplace runs cleanly without them.
+- The merged [near-sdk-rs PR #1369](https://github.com/near/near-sdk-rs/pull/1369) unblocked the shared vault path for Milestone 2 — Factory Optimization.
 
 ## Where We Are
 - **Milestone 1 — Delivered (Target was 2025-09-30):** All MVP flows run on NEAR testnet and passed manual checks.
@@ -24,8 +24,8 @@ Roadmap link: [SudoStake Roadmap — NEAR MVP & Launch](./sudostake-roadmap-near
   - Keep the feature flag plan ready so we can ship safely once work begins.
 
 ## Risks We Are Watching
-- No blockers for Milestone 1.
-- For Milestone 2, all heavy changes will sit behind feature flags so we can fall back to the current factory if we hit regressions.
+- No open risks for Milestone 1.
+- For Milestone 2, all major changes stay behind feature flags, so we can fall back to the current factory if we hit regressions.
 
 ## Next Two Weeks
 - Start the shared vault work: registry design, deploy plan, and launch checklist.

@@ -8,7 +8,9 @@ Primary Audience: Contributors, Investors & VCs, Ecosystem Partners & Builders
 # SudoStake Roadmap — NEAR MVP & Launch
 
 ## TL;DR
-Milestone 1 — Web Testnet Feature-Complete shipped ahead of schedule. Milestone 2 — Factory Optimization is underway to enable the shared vault path. Milestones 3 and 4 prepare a mainnet candidate and stable beta, followed by staged mainnet launches in the first half of 2026.
+- Milestone 1 finished ahead of plan on 2025-09-23.
+- Milestone 2 is live: build the code-hash registry, deploy the shared vault contract, and cut vault-creation costs.
+- Next in line: Milestone 3 (mainnet candidate) → Milestone 4 (beta stability) → Milestones 5–6 (staged mainnet launches in the first half of 2026).
 
 ## Snapshot (2025-09-30)
 - **Milestone 1 — Web Testnet Feature-Complete:** Delivered Sep 23, 2025 (ahead of target).
@@ -26,12 +28,12 @@ Milestone 1 — Web Testnet Feature-Complete shipped ahead of schedule. Mileston
 | Milestone 6 — Staged Mainnet Launch (Wave 2) & Stability | 2026-06-30 | 🔜 Planned | Milestone 5 | Broader access, scaling and reliability tuning. |
 
 ## Current Status & Checkpoints (as of 2025-09-30)
-- **Milestone 1 wrap-up:** Testnet lifecycle validated; counter-offers (amount-only) deferred without blocking scope; post-mortem tasks logged in progress reports.
-- **Milestone 2 execution:** Code-hash registry implementation and WASM size audit underway; factory + global vault integration staged behind feature flags.
+- **Milestone 1 wrap-up:** All testnet flows are validated. Counter-offers (amount-only) moved to the backlog without blocking scope. Follow-up tasks are in the progress reports.
+- **Milestone 2 execution:** Building the code-hash registry, tracking WASM size, and wiring the factory to the shared vault behind feature flags.
 - **Upcoming gates:**
-  - **2025-10-07 — Roadmap review:** Confirm Milestone 2 burndown, adjust schedules if new blockers surface.
-  - **2025-11-01 — Milestone 2 readiness checkpoint:** Verify optimized path metrics and migration rehearsal before locking launch date.
-- **Risks being tracked:** Global vault migration complexity, optimization regressions, and liquidity partner onboarding; mitigations outlined in the risk register.
+  - **2025-10-07 — Roadmap review:** Confirm Milestone 2 burndown and adjust if new blockers appear.
+  - **2025-11-01 — Milestone 2 readiness checkpoint:** Check optimized-path metrics and migration rehearsals before setting launch dates.
+- **Risks in focus:** Shared-vault migration complexity, possible optimization regressions, and liquidity partner onboarding. Details live in the risk register.
 
 ## Quarterly Summary
 
@@ -57,7 +59,7 @@ Milestone 1 — Web Testnet Feature-Complete shipped ahead of schedule. Mileston
 
 **Target:** Sep 30, 2025  •  **Status:** Completed Sep 23, 2025 (ahead of target)
 
-**Scope:** Ship the SudoStake web app on NEAR testnet end‑to‑end: mint → delegate/undelegate → request → accept (amount‑only) → repay (pre‑deadline) → claims (liquid → matured unstaked → fallback).
+**Scope:** Ship the SudoStake web app on NEAR testnet end-to-end: mint → delegate/undelegate → request → accept (amount-only) → repay (before deadline) → claims (liquid → matured unstaked → fallback).
 
 - Includes (user features):
   1) Connect wallet
@@ -78,26 +80,25 @@ Milestone 1 — Web Testnet Feature-Complete shipped ahead of schedule. Mileston
 
 **Target:** Nov 15, 2025  •  **Status:** In progress (blocker resolved)
 
-**Scope:** Optimized path (near‑sdk‑rs PR #1369 merged): code‑hash registry, WASM size reductions, deploy global SudoStake Vault, smooth migration from per‑vault instances, all behind flags.
+**Scope:** Complete the optimized path (enabled by [near-sdk-rs PR #1369](https://github.com/near/near-sdk-rs/pull/1369)): add the code-hash registry, shrink the contracts, deploy a shared SudoStake Vault, and migrate from per-vault instances using feature flags.
 
-**Checkpoint:** Nov 1, 2025 readiness check to validate optimized path milestones; fallback to embedded `vault.wasm` in Factory remains documented but is not expected.
+**Checkpoint:** Nov 1, 2025 readiness check to confirm milestones and keep the embedded `vault.wasm` fallback on standby.
 
-- Includes: E2E tests; before/after size & cost report; public view compatibility; migration plan; feature flags.
+- Includes: end-to-end tests, before/after size and cost report, public view compatibility, migration guide, and feature flags.
 
 #### Execution Plan — Next Steps
 
-0. Activate NPR tracker in `near_vault_factory` and `near_vault` (metrics/events for protocol rewards).
-1. Re‑implement SudoStake `near_vault` as a stand‑alone, reproducible contract (clean build, deterministic release process).
-2. Deploy SudoStake `near_vault` as a global contract (single code‑hash; retain public view compatibility).
-3. Re‑implement SudoStake `near_vault_factory` to use the global `near_vault` to deploy new vaults (via code‑hash registry).
-4. Deploy updated `near_vault_factory` to testnet.
-5. Integrate new factory in `sudostake_web_near` and `sudostake_agent_near`.
-6. Integrate the counter‑offers mechanism on clients (`sudostake_web_near`, `sudostake_agent_near`).
-7. Testnet testing/audits; publish size/cost report and migration guide.
+1. Activate NPR trackers in `near_vault_factory` and `near_vault` to capture protocol rewards metrics.
+2. Publish a reproducible build of the standalone `near_vault` contract.
+3. Deploy `near_vault` as a shared contract and keep public views intact.
+4. Update `near_vault_factory` to pull from the shared contract through the code-hash registry.
+5. Ship the new factory to testnet.
+6. Point `sudostake_web_near` and `sudostake_agent_near` at the updated factory and counter-offer flow.
+7. Run testnet verification, release the size/cost report, and finalize the migration guide.
 
 Notes
-- Steps 0–7 complete Milestone 2 on testnet with flags for safe rollout.
-- Counter-offers remain amount-only for this phase; extensions can follow after Milestone 3.
+- Steps 1–7 finish Milestone 2 on testnet with feature-flag protection.
+- Counter-offers stay amount-only in this phase; enhancements land after Milestone 3.
 
 #### Milestone 2 Burndown (Updated Weekly)
 | Workstream | Owner | Status | Notes / Next Action |

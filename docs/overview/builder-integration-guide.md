@@ -8,21 +8,21 @@ Primary Audience: Ecosystem Partners & Builders, Researchers & Technical Reviewe
 # Builder Integration Guide — SudoStake on NEAR
 
 ## Quick Facts
-- Contracts: Factory + Vault (Rust/near-sdk) on NEAR testnet with a mainnet candidate scheduled for Milestone 3 — Mainnet Candidate Behind Feature Flags.
-- Collateral: Staked NEAR via `staking_pool.wasm`; loans in native USDC (NEP-141).
-- Events: `EVENT_JSON` logs capture request, accept, repay, and liquidation actions.
-- Feature flags: Global vault rollout and counter-offers (amount-only) arrive during Milestone 2 — Factory Optimization.
+- Contracts: Factory + Vault (Rust/near-sdk) live on NEAR testnet; mainnet candidate ships in Milestone 3 — Mainnet Candidate Behind Feature Flags.
+- Collateral: Staked NEAR via `staking_pool.wasm`; loans settle in native USDC (NEP-141).
+- Events: `EVENT_JSON` logs for request, accept, repay, and liquidation actions.
+- Feature flags: Shared vault rollout and amount-only counter-offers unlock during Milestone 2 — Factory Optimization.
 
 ## Prerequisites
 - Familiarity with NEP-141 (`ft_transfer_call` callbacks) and `staking_pool.wasm` interfaces.
 - Ability to consume `EVENT_JSON` logs and schedule on-chain actions (agents/intents).
 
 ## Integration Steps
-1. Review architecture and roadmap: `../systems/sudostake-core-infra-on-near.md`, `../execution/sudostake-roadmap-near-mvp.md`.
-2. Implement USDC offer flow using `ft_transfer_call` to escrow funds to a vault.
-3. Subscribe to `sudostake.vault.*` events; map IDs to UI and automation.
-4. Add automation for `process_claims` post-deadline (optional but recommended).
-5. Coordinate beta access, addresses, and feature flags with the team.
+1. Review the architecture and roadmap: `../systems/sudostake-core-infra-on-near.md`, `../execution/sudostake-roadmap-near-mvp.md`.
+2. Implement the USDC offer flow with `ft_transfer_call` so lenders escrow funds into the vault.
+3. Subscribe to `sudostake.vault.*` events and map IDs to your UI and automation.
+4. Add automation for `process_claims` after deadlines (strongly recommended).
+5. Sync on beta access, contract addresses, and feature flags with the team.
 
 ## APIs & Contracts
 | Component | Contract | Key Methods |
@@ -43,8 +43,8 @@ Primary Audience: Ecosystem Partners & Builders, Researchers & Technical Reviewe
 - Track metrics such as vault count, active loans, and repayment rates via NPR trackers exposed in the contracts.
 
 ## Support & Contact
-- hello@sudostake.com for onboarding.
-- Join the builders channel (Discord/Telegram TBD) for API updates and feature-flag announcements.
+- Email hello@sudostake.com for onboarding.
+- Builders channel (Discord/Telegram TBD) will host API updates and feature-flag notices.
 - Progress reports: [progress-report-3.md](../execution/progress-report-3.md), [progress-report-2.md](../execution/progress-report-2.md).
 
 ## Related Documents

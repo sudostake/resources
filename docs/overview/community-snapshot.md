@@ -8,9 +8,9 @@ Primary Audience: Community & Prospective Users
 # Community Snapshot — SudoStake on NEAR
 
 ## TL;DR
-- Keep staking rewards while accessing USDC liquidity.
-- Rules-based lifecycle (request → accept → repay → liquidation); no custodians.
-- Friendly automation via NEAR intents/agents.
+- Keep staking rewards and still borrow USDC.
+- Lifecycle is rules-based (request → accept → repay → liquidation) with no custodians.
+- Automation help comes from NEAR intents and agents.
 
 ## Status
 - **Milestone 1 — Web Testnet Feature-Complete:** Delivered 2025-09-23 with full borrow/lend flows live on NEAR testnet.
@@ -18,9 +18,9 @@ Primary Audience: Community & Prospective Users
 - **Next Updates:** Roadmap checkpoint on 2025-10-07; next progress report by 2025-10-03.
 
 ## What’s Live Today
-- Vault minting (10 NEAR fee) and staking management (delegate, undelegate, claim).
-- Request/accept/repay with USDC.
-- Manual liquidation (anyone can trigger after deadline) with clear on-chain events.
+- Mint a vault for 10 NEAR, then delegate, undelegate, or claim unstaked funds.
+- Request, accept, and repay loans in USDC.
+- Trigger manual liquidations after deadlines; every step emits clear on-chain events.
 
 ## Coming Soon
 - Counter-offer (amount-only) improvements now that Milestone 1 is complete.
@@ -30,7 +30,7 @@ Primary Audience: Community & Prospective Users
 ## Stay in the Loop
 - Progress updates: [progress-report-3.md](../execution/progress-report-3.md) · [progress-report-2.md](../execution/progress-report-2.md)
 - Roadmap: [sudostake-roadmap-near-mvp.md](../execution/sudostake-roadmap-near-mvp.md)
-- Join the mailing list/Telegram (TBD) for launch notifications.
+- Mailing list or Telegram channel (TBD) coming alongside the next launch update.
 
 ## How to Get Involved
 - Share feedback via hello@sudostake.com.

@@ -12,10 +12,10 @@ Date: 2025-09-26
 Roadmap link: [SudoStake Roadmap — NEAR MVP & Launch](./sudostake-roadmap-near-mvp.md) — full milestone dates, scope, and checkpoints.
 
 ## What Happened
-- Milestone 1 finished on 2025-09-23, one week early. All testnet flows ran end to end, including liquidation dry runs.
-- Milestone 2 — Factory Optimization started. The merged [near-sdk-rs PR #1369](https://github.com/near/near-sdk-rs/pull/1369) keeps the optimized factory plan on track.
-- The testnet web app is live at [https://v0-sudo-stake-near-web.vercel.app/dashboard](https://v0-sudo-stake-near-web.vercel.app/dashboard). You can mint vaults, deposit, stake, request and fund USDC credit, repay, liquidate, transfer ownership, and perform the same actions via the SudoStake AI Agent.
-- Main focus now: set up the code-hash registry, trim contract size, and roll out changes with feature flags.
+- Milestone 1 wrapped on 2025-09-23, a week early. Every testnet flow, including liquidation rehearsals, passed.
+- Milestone 2 — Factory Optimization is underway. The merged [near-sdk-rs PR #1369](https://github.com/near/near-sdk-rs/pull/1369) cleared the last dependency.
+- The testnet app lives at [https://v0-sudo-stake-near-web.vercel.app/dashboard](https://v0-sudo-stake-near-web.vercel.app/dashboard). You can mint vaults, stake NEAR, request or fund USDC loans, repay, liquidate, transfer ownership, and do the same steps through the SudoStake AI Agent.
+- Current focus: ship the code-hash registry, shrink the contracts, and roll out changes behind feature flags.
 
 ## Where We Are
 - **Milestone 1 — Delivered:** Vault minting, staking actions, loan lifecycle, and liquidation are live on NEAR testnet. Counter-offers (amount-only) stay in the backlog but do not block the MVP.
@@ -31,9 +31,9 @@ Roadmap link: [SudoStake Roadmap — NEAR MVP & Launch](./sudostake-roadmap-near
 
 ## Next Two Weeks
 - Finish the registry work and publish the initial size and cost report.
-- Deploy the shared vault contract as a global reference so the factory no longer embeds the WASM, cutting vault-creation costs by more than 90% (from ~3 NEAR to well under 0.3 NEAR).
-- Enable feature flags, deploy the shared vault contract to testnet, and confirm normal user actions still work.
-- Write and rehearse the migration guide with a small lender and borrower group.
+- Deploy the shared vault contract as a global reference so the factory stops embedding the WASM. This cuts vault-creation costs by more than 90% (from ~3 NEAR to well under 0.3 NEAR).
+- Turn on the feature flags, push the shared vault contract to testnet, and recheck core user flows.
+- Draft and run the migration guide with a small lender and borrower group.
 
 ## Looking Ahead
 - Promote the optimized contracts to NEAR mainnet, connect them to the web app and AI Agent, and prepare the launch runbook once factory optimization clears the readiness checkpoint.
