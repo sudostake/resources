@@ -1,7 +1,7 @@
 ---
 Purpose: Outline standards and workflow for contributing to SudoStake documentation.
 Owner: Docs Lead (TBD)
-Last Updated: 2025-09-29
+Last Updated: 2025-10-01
 Primary Audience: Contributors
 ---
 
@@ -13,7 +13,7 @@ Primary Audience: Contributors
 ## Sources of Truth
 - Roadmap, status, execution steps: sudostake-roadmap-near-mvp.md
 - Product spec and flows: personas-and-flows.md
-- Milestone M1 details: sudostake-m1-progress.md
+- Milestone 1 details: sudostake-m1-progress.md
 - Infra overview and external references: sudostake-core-infra-on-near.md
 - Risk register: sudostake-risk-register.md
 - Team/org details: sudostake-team-org-details.md

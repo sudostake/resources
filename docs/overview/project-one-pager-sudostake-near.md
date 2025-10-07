@@ -1,7 +1,7 @@
 ---
 Purpose: Provide an investor- and partner-ready snapshot of SudoStake on NEAR.
 Owner: Growth & Partnerships (TBD)
-Last Updated: 2025-09-29
+Last Updated: 2025-10-01
 Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Prospective Users
 ---
 
@@ -9,13 +9,8 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Pr
 
 ## TL;DR
 - Borrow USDC against staked NEAR without unbonding or custodians.
-- Oracle-less, deterministic lifecycle; vaults are user-owned.
-- MVP testnet flows validated end-to-end; roadmap to mainnet behind flags.
-
-## Summary
-- Borrow USDC against staked NEAR without unbonding, off-chain oracles, or custodians.
-- NEAR’s native USDC and predictable epochs enable clear settlement rules.
-- MVP is live on testnet with flows validated by agents and the reference web client.
+- Oracle-less, deterministic lifecycle powered by user-owned vaults and NEAR’s predictable epochs plus native USDC.
+- MVP testnet flows validated end-to-end via the reference web client and automation agent; roadmap to mainnet runs behind feature flags.
 
 ## Problem & Solution
 | Problem | SudoStake Approach |
@@ -52,7 +47,7 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Pr
 
 ## Traction & Timeline
 - ~231 vaults validated on prior chain; NEAR MVP testnet live with full lifecycle coverage.
-- Milestone M1 (testnet feature-complete) delivered Sep 23, 2025; M2 factory optimization in progress.
+- Milestone 1 — Web Testnet Feature-Complete (delivered Sep 23, 2025); Milestone 2 — Factory Optimization (in progress) with global vault rollout tracked behind feature flags.
 - Go-to-market: testnet pilots → gated mainnet beta → staged mainnet rollout; wallet/agent co-marketing and developer bounties.
 
 ## Economics
@@ -69,9 +64,9 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Pr
 - Governance evolves from single maintainer to 2-of-3 multisig as contributor roster expands.
 
 ## Current Roadmap Highlights
-- **M1:** Testnet feature-complete (delivered).
-- **M2:** Global vault optimization behind feature flags (in progress).
-- **M3–M4:** Mainnet candidate and beta stability.
+- **Milestone 1 — Web Testnet Feature-Complete:** Delivered.
+- **Milestone 2 — Factory Optimization:** In progress behind feature flags.
+- **Milestones 3–4 — Mainnet Candidate and Beta Stability:** Next in sequence once factory work locks.
 
 ## Ecosystem Requests
 - Security review partners, indexing guidance, and wallet/agent distribution support.

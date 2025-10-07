@@ -1,17 +1,17 @@
 ---
 Purpose: Equip builders and integration partners with integration steps, API references, and support contacts.
 Owner: Ecosystem & Partner Engineering (TBD)
-Last Updated: 2025-09-30
+Last Updated: 2025-10-01
 Primary Audience: Ecosystem Partners & Builders, Researchers & Technical Reviewers
 ---
 
 # Builder Integration Guide — SudoStake on NEAR
 
 ## Quick Facts
-- Contracts: Factory + Vault (Rust/near-sdk) on NEAR testnet (mainnet candidate in M3).
+- Contracts: Factory + Vault (Rust/near-sdk) on NEAR testnet with a mainnet candidate scheduled for Milestone 3 — Mainnet Candidate Behind Feature Flags.
 - Collateral: Staked NEAR via `staking_pool.wasm`; loans in native USDC (NEP-141).
-- Events: `EVENT_JSON` logs for request, accept, repay, liquidation actions.
-- Flags: Global vault rollout and counter-offers (amount-only) behind flags in M2.
+- Events: `EVENT_JSON` logs capture request, accept, repay, and liquidation actions.
+- Feature flags: Global vault rollout and counter-offers (amount-only) arrive during Milestone 2 — Factory Optimization.
 
 ## Prerequisites
 - Familiarity with NEP-141 (`ft_transfer_call` callbacks) and `staking_pool.wasm` interfaces.
@@ -38,9 +38,9 @@ Primary Audience: Ecosystem Partners & Builders, Researchers & Technical Reviewe
 - Automation: agents/intents monitor deadlines, send reminders, and trigger liquidations.
 
 ## Observability
-- Subscribe to `EVENT_JSON` namespaces (`sudostake.vault.*`).
-- Monitor vault registry updates for new deployments (code-hash registry in M2).
-- Track metrics (vault count, active loans, repayment rates) via NPR trackers.
+- Subscribe to `EVENT_JSON` namespaces (`sudostake.vault.*`) to follow vault activity.
+- Monitor vault registry updates for new deployments once the Milestone 2 code-hash registry ships.
+- Track metrics such as vault count, active loans, and repayment rates via NPR trackers exposed in the contracts.
 
 ## Support & Contact
 - hello@sudostake.com for onboarding.
@@ -53,4 +53,4 @@ Primary Audience: Ecosystem Partners & Builders, Researchers & Technical Reviewe
 - [Investor & Partner Brief](./investor-partner-brief.md)
 
 ## Next Review
-- Update after the M2 factory rollout or sooner if contract interfaces change.
+- Update after the Milestone 2 factory rollout or sooner if contract interfaces change.

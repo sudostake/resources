@@ -1,7 +1,7 @@
 ---
 Purpose: Describe SudoStake NEAR MVP personas, flows, and system rules for product and integration planning.
 Owner: Product & Delivery (TBD)
-Last Updated: 2025-09-29
+Last Updated: 2025-10-01
 Primary Audience: Product, Researchers & Technical Reviewers, Contributors
 ---
 
@@ -168,8 +168,8 @@ flowchart TD
     I0 --> L1["Use available NEAR balance"]
     L1 --> C2{"Reached target?"}
     C2 -- "Yes" --> Z["Transfer NEAR, update liquidated, close"]
-    C2 -- "No" --> M1["Withdraw matured unstaked (withdraw_all)"]
-    M1 --> R1["Reconcile unstake entries"]
+    C2 -- "No" --> MU["Withdraw matured unstaked (withdraw_all)"]
+    MU --> R1["Reconcile unstake entries"]
     R1 --> C3{"Reached target?"}
     C3 -- "Yes" --> Z
     C3 -- "No" --> U1["Unstake partial remainder"]

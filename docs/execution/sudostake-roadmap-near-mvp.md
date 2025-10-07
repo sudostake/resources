@@ -1,59 +1,59 @@
 ---
 Purpose: Provide the authoritative roadmap for SudoStake’s NEAR MVP and launch milestones.
 Owner: Product & Delivery (TBD)
-Last Updated: 2025-09-30
+Last Updated: 2025-10-01
 Primary Audience: Contributors, Investors & VCs, Ecosystem Partners & Builders
 ---
 
 # SudoStake Roadmap — NEAR MVP & Launch
 
 ## TL;DR
-M1 delivered early; M2 (optimized factory path) in progress; M3 mainnet candidate, M4 stability; staged mainnet waves in Q1/Q2.
+Milestone 1 — Web Testnet Feature-Complete shipped ahead of schedule. Milestone 2 — Factory Optimization is underway to enable the shared vault path. Milestones 3 and 4 prepare a mainnet candidate and stable beta, followed by staged mainnet launches in the first half of 2026.
 
 ## Snapshot (2025-09-30)
-- **M1 — Web Testnet Feature-Complete:** Delivered Sep 23, 2025 (ahead of target).
-- **M2 — Factory Optimization (Optimized Path):** In progress; target Nov 15, 2025; near-sdk-rs PR #1369 merged.
-- Upcoming sequencing: M3 (Mainnet Candidate) → M4 (Beta Stability) → M5/M6 (Staged Launch Waves).
+- **Milestone 1 — Web Testnet Feature-Complete:** Delivered Sep 23, 2025 (ahead of target).
+- **Milestone 2 — Factory Optimization (Optimized Path):** In progress; target Nov 15, 2025; [near-sdk-rs PR #1369](https://github.com/near/near-sdk-rs/pull/1369) merged to remove the last dependency.
+- Upcoming sequencing: Milestone 3 (Mainnet Candidate Behind Feature Flags) → Milestone 4 (Year-End Beta Stability) → Milestones 5 and 6 (Staged Mainnet Launch Waves).
 
 ### Milestone Overview
 | Milestone | Target Date | Status | Dependencies | Notes |
 | --- | --- | --- | --- | --- |
-| M1 — Web Testnet Feature-Complete | 2025-09-30 | ✅ Delivered (2025-09-23) | None | Testnet lifecycle validated end-to-end. |
-| M2 — Factory Optimization (Optimized Path) | 2025-11-15 | 🚧 In progress | M1 | Global vault code-hash path behind flags; NPR metrics hooks. |
-| M3 — Mainnet Candidate Behind Flags | 2025-11-30 | 🔜 Planned | M2 | Closed beta cohort, monitoring stack. |
-| M4 — Year-End Beta Stability | 2025-12-20 | 🔜 Planned | M3 | Reliability targets, UX polish for beta. |
-| M5 — Staged Mainnet Launch (Wave 1) | 2026-03-31 | 🔜 Planned | M4 | Limited-access mainnet rollout with dashboards. |
-| M6 — Staged Mainnet Launch (Wave 2) & Stability | 2026-06-30 | 🔜 Planned | M5 | Broader access, scaling and reliability tuning. |
+| Milestone 1 — Web Testnet Feature-Complete | 2025-09-30 | ✅ Delivered (2025-09-23) | None | Testnet lifecycle validated end-to-end. |
+| Milestone 2 — Factory Optimization (Optimized Path) | 2025-11-15 | 🚧 In progress | Milestone 1 | Global vault code-hash path behind flags; NPR metrics hooks. |
+| Milestone 3 — Mainnet Candidate Behind Feature Flags | 2025-11-30 | 🔜 Planned | Milestone 2 | Closed beta cohort, monitoring stack. |
+| Milestone 4 — Year-End Beta Stability | 2025-12-20 | 🔜 Planned | Milestone 3 | Reliability targets, UX polish for beta. |
+| Milestone 5 — Staged Mainnet Launch (Wave 1) | 2026-03-31 | 🔜 Planned | Milestone 4 | Limited-access mainnet rollout with dashboards. |
+| Milestone 6 — Staged Mainnet Launch (Wave 2) & Stability | 2026-06-30 | 🔜 Planned | Milestone 5 | Broader access, scaling and reliability tuning. |
 
 ## Current Status & Checkpoints (as of 2025-09-30)
-- **M1 wrap-up:** Testnet lifecycle validated; counter-offers (amount-only) deferred without blocking scope; post-mortem tasks logged in progress reports.
-- **M2 execution:** Code-hash registry implementation and WASM size audit underway; factory + global vault integration staged behind feature flags.
+- **Milestone 1 wrap-up:** Testnet lifecycle validated; counter-offers (amount-only) deferred without blocking scope; post-mortem tasks logged in progress reports.
+- **Milestone 2 execution:** Code-hash registry implementation and WASM size audit underway; factory + global vault integration staged behind feature flags.
 - **Upcoming gates:**
-  - **2025-10-07 — Roadmap review:** Confirm M2 burndown, adjust schedules if new blockers surface.
-  - **2025-11-01 — M2 readiness checkpoint:** Verify optimized path metrics and migration rehearsal before locking launch date.
+  - **2025-10-07 — Roadmap review:** Confirm Milestone 2 burndown, adjust schedules if new blockers surface.
+  - **2025-11-01 — Milestone 2 readiness checkpoint:** Verify optimized path metrics and migration rehearsal before locking launch date.
 - **Risks being tracked:** Global vault migration complexity, optimization regressions, and liquidity partner onboarding; mitigations outlined in the risk register.
 
 ## Quarterly Summary
 
 **Q3 2025**
-- **M1 — Web Testnet Feature-Complete:** Completed ahead of target (Sep 23, 2025).
+- **Milestone 1 — Web Testnet Feature-Complete:** Completed ahead of target (Sep 23, 2025).
 
 **Q4 2025**
-- M2 — Factory Optimization • Optimized Path (Target: Nov 15; blocker resolved).
-- M3 — Mainnet Candidate Behind Flags (Target: Nov 30; contingent on M2).
-- M4 — Year-End Beta Stability (Target: Dec 20; contingent on M3).
+- Milestone 2 — Factory Optimization (Target: Nov 15; blocker resolved).
+- Milestone 3 — Mainnet Candidate Behind Feature Flags (Target: Nov 30; contingent on Milestone 2).
+- Milestone 4 — Year-End Beta Stability (Target: Dec 20; contingent on Milestone 3).
 
 **Q1 2026**
-- M5 — Staged Mainnet Launch (Wave 1) (Target: Mar 31; contingent on M4).
+- Milestone 5 — Staged Mainnet Launch (Wave 1) (Target: Mar 31; contingent on Milestone 4).
 
 **Q2 2026**
-- M6 — Staged Mainnet Launch (Wave 2) & Stability (Target: Jun 30).
+- Milestone 6 — Staged Mainnet Launch (Wave 2) & Stability (Target: Jun 30).
 
 ---
 
 ## Milestones
 
-### **M1 — Web Testnet Feature‑Complete**
+### **Milestone 1 — Web Testnet Feature‑Complete**
 
 **Target:** Sep 30, 2025  •  **Status:** Completed Sep 23, 2025 (ahead of target)
 
@@ -74,7 +74,7 @@ M1 delivered early; M2 (optimized factory path) in progress; M3 mainnet candidat
 
 ---
 
-### **M2 — Factory Optimization • Optimized Path**
+### **Milestone 2 — Factory Optimization • Optimized Path**
 
 **Target:** Nov 15, 2025  •  **Status:** In progress (blocker resolved)
 
@@ -96,10 +96,10 @@ M1 delivered early; M2 (optimized factory path) in progress; M3 mainnet candidat
 7. Testnet testing/audits; publish size/cost report and migration guide.
 
 Notes
-- Steps 0–7 complete M2 on testnet with flags for safe rollout.
-- Counter-offers remains amount-only for this phase; extensions can follow post-M3.
+- Steps 0–7 complete Milestone 2 on testnet with flags for safe rollout.
+- Counter-offers remain amount-only for this phase; extensions can follow after Milestone 3.
 
-#### M2 Burndown (Updated Weekly)
+#### Milestone 2 Burndown (Updated Weekly)
 | Workstream | Owner | Status | Notes / Next Action |
 | --- | --- | --- | --- |
 | Global `near_vault` build & release pipeline | Protocol Eng (Muhammed Ali) | In progress | Reproducible build script drafted; awaiting code review. |
@@ -110,7 +110,7 @@ Notes
 
 ---
 
-### **M3 — Mainnet Candidate Behind Flags**
+### **Milestone 3 — Mainnet Candidate Behind Feature Flags**
 
 **Target:** Nov 30, 2025
 
@@ -125,7 +125,7 @@ Notes
 
 ---
 
-### **M4 — Year‑End Beta Stability**
+### **Milestone 4 — Year‑End Beta Stability**
 
 **Target:** **Dec 20, 2025**
 
@@ -135,7 +135,7 @@ Notes
 
 ---
 
-### **M5 — Staged Mainnet Launch (Wave 1)**
+### **Milestone 5 — Staged Mainnet Launch (Wave 1)**
 
 **Target:** **Mar 31, 2026**
 
@@ -145,7 +145,7 @@ Notes
 
 ---
 
-### **M6 — Staged Mainnet Launch (Wave 2) & Stability**
+### **Milestone 6 — Staged Mainnet Launch (Wave 2) & Stability**
 
 **Target:** **Jun 30, 2026**
 
@@ -156,7 +156,7 @@ Notes
 ---
 
 ## Related Documents
-- [Milestone M1 Progress Report](./sudostake-m1-progress.md)
+- [Milestone 1 Progress Review](./sudostake-m1-progress.md)
 - [Progress Report 3](./progress-report-3.md)
 - [Risk Register](./sudostake-risk-register.md)
 - [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md)

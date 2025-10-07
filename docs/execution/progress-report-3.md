@@ -1,40 +1,46 @@
 ---
 Purpose: Provide the latest milestone status and near-term focus areas.
 Owner: Muhammed Ali
-Last Updated: 2025-09-29
+Last Updated: 2025-10-01
 Primary Audience: Contributors, Investors & VCs, Community & Prospective Users
 ---
 
 # SudoStake — Progress Report 3
 
-Date: 2025-09-26  •  Roadmap: [sudostake-roadmap-near-mvp.md](./sudostake-roadmap-near-mvp.md)
+Date: 2025-09-26
 
-> The roadmap remains the source of truth for dates, scope, and dependencies.
+Roadmap link: [SudoStake Roadmap — NEAR MVP & Launch](./sudostake-roadmap-near-mvp.md) — full milestone dates, scope, and checkpoints.
 
-## Summary
-- M1 closed on 2025-09-23 (ahead of target) with full testnet validation, including liquidation rehearsals.
-- M2 (optimized path) underway; near-sdk-rs PR #1369 merged, enabling global vault deployment work.
-- Active focus: code-hash registry, WASM size reduction, and controlled rollout behind feature flags.
+## What Happened
+- Milestone 1 finished on 2025-09-23, one week early. All testnet flows ran end to end, including liquidation dry runs.
+- Milestone 2 — Factory Optimization started. The merged [near-sdk-rs PR #1369](https://github.com/near/near-sdk-rs/pull/1369) keeps the optimized factory plan on track.
+- The testnet web app is live at [https://v0-sudo-stake-near-web.vercel.app/dashboard](https://v0-sudo-stake-near-web.vercel.app/dashboard). You can mint vaults, deposit, stake, request and fund USDC credit, repay, liquidate, transfer ownership, and perform the same actions via the SudoStake AI Agent.
+- Main focus now: set up the code-hash registry, trim contract size, and roll out changes with feature flags.
 
-## Status
-- **Milestone 1 — ✅ Delivered:** End-to-end flows (mint → delegate → request → accept → repay → liquidation → claims) confirmed; marketplace live; counter-offers deferred.
-- **Milestone 2 — 🚧 In progress (Target 2025-11-15):**
-  - Tasks: code-hash registry, WASM reductions, global vault deployment with view compatibility, migration guide, size/cost report, extended E2E tests.
-  - Checkpoint: Nov 1 readiness review; fallback documented but not expected.
+## Where We Are
+- **Milestone 1 — Delivered:** Vault minting, staking actions, loan lifecycle, and liquidation are live on NEAR testnet. Counter-offers (amount-only) stay in the backlog but do not block the MVP.
+- **Milestone 2 — Factory Optimization (Target 2025-11-15):**
+  - Build the registry that points every vault to the shared code hash.
+  - Capture before/after WASM size and gas costs.
+  - Prepare the migration guide and keep the public views working.
+  - Run the Nov 1 readiness check; the fallback plan remains the existing factory if needed.
 
-## Risks
-- **Global vault migration:** Use feature flags, maintain view compatibility, and run dedicated migration tests.
-- **Optimization regressions:** Expand integration tests, lock event schemas, and monitor candidate deployments.
+## Risks We Are Watching
+- **Global vault migration:** Changes roll out behind feature flags and must pass migration tests before broad release.
+- **Optimization regressions:** Extra integration tests and locked event formats guard against surprises while we shrink the contracts.
 
-## Next (2 Weeks)
-- Finalize code-hash registry and baseline size metrics (draft report underway).
-- Ship feature flags and deploy a candidate global vault to testnet.
-- Draft the migration guide and run a rehearsal with a small lender/borrower cohort.
+## Next Two Weeks
+- Finish the registry work and publish the initial size and cost report.
+- Deploy the shared vault contract as a global reference so the factory no longer embeds the WASM, cutting vault-creation costs by more than 90% (from ~3 NEAR to well under 0.3 NEAR).
+- Enable feature flags, deploy the shared vault contract to testnet, and confirm normal user actions still work.
+- Write and rehearse the migration guide with a small lender and borrower group.
 
-## Related Documents
-- [sudostake-roadmap-near-mvp.md](./sudostake-roadmap-near-mvp.md)
-- [sudostake-m1-progress.md](./sudostake-m1-progress.md)
-- [sudostake-risk-register.md](./sudostake-risk-register.md)
+## Looking Ahead
+- Promote the optimized contracts to NEAR mainnet, connect them to the web app and AI Agent, and prepare the launch runbook once factory optimization clears the readiness checkpoint.
 
-## Next Review
-- Provide the next public update by 2025-10-03 or sooner if M2 scope shifts.
+## Related Reading
+- [Milestone 1 Progress Review](./sudostake-m1-progress.md) — summary of what shipped in Milestone 1.
+- [Risk Register](./sudostake-risk-register.md) — current risks, owners, and mitigation plans.
+
+## Next Update
+- Next external update lands by 2025-10-03 or sooner if Milestone 2 scope changes.

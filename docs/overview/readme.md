@@ -1,7 +1,7 @@
 ---
 Purpose: Serve as the entry point for SudoStake documentation on NEAR.
 Owner: Docs Lead (TBD)
-Last Updated: 2025-09-29
+Last Updated: 2025-10-01
 Primary Audience: All audiences
 ---
 
@@ -25,7 +25,7 @@ Planning, execution, and reference materials for the SudoStake project on NEAR. 
 | --- | --- | --- |
 | Execution & timelines | [sudostake-roadmap-near-mvp.md](../execution/sudostake-roadmap-near-mvp.md) | Roadmap is authoritative for dates, scope, and sequencing. |
 | Product spec & flows | [personas-and-flows.md](../product/personas-and-flows.md) | Entities, system rules, liquidation order, KPIs, and user journeys. |
-| Milestone M1 | [sudostake-m1-progress.md](../execution/sudostake-m1-progress.md) | Locked metrics and outcomes from Milestone 1. |
+| Milestone 1 — Web Testnet Feature-Complete | [sudostake-m1-progress.md](../execution/sudostake-m1-progress.md) | Locked metrics, decisions, and follow-ups from the first milestone. |
 | Infrastructure | [sudostake-core-infra-on-near.md](../systems/sudostake-core-infra-on-near.md) | Contract architecture, dependencies, and external references. |
 | Risk management | [sudostake-risk-register.md](../execution/sudostake-risk-register.md) | Risks, mitigations, owners, and review cadence. |
 | Team & org | [sudostake-team-org-details.md](../team/sudostake-team-org-details.md) | Roles, responsibilities, and contact routing. |

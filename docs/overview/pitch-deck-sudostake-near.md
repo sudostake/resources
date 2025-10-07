@@ -1,7 +1,7 @@
 ---
 Purpose: Provide a written companion to the SudoStake NEAR pitch deck for investors and partners.
 Owner: Growth & Partnerships (TBD)
-Last Updated: 2025-09-29
+Last Updated: 2025-10-01
 Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Internal Stakeholders
 ---
 
@@ -56,8 +56,8 @@ Stake. Earn. Borrow. Native NEAR staking with oracle-less credit: borrow against
 
 ## Traction & Status
 - Prior chain (Archway): ~231 vaults created.
-- NEAR MVP: Rust/NEAR SDK contracts with near-workspaces tests; web client in active development.
-- Milestone 1: Core flows complete; marketplace view delivered per roadmap.
+- NEAR MVP: Rust/near-sdk contracts with near-workspaces tests; web client in active development.
+- Milestone 1 — Web Testnet Feature-Complete: Core flows and marketplace view delivered per roadmap.
 
 ## Business Model
 - Vault mint fee (Factory contract).
@@ -79,10 +79,10 @@ Stake. Earn. Borrow. Native NEAR staking with oracle-less credit: borrow against
 - Reproducible builds, integration tests, audits, and bug bounty planned pre-scale.
 
 ## Roadmap (High-Level)
-- **M1:** Testnet feature-complete (request/accept/repay/liquidate, marketplace) — delivered.
-- **M2:** Factory optimization (code-hash registry versus embedded WASM) — in progress.
-- **M3–M4:** Mainnet candidate behind flags; beta stability focus.
-- **M5–M6:** Staged mainnet rollout with widening access and reliability targets.
+- **Milestone 1 — Web Testnet Feature-Complete:** Request, accept, repay, liquidate, and marketplace experiences delivered on NEAR testnet.
+- **Milestone 2 — Factory Optimization:** Global vault deployment via code-hash registry (in progress) while maintaining a fallback to embedded WASM.
+- **Milestones 3–4 — Mainnet Candidate and Beta Stability:** Promote the optimized stack to a gated mainnet beta and harden reliability.
+- **Milestones 5–6 — Staged Mainnet Launch:** Gradual mainnet rollout with expanding access, monitoring, and reliability targets.
 
 ## Team
 - Maintainer: Muhammed Ali (protocol, web, agents). Recruiting contributors in Rust/NEAR, Next.js/React, DevOps. Governance path: solo → 2-of-3 multisig as team scales.

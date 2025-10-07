@@ -1,7 +1,7 @@
 ---
 Purpose: Document the architecture, contracts, and operational model for SudoStake on NEAR.
 Owner: Protocol Engineering (TBD)
-Last Updated: 2025-09-29
+Last Updated: 2025-10-01
 Primary Audience: Researchers & Technical Reviewers, Ecosystem Partners & Builders, Contributors
 ---
 
@@ -72,9 +72,9 @@ Client / Agent
 - Agent frameworks can monitor vault health, refinance credit lines, or operate liquidation bots.
 - Protocols gain a shared, audited collateral primitive to extend credit markets or structured products around native staking.
 
-## Current Status (Milestone M1)
+## Current Status (Milestone 1)
 - Delivered: wallet connection, vault dashboards, deposit/withdraw, delegate/undelegate, claim-unstaked balances, request/accept/repay flows.
-- In progress: global vault deployment behind flags (Milestone M2) with code-hash registry and cost optimizations.
+- In progress: global vault deployment behind feature flags as part of Milestone 2 — Factory Optimization, including code-hash registry and cost optimizations.
 
 ## Open Requests to Infra & Rewards Committees
 - Register intents for credit actions (create vault, accept, repay, liquidate) to streamline automation tooling.
@@ -98,10 +98,10 @@ Client / Agent
 
 ## Related Documents
 - [Roadmap — NEAR MVP & Launch](../execution/sudostake-roadmap-near-mvp.md)
-- [Milestone M1 Progress Report](../execution/sudostake-m1-progress.md)
+- [Milestone 1 Progress Review](../execution/sudostake-m1-progress.md)
 - [Risk Register](../execution/sudostake-risk-register.md)
 
 ## Next Review
-- Review architecture notes and integration status by 2025-10-20 or after Milestone M2 readiness check.
+- Review architecture notes and integration status by 2025-10-20 or after the Milestone 2 readiness check.
 
 Contact: hello@sudostake.com • https://sudostake.com

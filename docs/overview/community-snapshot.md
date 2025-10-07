@@ -1,7 +1,7 @@
 ---
 Purpose: Provide community members with a digestible snapshot of benefits, status, and how to stay involved.
 Owner: Community Lead (TBD)
-Last Updated: 2025-09-30
+Last Updated: 2025-10-01
 Primary Audience: Community & Prospective Users
 ---
 
@@ -13,9 +13,9 @@ Primary Audience: Community & Prospective Users
 - Friendly automation via NEAR intents/agents.
 
 ## Status
-- **M1 Testnet MVP:** Delivered 2025-09-23 — full borrow/lend flows live on NEAR testnet.
-- **Now Working On:** M2 factory optimization (global vault rollout, code-hash registry) targeting 2025-11-15.
-- **Next Updates:** Checkpoint on 2025-10-07; next progress report by 2025-10-03.
+- **Milestone 1 — Web Testnet Feature-Complete:** Delivered 2025-09-23 with full borrow/lend flows live on NEAR testnet.
+- **Now Working On:** Milestone 2 — Factory Optimization (global vault rollout, code-hash registry) targeting 2025-11-15.
+- **Next Updates:** Roadmap checkpoint on 2025-10-07; next progress report by 2025-10-03.
 
 ## What’s Live Today
 - Vault minting (10 NEAR fee) and staking management (delegate, undelegate, claim).
@@ -23,9 +23,9 @@ Primary Audience: Community & Prospective Users
 - Manual liquidation (anyone can trigger after deadline) with clear on-chain events.
 
 ## Coming Soon
-- Counter-offers (amount-only) enhancements post-M1.
-- Global vault deployment (single code-hash) behind feature flags.
-- Beta cohorts for lenders and community testers.
+- Counter-offer (amount-only) improvements now that Milestone 1 is complete.
+- Global vault deployment (single code hash) controlled by feature flags.
+- Beta cohorts for lenders and community testers once Milestone 2 reaches readiness.
 
 ## Stay in the Loop
 - Progress updates: [progress-report-3.md](../execution/progress-report-3.md) · [progress-report-2.md](../execution/progress-report-2.md)
@@ -34,7 +34,7 @@ Primary Audience: Community & Prospective Users
 
 ## How to Get Involved
 - Share feedback via hello@sudostake.com.
-- Register interest for beta access (link coming with M2 readiness checkpoint).
+- Register interest for beta access (link coming with the Milestone 2 readiness checkpoint).
 - Follow roadmap milestones to track launch phases.
 
 ## FAQ

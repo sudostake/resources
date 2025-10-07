@@ -1,7 +1,7 @@
 ---
 Purpose: Document the NEAR-specific lean canvas for SudoStake, reflecting current roadmap progress.
 Owner: Product & Strategy (TBD)
-Last Updated: 2025-09-29
+Last Updated: 2025-10-01
 Primary Audience: Product, Strategy, Contributors
 ---
 
@@ -10,7 +10,8 @@ Primary Audience: Product, Strategy, Contributors
 See also the chain-agnostic canvas in [lean-canvas-sudostake-generic.md](./lean-canvas-sudostake-generic.md).
 
 ## Status (2025-09-29)
-- M1 delivered (2025-09-23). M2 in progress: optimized factory path with code-hash registry and global vault behind flags.
+- Milestone 1 â€” Web Testnet Feature-Complete delivered on 2025-09-23.
+- Milestone 2 â€” Factory Optimization underway: optimized factory path, shared vault via code-hash registry, rollout behind feature flags.
 
 ## Lean Canvas Blocks
 
@@ -37,7 +38,7 @@ Liquidity for NEAR stakers without unbonding. Native borrow/lend on staked NEARâ
 - **Vaults:** Non-custodial contracts with configurable creation fee; delegate NEAR to chosen validators.
 - **Liquidity requests:** USDC loans collateralized by staked NEAR; accepted via NEP-141 JSON messages.
 - **Liquidation:** Strict order (liquid â†’ matured unstake â†’ targeted unstake), halting when obligations are met; no oracle dependency.
-- **Marketplace:** Discovery of open requests; counter-offers (amount-only) extend beyond M1 scope.
+- **Marketplace:** Discovery of open requests; counter-offers (amount-only) scheduled after Milestone 1 scope.
 
 ### Channels
 - SudoStake web app (NEAR).
@@ -66,8 +67,8 @@ Liquidity for NEAR stakers without unbonding. Native borrow/lend on staked NEARâ
 - Backing from Protocol Rewards Cohort 2; leverages prior-chain learnings (~231 vaults).
 
 ## Notes
-- Traction: Prior-chain release logged ~231 vaults; NEAR testnet MVP flows completed in M1.
-- Next steps: Execute M2 optimized factory/global vault rollout with migration planning and metrics.
+- Traction: Prior-chain release logged ~231 vaults; NEAR testnet MVP flows completed in Milestone 1.
+- Next steps: Execute Milestone 2 optimized factory/global vault rollout with migration planning and metrics.
 
 ## Related Documents
 - [Lean Canvas â€” SudoStake (Chain-Agnostic)](./lean-canvas-sudostake-generic.md)
@@ -75,4 +76,4 @@ Liquidity for NEAR stakers without unbonding. Native borrow/lend on staked NEARâ
 - [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
 
 ## Next Review
-- Refresh after the 2025-10-07 roadmap review or when M2 scope/assumptions change materially.
+- Refresh after the 2025-10-07 roadmap review or when Milestone 2 scope or assumptions change materially.

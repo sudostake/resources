@@ -1,30 +1,46 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)
-cd "$ROOT_DIR"
+# Simple Markdown link checker for relative paths inside the repository.
+# - Skips external links (http/https/mailto/tel).
+# - Verifies that linked Markdown or asset files exist.
 
-python3 - <<'PY'
-import pathlib
-import re
-import sys
+ROOT="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
 
-root = pathlib.Path("docs")
-pattern = re.compile(r"\[[^\]]+\]\(([^)#]+)\)")
-errors = []
+mapfile -d '' FILES < <(find "$ROOT" \( -name '*.md' -o -name 'README.md' \) -print0)
 
-for md in root.rglob("*.md"):
-    text = md.read_text()
-    for match in pattern.finditer(text):
-        target = match.group(1)
-        if "://" in target or target.startswith("mailto:") or target.startswith("#"):
-            continue
-        path = (md.parent / target).resolve()
-        if not path.exists():
-            errors.append((md, target))
+STATUS=0
 
-if errors:
-    for md, target in errors:
-        print(f"Broken link in {md}: {target}")
-    sys.exit(1)
-PY
+for FILE in "${FILES[@]}"; do
+  DIR="$(dirname "$FILE")"
+  while IFS= read -r MATCH; do
+    URL="${MATCH#*(}"
+    URL="${URL%)}"
+
+    case "$URL" in
+      http://*|https://*|mailto:*|tel:*) continue ;;
+      \#*) continue ;; # Pure anchor links are fine.
+    esac
+
+    TARGET_PATH="${URL%%#*}" # Strip any anchor.
+    [[ -z "$TARGET_PATH" ]] && continue
+
+    if [[ "$TARGET_PATH" = /* ]]; then
+      TARGET="$ROOT$TARGET_PATH"
+    else
+      TARGET="$DIR/$TARGET_PATH"
+    fi
+
+    if [[ ! -e "$TARGET" ]]; then
+      RELFILE="${FILE#$ROOT/}"
+      echo "BROKEN LINK: $RELFILE -> $URL"
+      STATUS=1
+    fi
+  done < <(grep -oE '\[[^]]+\]\([^)]+\)' "$FILE" | grep -vE '\]\((http|https|mailto:|tel:)')
+done
+
+if [[ $STATUS -eq 0 ]]; then
+  echo "All Markdown links resolve."
+fi
+
+exit $STATUS
