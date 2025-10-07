@@ -34,10 +34,10 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders
 
 ## Core Resources
 ### Quick Links
-- One-pager — [project-one-pager-sudostake-near.md](./project-one-pager-sudostake-near.md)
-- Roadmap — [sudostake-roadmap-near-mvp.md](../execution/sudostake-roadmap-near-mvp.md)
-- Pitch (text) — [pitch-deck-sudostake-near.md](./pitch-deck-sudostake-near.md)
-- Lean canvas — [lean-canvas-sudostake-near.md](../product/lean-canvas-sudostake-near.md)
+- One-pager — [Project One-Pager](./project-one-pager-sudostake-near.md)
+- Roadmap — [Roadmap — NEAR MVP & Launch](../execution/sudostake-roadmap-near-mvp.md)
+- Pitch (text) — [Pitch Deck (Text)](./pitch-deck-sudostake-near.md)
+- Lean canvas — [Lean Canvas — NEAR](../product/lean-canvas-sudostake-near.md)
 
 ## Engagement
 - **Contact:** hello@sudostake.com

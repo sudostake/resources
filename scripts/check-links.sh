@@ -8,6 +8,7 @@ set -euo pipefail
 ROOT="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
 
 STATUS=0
+LINK_REGEX='\[[^]]+\]\([^)]+\)'
 
 while IFS=: read -r FILE LINE MATCH; do
   [[ -z "$FILE" || -z "$MATCH" ]] && continue
@@ -35,7 +36,7 @@ while IFS=: read -r FILE LINE MATCH; do
     echo "BROKEN LINK: $RELFILE:$LINE -> $URL"
     STATUS=1
   fi
-done < <(grep -R --exclude-dir={.git,node_modules,vendor,dist,build} -n -oE '\[[^]]+\]\([^)]+\)' --include='*.md' "$ROOT" || true)
+done < <(grep -R --exclude-dir={.git,node_modules,vendor,dist,build} -n -oE "$LINK_REGEX" --include='*.md' "$ROOT" || true)
 
 if [[ $STATUS -eq 0 ]]; then
   echo "All Markdown links resolve."

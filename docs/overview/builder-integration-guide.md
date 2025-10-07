@@ -18,7 +18,7 @@ Primary Audience: Ecosystem Partners & Builders, Researchers & Technical Reviewe
 - Ability to consume `EVENT_JSON` logs and schedule on-chain actions (agents/intents).
 
 ## Integration Steps
-1. Review the architecture and roadmap: `../systems/sudostake-core-infra-on-near.md`, `../execution/sudostake-roadmap-near-mvp.md`.
+1. Review the architecture and roadmap: [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md), [Roadmap — NEAR MVP & Launch](../execution/sudostake-roadmap-near-mvp.md).
 2. Implement the USDC offer flow with `ft_transfer_call` so lenders escrow funds into the vault.
 3. Subscribe to `sudostake.vault.*` events and map IDs to your UI and automation.
 4. Add automation for `process_claims` after deadlines (strongly recommended).
