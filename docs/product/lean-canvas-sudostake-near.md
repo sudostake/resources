@@ -1,6 +1,6 @@
 # LEAN CANVAS — SudoStake on NEAR
 
-See also: LEAN_CANVAS_SudoStake_Generic.md for chain‑agnostic canvas.
+See also: lean-canvas-sudostake-generic.md for chain‑agnostic canvas.
 
 Status (Sep 26, 2025)
 - M1 complete (Sep 23, 2025). M2 in progress (near-sdk-rs PR #1369 merged; code-hash registry + global Vault behind feature flags).
