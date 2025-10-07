@@ -39,7 +39,7 @@ Primary Audience: Contributors, Partners, Investors
 
 ## Advisors & Partners
 - Advisors: None formal; informal ecosystem feedback ongoing.
-- Security reviewers: External Rust/NEAR partners per milestone (vendor TBD).
+- Security reviewers: External Rust/NEAR partners per action step (vendor TBD).
 - Validator partners: Under evaluation; none confirmed.
 
 ## Operating Model & Governance
@@ -47,13 +47,13 @@ Primary Audience: Contributors, Partners, Investors
 - Governance: Single maintainer today → planned move to 2-of-3 multisig when ≥2 maintainers active; on-chain parameters where feasible.
 
 ## Related Documents
-- [sudostake-roadmap-near-mvp.md](../execution/sudostake-roadmap-near-mvp.md)
+- [sudostake-action-plan-near-mvp.md](../execution/sudostake-action-plan-near-mvp.md)
 - [documentation-refactor-tracker.md](../meta/documentation-refactor-tracker.md)
 - [contributing.md](./contributing.md)
 
 ## Next Review
 - Refresh once additional maintainers onboard or incorporation details finalize.
-- Cadence: public backlog/roadmap; milestone release notes.
+- Cadence: public backlog/action plan; release notes per step.
 - Licensing: open‑source; CLAs possible for significant contributions.
 
 5) Legal & Compliance
@@ -82,6 +82,6 @@ Primary Audience: Contributors, Partners, Investors
 
 9) Contributors & Future Hiring
 - Open‑source contributions in Rust/NEAR, Next.js/React, DevOps, docs/community.
-- Good‑first‑issues & bounties in the org; milestones/grants may fund bounties.
+- Good‑first‑issues & bounties in the org; step-based grants may fund bounties.
 - Future hires (as funding allows): Smart Contract (Rust/NEAR), Front‑end (Next.js/React), DevOps/Infra.
-- Budget: milestone‑backed grants + protocol revenue; transparent rates/deliverables.
+- Budget: step-backed grants + protocol revenue; transparent rates/deliverables.

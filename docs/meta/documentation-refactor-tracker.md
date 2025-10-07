@@ -25,14 +25,14 @@ _Current coverage: Muhammed Ali (acting docs lead) owns every phase until collab
 | Audience Cluster | Primary Docs | Interim Owner | Cadence |
 | --- | --- | --- | --- |
 | Investors & VCs | `overview/investor-partner-brief.md`, `overview/project-one-pager-sudostake-near.md`, `overview/pitch-deck-sudostake-near.md` | Muhammed Ali | Bi-weekly during fundraising; hand off once GTM lead joins. |
-| Researchers & Technical Reviewers | `systems/sudostake-core-infra-on-near.md`, `execution/sudostake-risk-register.md`, technical appendices | Muhammed Ali | Review at milestone checkpoints; recruit protocol partner post-alignment. |
+| Researchers & Technical Reviewers | `systems/sudostake-core-infra-on-near.md`, `execution/sudostake-risk-register.md`, technical appendices | Muhammed Ali | Review at execution checkpoints; recruit protocol partner post-alignment. |
 | Ecosystem Partners & Builders | `overview/builder-integration-guide.md`, roadmap snapshots, API references | Muhammed Ali | Review before each integration wave; transition to partner engineering when staffed. |
 | Community & Prospective Users | `overview/community-snapshot.md`, progress reports, FAQs | Muhammed Ali | Align with progress reports; communicate monthly at minimum. |
 | Contributors & Internal Stakeholders | Contributing guide, inventory, tracker, future changelog | Muhammed Ali | Bi-weekly self-review plus quarterly ceremony placeholder. |
 
 ## Cadence Commitments
 
-- **Weekly solo review (15 min):** Muhammed Ali records status against tracker milestones; capture blockers in tracker notes.
+- **Weekly solo review (15 min):** Muhammed Ali records status against tracker checkpoints; capture blockers in tracker notes.
 - **Bi-weekly planning block:** Reassess upcoming deliverables; identify roles to recruit as alignment improves.
 - **Quarterly documentation review:** Validate sources of truth, close stale follow-ups in `documentation-inventory.md`, and log retrospective in upcoming changelog.
 

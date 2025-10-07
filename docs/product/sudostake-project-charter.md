@@ -49,7 +49,7 @@ Primary Audience: Internal Stakeholders, Contributors
 - Project manager: Muhammed Ali.
 - Decision model: centralized for MVP speed; governance expansion explored after rewrite.
 
-## Milestones
+## Action Sequence
 - NEAR contracts deployed to testnet — ✅ Complete.
 - Web MVP live — 🚧 In progress.
 - AI agent feature parity — 🚧 In progress.
@@ -67,7 +67,7 @@ Primary Audience: Internal Stakeholders, Contributors
 - **Assumptions:** Oracle-less core remains viable; demand for borrow-against-stake exists; web/AI clients serve as launch surfaces; reproducible builds arrive next; NEAR ecosystem support and compatibility persist.
 
 ## Related Documents
-- [sudostake-roadmap-near-mvp.md](../execution/sudostake-roadmap-near-mvp.md)
+- [sudostake-action-plan-near-mvp.md](../execution/sudostake-action-plan-near-mvp.md)
 - [sudostake-core-infra-on-near.md](../systems/sudostake-core-infra-on-near.md)
 - [project-one-pager-sudostake-near.md](../overview/project-one-pager-sudostake-near.md)
 

@@ -254,7 +254,7 @@ graph TD
 | **System** | failed refund rate; automation coverage; revert rate per method |
 
 ## Related Documents
-- [SudoStake Roadmap — NEAR MVP & Launch](../execution/sudostake-roadmap-near-mvp.md)
+- [SudoStake Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md)
 - [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
 - [Lean Canvas — SudoStake on NEAR](./lean-canvas-sudostake-near.md)
 

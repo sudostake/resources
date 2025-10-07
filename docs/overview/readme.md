@@ -1,80 +1,61 @@
----
 Purpose: Serve as the entry point for SudoStake documentation on NEAR.
 Owner: Docs Lead (TBD)
-Last Updated: 2025-10-01
-Primary Audience: All audiences
+Last Updated: 2025-10-02
+Primary Audience: Investors & VCs, Researchers & Technical Reviewers, Ecosystem Partners & Builders, Community & Prospective Users, Contributors, Internal Stakeholders
 ---
 
 # SudoStake on NEAR — Documentation Hub
 
-This hub lists the planning, execution, and reference docs for SudoStake on NEAR. Use the quick-start table to jump straight to the files that match your role.
+Start every assessment here. The sections below point you to the right level of depth, bundle documents into due-diligence kits, and flag the canonical sources that stay authoritative as the project evolves.
 
-## Quick Start
+## Audience Landing Zones
 
-| Audience | Start Here | Why |
+| Audience | Start Here | Key Questions Answered |
 | --- | --- | --- |
-| Investors & VCs | [Investor & Partner Brief](./investor-partner-brief.md) · [Project One-Pager](./project-one-pager-sudostake-near.md) · [Roadmap — NEAR MVP & Launch](../execution/sudostake-roadmap-near-mvp.md) | Snapshot, traction, roadmap outlook. |
-| Researchers & Technical Reviewers | [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md) · [Risk Register](../execution/sudostake-risk-register.md) · [Personas & Flows](../product/personas-and-flows.md) | Architecture, risk posture, flows. |
-| Ecosystem Partners & Builders | [Builder Integration Guide](./builder-integration-guide.md) · [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md) · [Lean Canvas — NEAR](../product/lean-canvas-sudostake-near.md) | Integration checklist, APIs, business context. |
-| Community & Prospective Users | [Community Snapshot](./community-snapshot.md) · [Project One-Pager](./project-one-pager-sudostake-near.md) · [Progress Report 3](../execution/progress-report-3.md) | High-level value and near-term updates. |
-| Contributors & Team | [Contributing Guide](../team/contributing.md) · [Documentation Strategy](../meta/documentation-strategy.md) · [Documentation Inventory](../meta/documentation-inventory.md) · [Information Architecture Plan](../meta/information-architecture-plan.md) | Standards, scope, and current action items. |
+| Investors & VCs | [Investor & Partner Brief](./investor-partner-brief.md) · [Project One-Pager](./project-one-pager-sudostake-near.md) · [Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md) | Market fit, traction, execution path, capital asks. |
+| Researchers & Technical Reviewers | [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md) · [Risk Register](../execution/sudostake-risk-register.md) · [Personas & Flows](../product/personas-and-flows.md) | Architecture, threat model, lifecycle guarantees, user intents. |
+| Ecosystem Partners & Builders | [Builder Integration Guide](./builder-integration-guide.md) · [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md) · [Lean Canvas — NEAR](../product/lean-canvas-sudostake-near.md) | Integration effort, APIs and events, business alignment. |
+| Community & Prospective Users | [Community Snapshot](./community-snapshot.md) · [Project One-Pager](./project-one-pager-sudostake-near.md) · [Progress Report 3](../execution/progress-report-3.md) | Why it matters, what is live, when the next update lands. |
+| Contributors & Team | [Contributing Guide](../team/contributing.md) · [Documentation Strategy](../meta/documentation-strategy.md) · [Documentation Inventory](../meta/documentation-inventory.md) | How we maintain docs, scope guardrails, pending actions. |
 
-## Sources of Truth
+## Due Diligence Toolkit
 
-| Topic | Source of Truth | Notes |
+| Goal | Pull These Docs | Highlights |
 | --- | --- | --- |
-| Execution & timelines | [sudostake-roadmap-near-mvp.md](../execution/sudostake-roadmap-near-mvp.md) | Roadmap is authoritative for dates, scope, and sequencing. |
-| Product spec & flows | [personas-and-flows.md](../product/personas-and-flows.md) | Entities, system rules, liquidation order, KPIs, and user journeys. |
-| Milestone 1 — Web Testnet Feature-Complete | [sudostake-m1-progress.md](../execution/sudostake-m1-progress.md) | Locked metrics, decisions, and follow-ups from the first milestone. |
-| Infrastructure | [sudostake-core-infra-on-near.md](../systems/sudostake-core-infra-on-near.md) | Contract architecture, dependencies, and external references. |
-| Risk management | [sudostake-risk-register.md](../execution/sudostake-risk-register.md) | Risks, mitigations, owners, and review cadence. |
-| Team & org | [sudostake-team-org-details.md](../team/sudostake-team-org-details.md) | Roles, responsibilities, and contact routing. |
+| Validate execution readiness | [Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md) · [Progress Report 3](../execution/progress-report-3.md) · [Step 1 Progress](../execution/sudostake-m1-progress.md) | Committed sequence, delivered scope, checkpoints and burndown cadence. |
+| Assess product-market fit | [Project One-Pager](./project-one-pager-sudostake-near.md) · [Lean Canvas — NEAR](../product/lean-canvas-sudostake-near.md) · [Community Snapshot](./community-snapshot.md) | Problem framing, target users, traction signals, community pulls. |
+| Review technical soundness | [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md) · [Risk Register](../execution/sudostake-risk-register.md) · [Personas & Flows](../product/personas-and-flows.md) | Contract boundaries, invariants, mitigations, lifecycle walkthroughs. |
+| Plan integration | [Builder Integration Guide](./builder-integration-guide.md) · [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md) · [Documentation Inventory](../meta/documentation-inventory.md) | API surface area, event strategy, update cadence, contact routing. |
 
-## Document Map
+## Always-Current Sources
 
-### Audience Briefs
-- [Investor & Partner Brief](./investor-partner-brief.md)
-- [Builder Integration Guide](./builder-integration-guide.md)
-- [Community Snapshot](./community-snapshot.md)
+| Topic | Source of Truth | Update Cadence |
+| --- | --- | --- |
+| Execution & timelines | [sudostake-action-plan-near-mvp.md](../execution/sudostake-action-plan-near-mvp.md) | Adjust after each execution review. |
+| Product spec & flows | [personas-and-flows.md](../product/personas-and-flows.md) | Refresh when rules, KPIs, or flows change. |
+| Step retrospectives | [sudostake-m1-progress.md](../execution/sudostake-m1-progress.md) | Lock each step on completion. |
+| Infrastructure | [sudostake-core-infra-on-near.md](../systems/sudostake-core-infra-on-near.md) | Review at readiness checkpoints or post-release. |
+| Risk management | [sudostake-risk-register.md](../execution/sudostake-risk-register.md) | Track via weekly sync; formal check every two weeks. |
+| Team & org | [sudostake-team-org-details.md](../team/sudostake-team-org-details.md) | Update when ownership or staffing shifts. |
 
-### Overview & Messaging
-- [Project One-Pager](./project-one-pager-sudostake-near.md)
-- [Pitch Deck (Text)](./pitch-deck-sudostake-near.md)
+## Repository Map
 
-### Product & Design
-- [Project Charter](../product/sudostake-project-charter.md)
-- [Lean Canvas — Generic](../product/lean-canvas-sudostake-generic.md)
-- [Lean Canvas — NEAR](../product/lean-canvas-sudostake-near.md)
-- [Personas & Flows](../product/personas-and-flows.md)
+- **Overview & Narrative** — [Project One-Pager](./project-one-pager-sudostake-near.md), [Pitch Deck (Text)](./pitch-deck-sudostake-near.md), [Investor & Partner Brief](./investor-partner-brief.md), [Community Snapshot](./community-snapshot.md).
+- **Execution & Status** — [Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md), [Step 1 Progress Review](../execution/sudostake-m1-progress.md), [Progress Report 3](../execution/progress-report-3.md), [Progress Report 2](../execution/progress-report-2.md), [Risk Register](../execution/sudostake-risk-register.md).
+- **Product & Users** — [Project Charter](../product/sudostake-project-charter.md), [Lean Canvas — NEAR](../product/lean-canvas-sudostake-near.md), [Lean Canvas — Generic](../product/lean-canvas-sudostake-generic.md), [Personas & Flows](../product/personas-and-flows.md).
+- **Systems & Research** — [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md), [Builder Integration Guide](./builder-integration-guide.md), [Expanded Competitive Analysis](../research/expanded-competitive-analysis.md).
+- **Team & Operations** — [Team & Org Details](../team/sudostake-team-org-details.md), [Contributing Guide](../team/contributing.md), [Documentation Strategy](../meta/documentation-strategy.md), [Documentation Inventory](../meta/documentation-inventory.md), [Documentation Refactor Tracker](../meta/documentation-refactor-tracker.md), [Information Architecture Plan](../meta/information-architecture-plan.md).
 
-### Execution & Status
-- [Roadmap — NEAR MVP & Launch](../execution/sudostake-roadmap-near-mvp.md)
-- [Milestone 1 Progress Review](../execution/sudostake-m1-progress.md)
-- [Progress Report 3](../execution/progress-report-3.md)
-- [Progress Report 2](../execution/progress-report-2.md)
-- [Risk Register](../execution/sudostake-risk-register.md)
+## Update Playbook
+- Begin with the [Contributing Guide](../team/contributing.md) for terminology, scope order, and review checklist.
+- Change the source-of-truth document first, then sync summaries or collateral.
+- Record action-plan updates, sequencing adjustments, and risk changes in the relevant execution docs before updating briefs.
+- Log stale files or follow-ups in the documentation inventory so maintenance owners can track them.
+- Run `scripts/check-links.sh` after major restructures.
 
-### Systems & Research
-- [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md)
-- [Expanded Competitive Analysis](../research/expanded-competitive-analysis.md)
-
-### Team & Operations
-- [Team & Org Details](../team/sudostake-team-org-details.md)
-- [Contributing Guide](../team/contributing.md)
-
-### Meta & Repository Docs
-- [Documentation Strategy](../meta/documentation-strategy.md)
-- [Documentation Inventory](../meta/documentation-inventory.md)
-- [Information Architecture Plan](../meta/information-architecture-plan.md)
-
-## Keeping Docs Current
-- Start with the [Contributing Guide](../team/contributing.md) for terminology, scope, and review order.
-- Update each source-of-truth document before touching summaries or collateral.
-- Record material changes in the roadmap or progress reports so the history stays clear.
-- Track stale files and follow-ups in the documentation inventory.
-
-## Contact
+## Contact & Feedback
 - [hello@sudostake.com](mailto:hello@sudostake.com) — Primary contact for external inquiries.
+- For doc-specific changes, open an issue or PR referencing the [Documentation Inventory](../meta/documentation-inventory.md).
 
 ## Related Documents
 - [Project One-Pager — SudoStake on NEAR](./project-one-pager-sudostake-near.md)
@@ -82,4 +63,4 @@ This hub lists the planning, execution, and reference docs for SudoStake on NEAR
 - [Information Architecture Plan](../meta/information-architecture-plan.md)
 
 ## Next Review
-- Update navigation once new audience landing pages ship or at the next quarterly documentation review.
+- Revisit navigation after new audience landing pages ship or during the next quarterly documentation review.

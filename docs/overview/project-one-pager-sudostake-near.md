@@ -10,7 +10,7 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Pr
 ## TL;DR
 - Borrow USDC against staked NEAR without unbonding or handing funds to a custodian.
 - Oracle-free lifecycle with user-owned vaults, predictable NEAR epochs, and native USDC.
-- MVP testnet flows work end to end in the web app and AI Agent; mainnet rollout stays behind feature flags until ready.
+- MVP testnet flows work end to end in the web app and AI Agent; mainnet rollout will phase in after the optimized factory clears verification.
 
 ## Problem & Solution
 | Problem | SudoStake Approach |
@@ -34,7 +34,7 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Pr
 - Vaults: deposit or withdraw NEAR, delegate or undelegate, claim unstaked funds.
 - Loans: request terms, accept offers, repay before the deadline.
 - Liquidations: deterministic, permissionless, and fully logged.
-- Rollout: feature flags and metrics hooks.
+- Rollout: phased releases with metrics hooks.
 
 ## Differentiation Snapshot
 |  | SudoStake | Pooled MM | CDP | Custodial |
@@ -47,7 +47,7 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Pr
 
 ## Traction & Timeline
 - ~231 vaults validated on the prior chain; NEAR MVP testnet covers the full lifecycle today.
-- Milestone 1 — Web Testnet Feature-Complete delivered on Sep 23, 2025. Milestone 2 — Factory Optimization is in progress with the shared vault rollout behind feature flags.
+- Step 1 — Testnet Flow Validation delivered on Sep 23, 2025. Step 2 — Shared Vault Deployment is in progress with the shared vault rollout baked into the factory contract.
 - Go-to-market path: testnet pilots → gated mainnet beta → staged mainnet waves with wallet and agent partnerships plus developer bounties.
 
 ## Economics
@@ -64,9 +64,9 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Pr
 - Governance plan: move from single maintainer to a 2-of-3 multisig as contributors join.
 
 ## Current Roadmap Highlights
-- **Milestone 1 — Web Testnet Feature-Complete:** Delivered.
-- **Milestone 2 — Factory Optimization:** In progress behind feature flags.
-- **Milestones 3–4 — Mainnet Candidate and Beta Stability:** Next in sequence once factory work locks.
+- **Step 1 — Testnet Flow Validation:** Delivered.
+- **Step 2 — Shared Vault Deployment:** In progress with shared code-hash registry work.
+- **Steps 3–4 — Mainnet Candidate and Beta Stability:** Next in sequence once factory work locks.
 
 ## Ecosystem Requests
 - Security review partners, indexing guidance, and wallet/agent distribution support.
@@ -77,7 +77,7 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Pr
 
 ## Related Documents
 - [Pitch Deck (Text)](./pitch-deck-sudostake-near.md)
-- [Roadmap — NEAR MVP & Launch](../execution/sudostake-roadmap-near-mvp.md)
+- [Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md)
 - [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
 
 ## Next Review

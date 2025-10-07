@@ -72,9 +72,9 @@ Client / Agent
 - Agent frameworks can monitor vault health, refinance credit lines, or operate liquidation bots.
 - Protocols gain a shared, audited collateral primitive to extend credit markets or structured products around native staking.
 
-## Current Status (Milestone 1)
+## Current Status (Step 1)
 - Delivered: wallet connection, vault dashboards, deposit/withdraw, delegate/undelegate, claim-unstaked balances, request/accept/repay flows.
-- In progress: global vault deployment behind feature flags as part of Milestone 2 — Factory Optimization, including code-hash registry and cost optimizations.
+- In progress: global vault deployment via the code-hash registry as part of Step 2 — Shared Vault Deployment, including size and cost optimizations.
 
 ## Open Requests to Infra & Rewards Committees
 - Register intents for credit actions (create vault, accept, repay, liquidate) to streamline automation tooling.
@@ -97,11 +97,11 @@ Client / Agent
 - Native USDC — https://pages.near.org/blog/usdc-launches-natively-on-the-near-protocol/
 
 ## Related Documents
-- [Roadmap — NEAR MVP & Launch](../execution/sudostake-roadmap-near-mvp.md)
-- [Milestone 1 Progress Review](../execution/sudostake-m1-progress.md)
+- [Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md)
+- [Step 1 Progress Review](../execution/sudostake-m1-progress.md)
 - [Risk Register](../execution/sudostake-risk-register.md)
 
 ## Next Review
-- Review architecture notes and integration status by 2025-10-20 or after the Milestone 2 readiness check.
+- Review architecture notes and integration status by 2025-10-20 or after the Step 2 readiness check.
 
 Contact: hello@sudostake.com • https://sudostake.com

@@ -10,8 +10,8 @@ Primary Audience: Product, Strategy, Contributors
 See also the chain-agnostic canvas in [lean-canvas-sudostake-generic.md](./lean-canvas-sudostake-generic.md).
 
 ## Status (2025-09-29)
-- Milestone 1 — Web Testnet Feature-Complete delivered on 2025-09-23.
-- Milestone 2 — Factory Optimization underway: optimized factory path, shared vault via code-hash registry, rollout behind feature flags.
+- Step 1 — Testnet Flow Validation delivered on 2025-09-23.
+- Step 2 — Shared Vault Deployment underway: optimized factory path and shared vault via code-hash registry implemented directly in the factory.
 
 ## Lean Canvas Blocks
 
@@ -38,7 +38,7 @@ Liquidity for NEAR stakers without unbonding. Native borrow/lend on staked NEAR�
 - **Vaults:** Non-custodial contracts with configurable creation fee; delegate NEAR to chosen validators.
 - **Liquidity requests:** USDC loans collateralized by staked NEAR; accepted via NEP-141 JSON messages.
 - **Liquidation:** Strict order (liquid → matured unstake → targeted unstake), halting when obligations are met; no oracle dependency.
-- **Marketplace:** Discovery of open requests; counter-offers (amount-only) scheduled after Milestone 1 scope.
+- **Marketplace:** Discovery of open requests; counter-offers (amount-only) scheduled after Step 1 scope.
 
 ### Channels
 - SudoStake web app (NEAR).
@@ -67,13 +67,13 @@ Liquidity for NEAR stakers without unbonding. Native borrow/lend on staked NEAR�
 - Backing from Protocol Rewards Cohort 2; leverages prior-chain learnings (~231 vaults).
 
 ## Notes
-- Traction: Prior-chain release logged ~231 vaults; NEAR testnet MVP flows completed in Milestone 1.
-- Next steps: Execute Milestone 2 optimized factory/global vault rollout with migration planning and metrics.
+- Traction: Prior-chain release logged ~231 vaults; NEAR testnet MVP flows completed in Step 1.
+- Next steps: Execute Step 2 optimized factory/global vault rollout with migration planning and metrics.
 
 ## Related Documents
 - [Lean Canvas — SudoStake (Chain-Agnostic)](./lean-canvas-sudostake-generic.md)
-- [SudoStake Roadmap — NEAR MVP & Launch](../execution/sudostake-roadmap-near-mvp.md)
+- [SudoStake Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md)
 - [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
 
 ## Next Review
-- Refresh after the 2025-10-07 roadmap review or when Milestone 2 scope or assumptions change materially.
+- Refresh after the 2025-10-07 roadmap review or when Step 2 scope or assumptions change materially.

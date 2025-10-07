@@ -33,7 +33,7 @@ Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Strategy
 ## Related Documents
 - [project-one-pager-sudostake-near.md](../overview/project-one-pager-sudostake-near.md)
 - [sudostake-core-infra-on-near.md](../systems/sudostake-core-infra-on-near.md)
-- [sudostake-roadmap-near-mvp.md](../execution/sudostake-roadmap-near-mvp.md)
+- [sudostake-action-plan-near-mvp.md](../execution/sudostake-action-plan-near-mvp.md)
 
 ## Next Review
 - Refresh positioning ahead of the next fundraising or integration cycle.

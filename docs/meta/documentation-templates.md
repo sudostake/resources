@@ -30,22 +30,22 @@ Primary Audience: <Select from Investors & VCs, Researchers & Technical Reviewer
 
 ```markdown
 ---
-Purpose: Summarize milestone progress and flag material changes for stakeholders.
-Owner: <Role overseeing the milestone.>
+Purpose: Summarize execution progress and flag material changes for stakeholders.
+Owner: <Role overseeing the workstream.>
 Last Updated: YYYY-MM-DD
 Primary Audience: Contributors, Investors & VCs, Community & Prospective Users
 ---
 
 # SudoStake — Progress Report <Number>
 
-Date: YYYY-MM-DD  •  Roadmap: [sudostake-roadmap-near-mvp.md](../execution/sudostake-roadmap-near-mvp.md)
-Note: This report summarizes current status. For authoritative dates, scope, and execution steps, see the roadmap.
+Date: YYYY-MM-DD  •  Action Plan: [sudostake-action-plan-near-mvp.md](../execution/sudostake-action-plan-near-mvp.md)
+Note: This report summarizes current status. For authoritative dates, scope, and sequencing, see the action plan.
 
 ## Summary
 - <Top 3 updates, ideally bullet form.>
 
 ## Status
-- **Milestone** — <status label> (Target: YYYY-MM-DD)
+- **Step** — <status label> (Target: YYYY-MM-DD)
   - Key workstreams and dependencies.
 
 ## Risks
@@ -55,7 +55,7 @@ Note: This report summarizes current status. For authoritative dates, scope, and
 - <Upcoming actions with owners.>
 
 ## Related Documents
-- [Roadmap — NEAR MVP & Launch](../execution/sudostake-roadmap-near-mvp.md)
+- [Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md)
 - [Risk Register](../execution/sudostake-risk-register.md)
 - <Add links as needed.>
 
@@ -65,7 +65,7 @@ Note: This report summarizes current status. For authoritative dates, scope, and
 
 ### Tailoring Guidance
 - Replace relative paths once documents move into the `docs/execution/` tree (Phase 1).
-- Consider adding a KPI snapshot table if the milestone has quantitative targets.
+- Consider adding a KPI snapshot table if the step has quantitative targets.
 - Archive reports in chronological order with ISO-like filenames (e.g., `progress-report-2025-09-26.md`).
 
 ## Related Documents

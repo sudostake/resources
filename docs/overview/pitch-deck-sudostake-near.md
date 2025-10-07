@@ -57,7 +57,7 @@ Stake. Earn. Borrow. Native NEAR staking with oracle-less credit: borrow against
 ## Traction & Status
 - Prior chain (Archway): ~231 vaults created.
 - NEAR MVP: Rust/near-sdk contracts with near-workspaces tests; web client in active development.
-- Milestone 1 — Web Testnet Feature-Complete: Core flows and marketplace view delivered per roadmap.
+- Step 1 — Testnet Flow Validation: Core flows and marketplace view delivered per action plan.
 
 ## Business Model
 - Vault mint fee (Factory contract).
@@ -79,10 +79,10 @@ Stake. Earn. Borrow. Native NEAR staking with oracle-less credit: borrow against
 - Reproducible builds, integration tests, audits, and bug bounty planned pre-scale.
 
 ## Roadmap (High-Level)
-- **Milestone 1 — Web Testnet Feature-Complete:** Request, accept, repay, liquidate, and marketplace experiences delivered on NEAR testnet.
-- **Milestone 2 — Factory Optimization:** Global vault deployment via code-hash registry (in progress) while maintaining a fallback to embedded WASM.
-- **Milestones 3–4 — Mainnet Candidate and Beta Stability:** Promote the optimized stack to a gated mainnet beta and harden reliability.
-- **Milestones 5–6 — Staged Mainnet Launch:** Gradual mainnet rollout with expanding access, monitoring, and reliability targets.
+- **Step 1 — Testnet Flow Validation:** Request, accept, repay, liquidate, and marketplace experiences delivered on NEAR testnet.
+- **Step 2 — Shared Vault Deployment:** Global vault rollout via code-hash registry implemented directly in the Rust factory contract.
+- **Steps 3–4 — Mainnet Candidate and Beta Stabilization:** Promote the optimized stack to a gated mainnet beta and harden reliability.
+- **Steps 5–6 — Mainnet Launch Waves:** Gradual mainnet rollout with expanding access, monitoring, and reliability targets.
 
 ## Team
 - Maintainer: Muhammed Ali (protocol, web, agents). Recruiting contributors in Rust/NEAR, Next.js/React, DevOps. Governance path: solo → 2-of-3 multisig as team scales.
@@ -96,8 +96,8 @@ Stake. Earn. Borrow. Native NEAR staking with oracle-less credit: borrow against
 
 ## Related Documents
 - [Project One-Pager — SudoStake on NEAR](./project-one-pager-sudostake-near.md)
-- [SudoStake Roadmap — NEAR MVP & Launch](../execution/sudostake-roadmap-near-mvp.md)
+- [SudoStake Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md)
 - [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
 
 ## Next Review
-- Update alongside the next fundraising cycle or when roadmap milestones shift (target check-in: 2025-10-31).
+- Update alongside the next fundraising cycle or when action-plan steps shift (target check-in: 2025-10-31).

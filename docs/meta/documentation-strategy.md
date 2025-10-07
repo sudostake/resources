@@ -21,7 +21,7 @@ Primary Audience: Contributors, Internal Stakeholders
 ## Primary Audiences & Top Questions
 | Audience | Goals | Key Questions We Must Answer |
 | --- | --- | --- |
-| Investors & VCs | Evaluate opportunity, team, and execution readiness. | What problem are we solving, what is the market, what traction have we achieved, what milestones are next, how do we de-risk? |
+| Investors & VCs | Evaluate opportunity, team, and execution readiness. | What problem are we solving, what is the market, what traction have we achieved, what steps are next, how do we de-risk? |
 | Researchers & Technical Reviewers | Assess protocol design, risk, and integration feasibility. | How does the architecture work, what assumptions underpin it, how do we mitigate risk, how do contracts interact? |
 | Ecosystem Partners & Builders | Decide whether to integrate or collaborate. | What are the partner touchpoints, what tooling or APIs exist, what is the rollout plan, who manages which components? |
 | Community & Prospective Users | Understand SudoStake’s value proposition and status. | Why does this matter to them, what benefits are live or upcoming, how can they follow progress? |

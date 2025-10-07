@@ -11,16 +11,16 @@ Primary Audience: Contributors
 - Documentation contributions only; code changes live in the relevant contract, web, or agent repositories.
 
 ## Sources of Truth
-- Roadmap, status, execution steps: sudostake-roadmap-near-mvp.md
+- Execution plan, status, sequencing: sudostake-action-plan-near-mvp.md
 - Product spec and flows: personas-and-flows.md
-- Milestone 1 details: sudostake-m1-progress.md
+- Step 1 details: sudostake-m1-progress.md
 - Infra overview and external references: sudostake-core-infra-on-near.md
 - Risk register: sudostake-risk-register.md
 - Team/org details: sudostake-team-org-details.md
 - Messaging collateral (lean canvases, one-pager, pitch) is secondary; never override roadmap or specs.
 
 ## Consistency Rules
-- Terms: keep “global Vault contract”, “code-hash registry”, “counter-offers (amount-only)”, “feature flags”.
+- Terms: keep “global Vault contract”, “code-hash registry”, “counter-offers (amount-only)”.
 - Interfaces: preserve method names (ft_transfer_call, ft_on_transfer) and staking-pool ops (deposit_and_stake, unstake, withdraw_all).
 - Hyphenation: use ASCII hyphen (-) for terminology; avoid typographic dashes.
 - Progress reports must reiterate that the roadmap is authoritative for scope/dates.
@@ -33,7 +33,7 @@ Primary Audience: Contributors
   - Last Updated — ISO date (YYYY-MM-DD).
   - Primary Audience — comma-separated list from the standard audience set.
 - File names:
-  - Use lowercase-hyphenated names for every Markdown document (e.g., `project-one-pager-sudostake-near.md`, `sudostake-roadmap-near-mvp.md`).
+  - Use lowercase-hyphenated names for every Markdown document (e.g., `project-one-pager-sudostake-near.md`, `sudostake-action-plan-near-mvp.md`).
   - Avoid underscores, spaces, or camel/title case for portability.
 - Flow: summary → detail → references. Add “Related Documents” and “Next Review” where helpful.
 - Prefer tables or bullets over dense paragraphs for complex ideas.
@@ -45,8 +45,8 @@ Primary Audience: Contributors
 - Keep heading hierarchy shallow; skip decorative separators.
 
 ## Change Process
-- For scope or roadmap changes:
-  - Update sudostake-roadmap-near-mvp.md first.
+- For scope or execution-plan changes:
+  - Update sudostake-action-plan-near-mvp.md first.
   - Cross-reference related progress reports or messaging docs.
 - Commit messages should capture what changed and why (e.g., `docs: standardize “code-hash registry”; add feature flags note`).
 - Link issues or tasks when relevant.

@@ -14,8 +14,8 @@ Primary Audience: Contributors, Internal Stakeholders
 
 ## Proposed Folder Structure (Post-Refactor)
 - `overview/` — readme, project one-pager, pitch collateral, press-ready summaries.
-- `product/` — personas and flows, project charter, specifications, milestone briefs.
-- `execution/` — roadmap, progress reports, milestone retrospectives, risk register.
+- `product/` — personas and flows, project charter, specifications, execution briefs.
+- `execution/` — action plan, progress reports, step retrospectives, risk register.
 - `systems/` — core infrastructure overview, technical references, integration guides.
 - `research/` — competitive analysis, market notes, external studies.
 - `team/` — organization details, contributor guidelines, contact list.
@@ -33,8 +33,8 @@ Primary Audience: Contributors, Internal Stakeholders
 | lean-canvas-sudostake-near.md | root | product/lean-canvas-sudostake-near.md | Cross-link differences vs generic canvas. |
 | personas-and-flows.md | root | product/personas-and-flows.md | Add scenario summaries and integration notes. |
 | sudostake-project-charter.md | root | product/sudostake-project-charter.md | Update governance section once folder move occurs. |
-| sudostake-roadmap-near-mvp.md | root | execution/sudostake-roadmap-near-mvp.md | Keep as source of truth for dates and scope. |
-| sudostake-m1-progress.md | root | execution/sudostake-m1-progress.md | Pair with future milestone reports. |
+| sudostake-action-plan-near-mvp.md | root | execution/sudostake-action-plan-near-mvp.md | Keep as source of truth for sequencing, dates, and scope. |
+| sudostake-m1-progress.md | root | execution/sudostake-m1-progress.md | Pair with future step reports. |
 | progress-report-2.md | root | execution/progress-report-2.md | Rename to include dates if needed during refactor. |
 | progress-report-3.md | root | execution/progress-report-3.md | Maintain chronological indexing. |
 | sudostake-risk-register.md | root | execution/sudostake-risk-register.md | Convert to structured table with owners. |
@@ -57,7 +57,7 @@ Primary Audience: Contributors, Internal Stakeholders
 - Add “Related Documents” to long-form files and link the most relevant references.
 - Use consistent heading IDs (lowercase with hyphens) for cross-file anchors.
 - Include a mini-table of contents once documents exceed ~700 words.
-- Cite the source when summarizing data (e.g., “See roadmap §Milestone 2”).
+- Cite the source when summarizing data (e.g., “See action plan §Step 2”).
 
 ## Implementation Checklist
 1. Publish the refreshed README structure before moving files.

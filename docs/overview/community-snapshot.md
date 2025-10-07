@@ -1,7 +1,7 @@
 ---
 Purpose: Provide community members with a digestible snapshot of benefits, status, and how to stay involved.
 Owner: Community Lead (TBD)
-Last Updated: 2025-10-01
+Last Updated: 2025-10-02
 Primary Audience: Community & Prospective Users
 ---
 
@@ -13,8 +13,8 @@ Primary Audience: Community & Prospective Users
 - Automation help comes from NEAR intents and agents.
 
 ## Status
-- **Milestone 1 — Web Testnet Feature-Complete:** Delivered 2025-09-23 with full borrow/lend flows live on NEAR testnet.
-- **Now Working On:** Milestone 2 — Factory Optimization (global vault rollout, code-hash registry) targeting 2025-11-15.
+- **Step 1 — Testnet Flow Validation:** Delivered 2025-09-23 with full borrow/lend flows live on NEAR testnet.
+- **Now Working On:** Step 2 — Shared Vault Deployment (global vault rollout, code-hash registry) targeting 2025-11-15.
 - **Next Updates:** Roadmap checkpoint on 2025-10-07; next progress report by 2025-10-03.
 
 ## What’s Live Today
@@ -23,19 +23,29 @@ Primary Audience: Community & Prospective Users
 - Trigger manual liquidations after deadlines; every step emits clear on-chain events.
 
 ## Coming Soon
-- Counter-offer (amount-only) improvements now that Milestone 1 is complete.
-- Global vault deployment (single code hash) controlled by feature flags.
-- Beta cohorts for lenders and community testers once Milestone 2 reaches readiness.
+- Counter-offer (amount-only) improvements now that Step 1 is complete.
+- Global vault deployment (single code hash) rolling out once the factory registry lands.
+- Beta cohorts for lenders and community testers once Step 2 reaches readiness.
+
+## Key Questions
+- **Is anything automated?** No. Repay and liquidate actions are manual (you or an agent triggers them) to keep the system deterministic.
+- **What do I need to interact?** A NEAR wallet, staked NEAR to collateralize, and USDC for repayments.
+- **Who controls vaults?** Each borrower owns their vault; validators remain user-selected.
+
+## Watchlist & Upcoming Actions
+- 2025-10-03 — Next progress report with fresh metrics, readiness notes, and community tasks.
+- 2025-10-07 — Roadmap checkpoint confirming Step 2 remains on track.
+- 2025-11-01 — Step 2 readiness review unlocking shared vault rollout and beta invitations.
 
 ## Stay in the Loop
 - Progress updates: [progress-report-3.md](../execution/progress-report-3.md) · [progress-report-2.md](../execution/progress-report-2.md)
-- Roadmap: [sudostake-roadmap-near-mvp.md](../execution/sudostake-roadmap-near-mvp.md)
+- Action plan: [sudostake-action-plan-near-mvp.md](../execution/sudostake-action-plan-near-mvp.md)
 - Mailing list or Telegram channel (TBD) coming alongside the next launch update.
 
-## How to Get Involved
-- Share feedback via hello@sudostake.com.
-- Register interest for beta access (link coming with the Milestone 2 readiness checkpoint).
-- Follow roadmap milestones to track launch phases.
+## Participation Checklist
+- Share feedback anytime via hello@sudostake.com.
+- Register interest for beta access once the Step 2 readiness checkpoint opens sign-ups.
+- Follow action-plan steps and progress reports to stay aligned with launch phases.
 
 ## FAQ
 - Does anything happen automatically? No—repay/liquidate actions are explicit (you or an agent triggers them).

@@ -1,28 +1,37 @@
 ---
 Purpose: Equip builders and integration partners with integration steps, API references, and support contacts.
 Owner: Ecosystem & Partner Engineering (TBD)
-Last Updated: 2025-10-01
+Last Updated: 2025-10-02
 Primary Audience: Ecosystem Partners & Builders, Researchers & Technical Reviewers
 ---
 
 # Builder Integration Guide — SudoStake on NEAR
 
-## Quick Facts
-- Contracts: Factory + Vault (Rust/near-sdk) live on NEAR testnet; mainnet candidate ships in Milestone 3 — Mainnet Candidate Behind Feature Flags.
-- Collateral: Staked NEAR via `staking_pool.wasm`; loans settle in native USDC (NEP-141).
-- Events: `EVENT_JSON` logs for request, accept, repay, and liquidation actions.
-- Feature flags: Shared vault rollout and amount-only counter-offers unlock during Milestone 2 — Factory Optimization.
+## Integration Snapshot
+- **Environment:** Factory + Vault (Rust/near-sdk) deployed on NEAR testnet; mainnet candidate will stage behind controlled access during Step 3.
+- **Collateral & Settlement:** Staked NEAR via `staking_pool.wasm`; loans and repayments settle in native USDC (NEP-141).
+- **Signals:** Structured `EVENT_JSON` logs for request, accept, repay, liquidation; NPR metrics for vault, loan, and repayment counts.
+- **Upcoming Changes:** Shared vault rollout and amount-only counter-offers unlock during Step 2 — Shared Vault Deployment.
 
 ## Prerequisites
 - Familiarity with NEP-141 (`ft_transfer_call` callbacks) and `staking_pool.wasm` interfaces.
 - Ability to consume `EVENT_JSON` logs and schedule on-chain actions (agents/intents).
 
-## Integration Steps
-1. Review the architecture and roadmap: [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md), [Roadmap — NEAR MVP & Launch](../execution/sudostake-roadmap-near-mvp.md).
-2. Implement the USDC offer flow with `ft_transfer_call` so lenders escrow funds into the vault.
-3. Subscribe to `sudostake.vault.*` events and map IDs to your UI and automation.
-4. Add automation for `process_claims` after deadlines (strongly recommended).
-5. Sync on beta access, contract addresses, and feature flags with the team.
+## Integration Readiness Checklist
+| Step | Outcome | Owner |
+| --- | --- | --- |
+| Confirm contract addresses and deployment status. | Testnet + pending mainnet candidate endpoints recorded. | SudoStake team ↔ partner |
+| Wire `ft_transfer_call` offer flow to escrow USDC. | Vault escrow lifecycle tested end to end. | Partner |
+| Subscribe to `sudostake.vault.*` events. | UI/automation receives deterministic lifecycle logs. | Partner |
+| Implement `process_claims` automation. | Post-deadline liquidations handled within gas/time limits. | Partner |
+| Align on readiness checkpoints. | Shared beta timeline and rollback plan captured. | Joint |
+
+## Suggested Implementation Path
+1. Review system design and sequencing: [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md), [Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md).
+2. Stand up offer submission using `ft_transfer_call` and validate refund behavior for non-winning bids.
+3. Map `sudostake.vault.*` event payloads into your indexing or alerting stack.
+4. Automate `process_claims` or equivalent liquidation helper after loan expiry.
+5. Schedule a joint execution review once Step 2 readiness is confirmed to plan mainnet rollout.
 
 ## APIs & Contracts
 | Component | Contract | Key Methods |
@@ -37,14 +46,20 @@ Primary Audience: Ecosystem Partners & Builders, Researchers & Technical Reviewe
 - Lender: discover request → `ft_transfer_call` counter-offer → if accepted, escrow becomes loan → after deadline run `process_claims` if needed.
 - Automation: agents/intents monitor deadlines, send reminders, and trigger liquidations.
 
+## Due Diligence Pack
+- Architecture & invariants: [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
+- Execution cadence: [SudoStake Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md), [Progress Report 3](../execution/progress-report-3.md)
+- Risk posture: [SudoStake Risk Register](../execution/sudostake-risk-register.md)
+- Integration inventory: [Documentation Inventory](../meta/documentation-inventory.md)
+
 ## Observability
 - Subscribe to `EVENT_JSON` namespaces (`sudostake.vault.*`) to follow vault activity.
-- Monitor vault registry updates for new deployments once the Milestone 2 code-hash registry ships.
+- Monitor vault registry updates for new deployments once the Step 2 code-hash registry ships.
 - Track metrics such as vault count, active loans, and repayment rates via NPR trackers exposed in the contracts.
 
 ## Support & Contact
 - Email hello@sudostake.com for onboarding.
-- Builders channel (Discord/Telegram TBD) will host API updates and feature-flag notices.
+- Builders channel (Discord/Telegram TBD) will host API updates and rollout notices.
 - Progress reports: [progress-report-3.md](../execution/progress-report-3.md), [progress-report-2.md](../execution/progress-report-2.md).
 
 ## Related Documents
@@ -53,4 +68,4 @@ Primary Audience: Ecosystem Partners & Builders, Researchers & Technical Reviewe
 - [Investor & Partner Brief](./investor-partner-brief.md)
 
 ## Next Review
-- Update after the Milestone 2 factory rollout or sooner if contract interfaces change.
+- Update after the Step 2 factory rollout or sooner if contract interfaces change.

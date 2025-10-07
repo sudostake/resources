@@ -13,19 +13,19 @@ This inventory consolidates the current documentation set, primary audiences, an
 
 | Document | Primary Purpose | Primary Audience(s) | Status / Immediate Notes | Last Updated (Git) |
 | --- | --- | --- | --- | --- |
-| overview/readme.md | High-level index of core materials. | All audiences | Quick-start table updated with audience briefs; refresh alongside new guides. | 2025-10-01 |
+| overview/readme.md | High-level index of core materials. | Investors & VCs, Researchers & Technical Reviewers, Ecosystem Partners & Builders, Community & Prospective Users, Contributors, Internal Stakeholders | Navigation refreshed with due-diligence kits; refresh alongside new guides. | 2025-10-02 |
 | overview/project-one-pager-sudostake-near.md | Investor/partner summary of mission and value. | Investors & VCs, Partners | Update traction metrics by 2025-10-15; keep executive summary current. | 2025-10-01 |
 | overview/pitch-deck-sudostake-near.md | Presentation deck content (text version). | Investors & VCs | Sync with latest fundraising narrative; link maintained slides. | 2025-10-01 |
-| overview/investor-partner-brief.md | Role-specific summary for investors and partners. | Investors & VCs, Partners | New landing page; refresh after roadmap reviews and fundraising updates. | 2025-10-01 |
-| overview/builder-integration-guide.md | Integration checklist and API notes for builders. | Ecosystem Partners & Builders | New landing page; update after Milestone 2 factory rollout or API changes. | 2025-10-01 |
-| overview/community-snapshot.md | Community-facing status snapshot and calls to action. | Community & Prospective Users | New landing page; refresh after next progress report (2025-10-03). | 2025-10-01 |
+| overview/investor-partner-brief.md | Role-specific summary for investors and partners. | Investors & VCs, Partners | Evaluation checklist + diligence links added; refresh after roadmap reviews and fundraising updates. | 2025-10-02 |
+| overview/builder-integration-guide.md | Integration checklist and API notes for builders. | Ecosystem Partners & Builders | Integration readiness checklist added; update after Step 2 factory rollout or API changes. | 2025-10-02 |
+| overview/community-snapshot.md | Community-facing status snapshot and calls to action. | Community & Prospective Users | Watchlist and participation checklist added; refresh after next progress report (2025-10-03). | 2025-10-02 |
 
 ## Product
 
 | Document | Primary Purpose | Primary Audience(s) | Status / Immediate Notes | Last Updated (Git) |
 | --- | --- | --- | --- | --- |
 | product/lean-canvas-sudostake-generic.md | Business model assumptions (generic framing). | Product, Strategy | Highlight deltas vs NEAR-specific canvas before de-duplication. | 2025-09-29 |
-| product/lean-canvas-sudostake-near.md | Business model assumptions tailored to NEAR. | Product, Strategy | Align with roadmap milestones and one-pager language. | 2025-10-01 |
+| product/lean-canvas-sudostake-near.md | Business model assumptions tailored to NEAR. | Product, Strategy | Align with action-plan steps and one-pager language. | 2025-10-01 |
 | product/sudostake-project-charter.md | Project scope, objectives, and governance. | Internal Stakeholders | Front matter + structured sections live; refresh when scope shifts. | 2025-09-29 |
 | product/personas-and-flows.md | User archetypes and interaction flows. | Product, Researchers | Layer in scenario snapshots; link to UI references. | 2025-10-01 |
 
@@ -33,9 +33,9 @@ This inventory consolidates the current documentation set, primary audiences, an
 
 | Document | Primary Purpose | Primary Audience(s) | Status / Immediate Notes | Last Updated (Git) |
 | --- | --- | --- | --- | --- |
-| execution/sudostake-roadmap-near-mvp.md | Execution plan and milestone schedule. | Contributors, Investors | Snapshot + burndown refreshed; track the 2025-11-01 readiness checkpoint. | 2025-10-01 |
-| execution/sudostake-m1-progress.md | Milestone 1 retrospective and metrics. | Contributors, Investors | Template-aligned summary; add Milestone 2 dependencies as they emerge. | 2025-10-01 |
-| execution/progress-report-2.md | Narrative update on earlier milestone progress. | Contributors, Community | Simplified language with roadmap link and clearer next steps. | 2025-10-01 |
+| execution/sudostake-action-plan-near-mvp.md | Execution plan and step-by-step sequencing. | Contributors, Investors | Snapshot + burndown refreshed; track the 2025-11-01 readiness checkpoint. | 2025-10-07 |
+| execution/sudostake-m1-progress.md | Step 1 retrospective and metrics. | Contributors, Investors | Template-aligned summary; add Step 2 dependencies as they emerge. | 2025-10-01 |
+| execution/progress-report-2.md | Narrative update on earlier execution steps. | Contributors, Community | Simplified language with action-plan link and clearer next steps. | 2025-10-07 |
 | execution/progress-report-3.md | Latest progress narrative. | Contributors, Community, Investors | Includes live testnet link, factory cost-cut plan, and mainnet launch outlook. | 2025-10-01 |
 | execution/sudostake-risk-register.md | Identified risks, mitigations, and owners. | Contributors, Investors | Structured table in place; confirm next review cadence. | 2025-09-29 |
 
@@ -43,7 +43,7 @@ This inventory consolidates the current documentation set, primary audiences, an
 
 | Document | Primary Purpose | Primary Audience(s) | Status / Immediate Notes | Last Updated (Git) |
 | --- | --- | --- | --- | --- |
-| systems/sudostake-core-infra-on-near.md | Technical architecture and dependencies. | Researchers, Builders | Revisit after the Milestone 2 readiness check; add diagrams if available. | 2025-10-01 |
+| systems/sudostake-core-infra-on-near.md | Technical architecture and dependencies. | Researchers, Builders | Revisit after the Step 2 readiness check; add diagrams if available. | 2025-10-01 |
 
 ## Research
 
