@@ -35,7 +35,7 @@ while IFS=: read -r FILE LINE MATCH; do
     echo "BROKEN LINK: $RELFILE:$LINE -> $URL"
     STATUS=1
   fi
-done < <(grep -R -n -oE '\[[^]]+\]\([^)]+\)' --include='*.md' "$ROOT" || true)
+done < <(grep -R --exclude-dir={.git,node_modules,vendor,dist,build} -n -oE '\[[^]]+\]\([^)]+\)' --include='*.md' "$ROOT" || true)
 
 if [[ $STATUS -eq 0 ]]; then
   echo "All Markdown links resolve."
