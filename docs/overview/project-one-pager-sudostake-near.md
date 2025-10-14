@@ -1,11 +1,13 @@
 ---
 Purpose: Provide an investor- and partner-ready snapshot of SudoStake on NEAR.
 Owner: Growth & Partnerships (TBD)
-Last Updated: 2025-10-01
+Last Updated: 2025-10-08
 Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Community & Prospective Users
 ---
 
 # SudoStake on NEAR — One-Pager
+
+This one-pager provides the investor- and partner-ready snapshot of SudoStake’s NEAR deployment.
 
 ## TL;DR
 - Borrow USDC against staked NEAR without unbonding or handing funds to a custodian.

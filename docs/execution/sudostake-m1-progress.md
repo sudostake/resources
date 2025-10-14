@@ -1,7 +1,7 @@
 ---
 Purpose: Record SudoStake NEAR MVP Step 1 outcomes and guardrails.
 Owner: Product & Delivery (TBD)
-Last Updated: 2025-10-01
+Last Updated: 2025-10-08
 Primary Audience: Contributors, Investors & VCs, Internal Stakeholders
 ---
 

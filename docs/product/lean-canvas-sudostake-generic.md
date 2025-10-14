@@ -1,7 +1,7 @@
 ---
 Purpose: Capture the chain-agnostic lean canvas for SudoStake’s staking-backed credit model.
 Owner: Product & Strategy (TBD)
-Last Updated: 2025-09-29
+Last Updated: 2025-10-08
 Primary Audience: Product, Strategy, Contributors
 ---
 

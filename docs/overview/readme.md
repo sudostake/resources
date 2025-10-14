@@ -1,12 +1,14 @@
 Purpose: Serve as the entry point for SudoStake documentation on NEAR.
 Owner: Docs Lead (TBD)
-Last Updated: 2025-10-02
+Last Updated: 2025-10-08
 Primary Audience: Investors & VCs, Researchers & Technical Reviewers, Ecosystem Partners & Builders, Community & Prospective Users, Contributors, Internal Stakeholders
 ---
 
 # SudoStake on NEAR — Documentation Hub
 
 Start every assessment here. The sections below point you to the right level of depth, bundle documents into due-diligence kits, and flag the canonical sources that stay authoritative as the project evolves.
+
+Match your role to the audience table below, pull the due-diligence bundles as needed, and update sources of truth before revising summaries.
 
 ## Audience Landing Zones
 

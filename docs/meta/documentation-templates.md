@@ -1,13 +1,13 @@
 ---
 Purpose: Provide reusable templates for SudoStake documentation front matter and progress reports.
 Owner: Docs Lead (TBD)
-Last Updated: 2025-09-29
+Last Updated: 2025-10-08
 Primary Audience: Contributors
 ---
 
 # SudoStake Documentation Templates
 
-Use these templates to standardize structure across the documentation set. Update this file if new doc types are introduced.
+Use these templates to standardize structure across the documentation set. Update this file if new doc types are introduced, and copy the relevant snippet when creating or refreshing docs so metadata stays consistent.
 
 ## Front Matter (All Docs)
 

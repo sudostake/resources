@@ -1,7 +1,7 @@
 ---
 Purpose: Document the NEAR-specific lean canvas for SudoStake, reflecting current roadmap progress.
 Owner: Product & Strategy (TBD)
-Last Updated: 2025-10-01
+Last Updated: 2025-10-08
 Primary Audience: Product, Strategy, Contributors
 ---
 

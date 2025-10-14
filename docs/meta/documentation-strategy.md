@@ -1,7 +1,7 @@
 ---
 Purpose: Define goals, audiences, and guardrails for the SudoStake documentation refactor.
 Owner: Docs Lead (TBD)
-Last Updated: 2025-09-29
+Last Updated: 2025-10-08
 Primary Audience: Contributors, Internal Stakeholders
 ---
 

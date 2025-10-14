@@ -1,7 +1,7 @@
 ---
 Purpose: Provide the authoritative action plan for SudoStake’s NEAR MVP and launch.
 Owner: Product & Delivery (TBD)
-Last Updated: 2025-10-07
+Last Updated: 2025-10-08
 Primary Audience: Contributors, Investors & VCs, Ecosystem Partners & Builders
 ---
 

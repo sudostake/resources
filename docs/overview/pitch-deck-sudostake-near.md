@@ -1,11 +1,13 @@
 ---
 Purpose: Provide a written companion to the SudoStake NEAR pitch deck for investors and partners.
 Owner: Growth & Partnerships (TBD)
-Last Updated: 2025-10-01
+Last Updated: 2025-10-08
 Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Internal Stakeholders
 ---
 
 # SudoStake on NEAR — Written Pitch
+
+Use this written companion alongside the live deck when preparing investor or partner conversations.
 
 ## One-Liner
 Stake. Earn. Borrow. Native NEAR staking with oracle-less credit: borrow against staked NEAR without unbonding or custodians.

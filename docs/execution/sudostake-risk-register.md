@@ -1,7 +1,7 @@
 ---
 Purpose: Track and mitigate key risks for the SudoStake NEAR MVP and launch.
 Owner: Risk & Compliance (TBD)
-Last Updated: 2025-10-07
+Last Updated: 2025-10-08
 Primary Audience: Contributors, Investors & VCs
 ---
 

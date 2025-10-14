@@ -1,11 +1,13 @@
 ---
 Purpose: Equip builders and integration partners with integration steps, API references, and support contacts.
 Owner: Ecosystem & Partner Engineering (TBD)
-Last Updated: 2025-10-02
+Last Updated: 2025-10-08
 Primary Audience: Ecosystem Partners & Builders, Researchers & Technical Reviewers
 ---
 
 # Builder Integration Guide — SudoStake on NEAR
+
+This guide is the single reference for partners preparing to integrate with the SudoStake contracts and supporting services.
 
 ## Integration Snapshot
 - **Environment:** Factory + Vault (Rust/near-sdk) deployed on NEAR testnet; mainnet candidate will stage behind controlled access during Step 3.

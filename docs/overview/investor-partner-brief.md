@@ -1,11 +1,13 @@
 ---
 Purpose: Give investors and partners a living snapshot with traction metrics and quick links.
 Owner: Growth & Partnerships (TBD)
-Last Updated: 2025-10-02
+Last Updated: 2025-10-08
 Primary Audience: Investors & VCs, Ecosystem Partners & Builders
 ---
 
 # Investor & Partner Brief — SudoStake on NEAR
+
+Use this brief when aligning investors and partners on traction, roadmap checkpoints, and the core diligence packet.
 
 ## Investment Highlights
 - **Model:** Native staking-backed credit. Borrow USDC against staked NEAR without unbonding or custodians; lenders operate in isolated, oracle-free deals.

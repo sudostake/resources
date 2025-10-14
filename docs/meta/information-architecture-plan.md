@@ -1,7 +1,7 @@
 ---
 Purpose: Outline the proposed information architecture for the SudoStake documentation refactor.
 Owner: Docs Lead (TBD)
-Last Updated: 2025-10-01
+Last Updated: 2025-10-08
 Primary Audience: Contributors, Internal Stakeholders
 ---
 

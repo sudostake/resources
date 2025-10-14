@@ -1,11 +1,13 @@
 ---
 Purpose: Provide community members with a digestible snapshot of benefits, status, and how to stay involved.
 Owner: Community Lead (TBD)
-Last Updated: 2025-10-02
+Last Updated: 2025-10-08
 Primary Audience: Community & Prospective Users
 ---
 
 # Community Snapshot — SudoStake on NEAR
+
+Use this snapshot to brief the community on current status, what is live, and the next actions they can take.
 
 ## TL;DR
 - Keep staking rewards and still borrow USDC.

@@ -1,11 +1,13 @@
 ---
 Purpose: Document SudoStake team structure, ownership, and contact paths.
 Owner: Muhammed Ali
-Last Updated: 2025-09-29
+Last Updated: 2025-10-08
 Primary Audience: Contributors, Partners, Investors
 ---
 
 # SudoStake — Team & Org Details
+
+This document centralizes team structure, contact paths, governance posture, and hiring plans for diligence discussions.
 
 ## Snapshot
 - **One-liner:** Native staking with composable credit.
@@ -46,6 +48,37 @@ Primary Audience: Contributors, Partners, Investors
 - Operations: Solo maintainer coordinating open-source contributions.
 - Governance: Single maintainer today → planned move to 2-of-3 multisig when ≥2 maintainers active; on-chain parameters where feasible.
 
+## Legal & Compliance
+- Entity: Not yet incorporated; legal structure under evaluation.
+- Posture: Ships non-custodial software only; does not hold client funds or fiat.
+- Data handling: Minimal; privacy-preserving analytics introduced only with clear consent.
+- Jurisdiction plans: Documented once incorporation completes; update diligence packages accordingly.
+
+## Security Practices
+- Current controls: Reproducible builds via `cargo-near`, GitHub Actions pipelines, GPG-signed commits/tags, protected branches, mandatory reviews, near-workspaces unit/integration coverage for vault lifecycle, settlement, and liquidation.
+- Design guardrails: MEV-aware flows, deterministic state machine, explicit manual triggers.
+- Upcoming work: Third-party audit selection, public bug bounty, expanded fuzz/property tests, and published incident runbooks before mainnet launch.
+
+## Track Record
+- Archway deployment recorded ~231 vaults prior to NEAR migration.
+- NEAR MVP work covers CosmWasm → NEAR SDK port, deterministic build pipeline, and full-contract test coverage.
+- Tooling contributions include near-workspaces suites, automated release workflows, and signed WASM artifacts.
+
+## Responsibility Map
+- Protocol design/specifications — Muhammed Ali (R/A); Contributors (C)
+- Smart contracts (NEAR) — Muhammed Ali (R/A); Contributors (C)
+- Frontend (Next.js/React) — Muhammed Ali (R/A); Contributors (C)
+- CI/CD & releases — Muhammed Ali (R/A); Contributors (C)
+- Security reviews & audits — Muhammed Ali (R/A); Contributors (C)
+- Partnerships & grants — Muhammed Ali (R/A); Contributors (C)
+- Community & documentation — Muhammed Ali (R/A); Contributors (C)
+
+## Contributors & Future Hiring
+- Actively recruiting open-source collaborators across Rust/NEAR, frontend, DevOps, docs, and community.
+- Good-first issues and bounty-backed tasks will live in the organization repositories; step-based grants earmarked for additional bounties.
+- Target near-term hires (funding permitting): Rust/NEAR smart-contract engineer, Next.js/React lead, DevOps/infra specialist.
+- Budget planning: Current runway from NEAR Protocol Rewards Cohort 2; future protocol revenue and grants earmarked for staffing.
+
 ## Related Documents
 - [sudostake-action-plan-near-mvp.md](../execution/sudostake-action-plan-near-mvp.md)
 - [documentation-refactor-tracker.md](../meta/documentation-refactor-tracker.md)
@@ -54,34 +87,4 @@ Primary Audience: Contributors, Partners, Investors
 ## Next Review
 - Refresh once additional maintainers onboard or incorporation details finalize.
 - Cadence: public backlog/action plan; release notes per step.
-- Licensing: open‑source; CLAs possible for significant contributions.
-
-5) Legal & Compliance
-- Entity: none yet; incorporation planned.
-- Posture: non‑custodial software; no client funds/fiat handling.
-- Data: minimal; privacy‑preserving analytics if added.
-- Jurisdiction: evaluating; will update on registration.
-
-6) Security Practices
-- Current: reproducible builds (cargo‑near, GitHub Actions); GPG‑signed commits/tags; protected branches; review‑required PRs; unit/integration tests (near‑workspaces) for vault lifecycle/settlement/liquidation; MEV‑aware design.
-- Planned: third‑party audit; public bug bounty; expanded fuzz/property tests; scenario coverage; incident runbooks.
-
-7) Track Record
-- Archway: ~231 vaults created (agg staked TBD).
-- NEAR: MVP development; CosmWasm → NEAR SDK port; deterministic builds/CI tests.
-- Tooling: near‑workspaces tests; Actions builds; GPG‑signed releases.
-
-8) Responsibility Map
-- Protocol design/specs — Muhammed (R/A); Contributors (C)
-- Smart contracts (NEAR) — Muhammed (R/A); Contributors (C)
-- Front‑end — Muhammed (R/A); Contributors (C)
-- CI/CD & releases — Muhammed (R/A); Contributors (C)
-- Security & audits — Muhammed (R/A); Contributors (C)
-- Partnerships & grants — Muhammed (R/A); Contributors (C)
-- Community & docs — Muhammed (R/A); Contributors (C)
-
-9) Contributors & Future Hiring
-- Open‑source contributions in Rust/NEAR, Next.js/React, DevOps, docs/community.
-- Good‑first‑issues & bounties in the org; step-based grants may fund bounties.
-- Future hires (as funding allows): Smart Contract (Rust/NEAR), Front‑end (Next.js/React), DevOps/Infra.
-- Budget: step-backed grants + protocol revenue; transparent rates/deliverables.
+- Licensing: open-source; contribution license agreements added if significant external contributors join.

@@ -1,7 +1,7 @@
 ---
 Purpose: Describe SudoStake NEAR MVP personas, flows, and system rules for product and integration planning.
 Owner: Product & Delivery (TBD)
-Last Updated: 2025-10-01
+Last Updated: 2025-10-08
 Primary Audience: Product, Researchers & Technical Reviewers, Contributors
 ---
 

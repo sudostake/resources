@@ -1,11 +1,13 @@
 ---
 Purpose: Outline standards and workflow for contributing to SudoStake documentation.
 Owner: Docs Lead (TBD)
-Last Updated: 2025-10-01
+Last Updated: 2025-10-08
 Primary Audience: Contributors
 ---
 
 # Contributing Guide (Docs)
+
+Use this guide to understand standards, naming, and the review workflow before editing any documentation.
 
 ## Scope
 - Documentation contributions only; code changes live in the relevant contract, web, or agent repositories.

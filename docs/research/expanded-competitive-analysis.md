@@ -1,11 +1,13 @@
 ---
 Purpose: Compare SudoStake with adjacent lending models for positioning conversations.
 Owner: Growth & Partnerships (TBD)
-Last Updated: 2025-09-29
+Last Updated: 2025-10-08
 Primary Audience: Investors & VCs, Ecosystem Partners & Builders, Strategy
 ---
 
 # SudoStake Competitive Analysis
+
+Use this analysis when positioning SudoStake against adjacent lending models for investors or ecosystem partners.
 
 ## Snapshot
 - **Positioning:** Native staking-backed credit; vaults remain user-owned collateral with deterministic settlement.

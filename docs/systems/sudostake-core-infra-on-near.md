@@ -1,7 +1,7 @@
 ---
 Purpose: Document the architecture, contracts, and operational model for SudoStake on NEAR.
 Owner: Protocol Engineering (TBD)
-Last Updated: 2025-10-01
+Last Updated: 2025-10-08
 Primary Audience: Researchers & Technical Reviewers, Ecosystem Partners & Builders, Contributors
 ---
 

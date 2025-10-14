@@ -1,13 +1,15 @@
 ---
 Purpose: Prepare for the shared vault code-hash registry design review.
 Owner: Protocol Engineering
-Last Updated: 2025-10-07
+Last Updated: 2025-10-08
 Primary Audience: Protocol & App Engineering, Infra & Ops
 ---
 
 # Factory Optimization — Design Review Prep (2025-10-14)
 
 Target attendees: Protocol Engineering (registry implementation), App Engineering (web & agent integration), Infra & Ops (deployment & monitoring), Product/Ops (migration comms).
+
+Distribute this prep packet ahead of the design review so the group arrives with shared context and ready-to-decide inputs.
 
 ## Goals
 - Lock the technical approach for moving `sudostake_contracts_near` to a shared vault code-hash registry implemented directly in Rust.

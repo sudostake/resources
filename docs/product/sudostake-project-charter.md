@@ -1,7 +1,7 @@
 ---
 Purpose: Capture scope, objectives, and governance for the SudoStake MVP.
 Owner: Muhammed Ali
-Last Updated: 2025-09-29
+Last Updated: 2025-10-08
 Primary Audience: Internal Stakeholders, Contributors
 ---
 
