@@ -40,7 +40,7 @@ Use this snapshot to brief the community on current status, what is live, and th
 - 2025-11-01 — Step 2 readiness review unlocking shared vault rollout and beta invitations.
 
 ## Stay in the Loop
-- Progress updates: [Execution Timeline & Scope Tracker](../execution/execution-timeline.md)
+- Progress updates: [Action Plan — Timeline Snapshot](../execution/sudostake-action-plan-near-mvp.md#timeline-snapshot)
 - Action plan: [sudostake-action-plan-near-mvp.md](../execution/sudostake-action-plan-near-mvp.md)
 - Mailing list or Telegram channel (TBD) coming alongside the next launch update.
 

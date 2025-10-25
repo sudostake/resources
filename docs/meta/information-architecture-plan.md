@@ -34,9 +34,6 @@ Primary Audience: Contributors, Internal Stakeholders
 | personas-and-flows.md | root | product/personas-and-flows.md | Add scenario summaries and integration notes. |
 | sudostake-project-charter.md | root | product/sudostake-project-charter.md | Update governance section once folder move occurs. |
 | sudostake-action-plan-near-mvp.md | root | execution/sudostake-action-plan-near-mvp.md | Keep as source of truth for sequencing, dates, and scope. |
-| step-1-progress-2025-09-23.md | root | execution/step-1-progress-2025-09-23.md | Pair with future step reports. |
-| progress-report-2025-09-23.md | root | execution/progress-report-2025-09-23.md | Date-stamped Step 1 completion summary. |
-| progress-report-2025-10-07.md | root | execution/progress-report-2025-10-07.md | Latest update before Step 2 registry work. |
 | sudostake-risk-register.md | root | execution/sudostake-risk-register.md | Convert to structured table with owners. |
 | sudostake-core-infra-on-near.md | root | systems/sudostake-core-infra-on-near.md | Add architecture diagrams and glossary tags. |
 | expanded-competitive-analysis.md | root | research/expanded-competitive-analysis.md | Provide executive summary section for quick reading. |

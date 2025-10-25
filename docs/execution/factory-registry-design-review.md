@@ -22,7 +22,7 @@ Primary Audience: Protocol & App Engineering, Infra & Ops
 - `sudostake_contracts_near/contracts/factory/tests/integration_test.rs` — per-vault deployment tests.
 - `sudostake_web_near/utils/constants.ts` & `utils/networks.ts` — factory address, mint fee, UI copy.
 - `sudostake_agent_near/agent/src/helpers.py` — factory + USDC constants the agent assumes.
-- `docs/execution/progress-report-2025-10-07.md` & `docs/execution/sudostake-action-plan-near-mvp.md` — milestones, risks, burndown.
+- `docs/execution/sudostake-action-plan-near-mvp.md` — step status, milestones, and burndown context.
 
 ## Agenda & Timeboxes
 | Time | Topic | Outcomes |

@@ -15,7 +15,7 @@ Use this guide to understand standards, naming, and the review workflow before e
 ## Sources of Truth
 - Execution plan, status, sequencing: sudostake-action-plan-near-mvp.md
 - Product spec and flows: personas-and-flows.md
-- Step 1 details: step-1-progress-2025-09-23.md
+- Step 1 details: sudostake-action-plan-near-mvp.md (Step 1 entry)
 - Infra overview and external references: sudostake-core-infra-on-near.md
 - Risk register: sudostake-risk-register.md
 - Team/org details: sudostake-team-org-details.md
