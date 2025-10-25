@@ -15,7 +15,7 @@ Use this guide to understand standards, naming, and the review workflow before e
 ## Sources of Truth
 - Execution plan, status, sequencing: sudostake-action-plan-near-mvp.md
 - Product spec and flows: personas-and-flows.md
-- Step 1 details: sudostake-m1-progress.md
+- Step 1 details: sudostake-action-plan-near-mvp.md (Step 1 entry)
 - Infra overview and external references: sudostake-core-infra-on-near.md
 - Risk register: sudostake-risk-register.md
 - Team/org details: sudostake-team-org-details.md
@@ -59,11 +59,3 @@ Use this guide to understand standards, naming, and the review workflow before e
 - Are method names and protocols accurate (NEP-141, staking-pool operations)?
 - Did we eliminate redundant text without losing meaning?
 - Are references minimal, correct, and using relative links?
-
-## Related Documents
-- [Documentation Strategy](../meta/documentation-strategy.md)
-- [Documentation Inventory](../meta/documentation-inventory.md)
-- [Documentation Refactor Tracker](../meta/documentation-refactor-tracker.md)
-
-## Next Review
-- Review during the quarterly documentation ceremony or when onboarding new contributors.

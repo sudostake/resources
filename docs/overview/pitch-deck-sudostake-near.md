@@ -95,11 +95,3 @@ Stake. Earn. Borrow. Native NEAR staking with oracle-less credit: borrow against
 
 ## Contact
 - hello@sudostake.com • https://sudostake.com • GitHub: https://github.com/sudostake
-
-## Related Documents
-- [Project One-Pager — SudoStake on NEAR](./project-one-pager-sudostake-near.md)
-- [SudoStake Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md)
-- [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
-
-## Next Review
-- Update alongside the next fundraising cycle or when action-plan steps shift (target check-in: 2025-10-31).

@@ -20,11 +20,3 @@ Scope: Protocol, product, and go-to-market risks across smart contracts, liquidi
 | R-07 | Expectations mismatch with pooled lending products slows adoption. | Medium | Medium | Marketing & Community | Align onboarding copy, create model comparison one-pager, highlight deterministic recovery in campaign assets. | Planned | 2025-10-17 |
 | R-08 | Vault creation costs stay ~10 NEAR until the shared code-hash registry ships. | High | High | Protocol Engineering | Deliver registry + shared vault updates, publish size/gas deltas, and provide a migration playbook. | Mitigation planned | 2025-10-14 |
 | R-09 | Firebase/Vercel outages or misconfiguration block vault indexing and lender dashboards. | Medium | Medium | Infra & Ops | Document manual reindex flow, add monitoring and alerting, plan secondary data source (cron-based polling) as contingency. | Mitigation planned | 2025-10-21 |
-
-## Related Documents
-- [Action Plan — NEAR MVP & Launch](./sudostake-action-plan-near-mvp.md)
-- [Progress Report 3](./progress-report-3.md)
-- [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
-
-## Next Review
-- Confirm mitigation status during weekly program sync; formal register refresh targeted for 2025-10-14.

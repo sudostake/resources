@@ -76,11 +76,3 @@ This one-pager provides the investor- and partner-ready snapshot of SudoStake’
 
 ## Contact
 - hello@sudostake.com • https://sudostake.com • GitHub: https://github.com/sudostake
-
-## Related Documents
-- [Pitch Deck (Text)](./pitch-deck-sudostake-near.md)
-- [Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md)
-- [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
-
-## Next Review
-- Refresh by 2025-10-15 to update traction numbers and roadmap notes.

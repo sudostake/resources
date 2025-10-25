@@ -40,7 +40,7 @@ Use this snapshot to brief the community on current status, what is live, and th
 - 2025-11-01 — Step 2 readiness review unlocking shared vault rollout and beta invitations.
 
 ## Stay in the Loop
-- Progress updates: [progress-report-3.md](../execution/progress-report-3.md) · [progress-report-2.md](../execution/progress-report-2.md)
+- Progress updates: [Action Plan — Timeline Snapshot](../execution/sudostake-action-plan-near-mvp.md#timeline-snapshot)
 - Action plan: [sudostake-action-plan-near-mvp.md](../execution/sudostake-action-plan-near-mvp.md)
 - Mailing list or Telegram channel (TBD) coming alongside the next launch update.
 
@@ -53,11 +53,3 @@ Use this snapshot to brief the community on current status, what is live, and th
 - Does anything happen automatically? No—repay/liquidate actions are explicit (you or an agent triggers them).
 - How do I repay? Use USDC to pay the owed amount before the deadline; the vault releases collateral.
 - Who can liquidate? Anyone, after the deadline, following the fixed liquidation order until obligations are met.
-
-## Related Documents
-- [Project One-Pager](./project-one-pager-sudostake-near.md)
-- [Investor & Partner Brief](./investor-partner-brief.md)
-- [Builder Integration Guide](./builder-integration-guide.md)
-
-## Next Review
-- Refresh after the next progress report (2025-10-03) or when beta access details are confirmed.

@@ -50,7 +50,7 @@ This guide is the single reference for partners preparing to integrate with the 
 
 ## Due Diligence Pack
 - Architecture & invariants: [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
-- Execution cadence: [SudoStake Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md), [Progress Report 3](../execution/progress-report-3.md)
+- Execution cadence: [SudoStake Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md#timeline-snapshot)
 - Risk posture: [SudoStake Risk Register](../execution/sudostake-risk-register.md)
 - Integration inventory: [Documentation Inventory](../meta/documentation-inventory.md)
 
@@ -62,12 +62,4 @@ This guide is the single reference for partners preparing to integrate with the 
 ## Support & Contact
 - Email hello@sudostake.com for onboarding.
 - Builders channel (Discord/Telegram TBD) will host API updates and rollout notices.
-- Progress reports: [progress-report-3.md](../execution/progress-report-3.md), [progress-report-2.md](../execution/progress-report-2.md).
-
-## Related Documents
-- [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
-- [SudoStake Risk Register](../execution/sudostake-risk-register.md)
-- [Investor & Partner Brief](./investor-partner-brief.md)
-
-## Next Review
-- Update after the Step 2 factory rollout or sooner if contract interfaces change.
+- Progress updates: [Action Plan — Step Status Overview](../execution/sudostake-action-plan-near-mvp.md#step-status-overview).

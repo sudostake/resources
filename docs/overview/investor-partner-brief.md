@@ -33,7 +33,7 @@ Use this brief when aligning investors and partners on traction, roadmap checkpo
 - Confirm execution alignment and runway assumptions in [SudoStake Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md).
 - Review mitigations and open questions in the [Risk Register](../execution/sudostake-risk-register.md).
 - Assess contract architecture and release plan in [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md).
-- Check latest burndown and delivered scope in [Progress Report 3](../execution/progress-report-3.md) and [Step 1 Review](../execution/sudostake-m1-progress.md).
+- Check latest burndown and delivered scope via the [Action Plan timeline snapshot](../execution/sudostake-action-plan-near-mvp.md#timeline-snapshot).
 
 ## Partner Opportunities
 - Security reviewers, indexers, and wallet or agent distribution partners as mainnet launch approaches.
@@ -43,18 +43,10 @@ Use this brief when aligning investors and partners on traction, roadmap checkpo
 ## Due Diligence Links
 - Narrative: [Project One-Pager](./project-one-pager-sudostake-near.md), [Pitch Deck (Text)](./pitch-deck-sudostake-near.md)
 - Business model: [Lean Canvas — NEAR](../product/lean-canvas-sudostake-near.md), [Lean Canvas — Generic](../product/lean-canvas-sudostake-generic.md)
-- Execution: [Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md), [Progress Report 3](../execution/progress-report-3.md), [Documentation Inventory](../meta/documentation-inventory.md)
+- Execution: [Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md), [Documentation Inventory](../meta/documentation-inventory.md)
 - Technical depth: [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md), [Risk Register](../execution/sudostake-risk-register.md)
 
 ## Engagement
 - **Contact:** hello@sudostake.com
-- **Updates:** Progress reports ([progress-report-3.md](../execution/progress-report-3.md), [progress-report-2.md](../execution/progress-report-2.md))
+- **Updates:** [Action Plan — Step Status Overview](../execution/sudostake-action-plan-near-mvp.md#step-status-overview)
 - **Calls-to-Action:** Book a diligence session, join the 2025-10-07 roadmap review, flag interest in beta participation or liquidity provisioning.
-
-## Related Documents
-- [SudoStake Risk Register](../execution/sudostake-risk-register.md)
-- [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
-- [Documentation Inventory](../meta/documentation-inventory.md)
-
-## Next Review
-- Refresh after the 2025-10-07 roadmap review or when traction metrics change materially.

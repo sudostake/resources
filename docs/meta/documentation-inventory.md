@@ -33,10 +33,7 @@ This inventory consolidates the current documentation set, primary audiences, an
 
 | Document | Primary Purpose | Primary Audience(s) | Status / Immediate Notes | Last Updated (Git) |
 | --- | --- | --- | --- | --- |
-| execution/sudostake-action-plan-near-mvp.md | Execution plan and step-by-step sequencing. | Contributors, Investors | Snapshot + burndown refreshed; track the 2025-11-01 readiness checkpoint. | 2025-10-08 |
-| execution/sudostake-m1-progress.md | Step 1 retrospective and metrics. | Contributors, Investors | Template-aligned summary; add Step 2 dependencies as they emerge. | 2025-10-08 |
-| execution/progress-report-2.md | Narrative update on earlier execution steps. | Contributors, Community | Simplified language with action-plan link and clearer next steps. | 2025-10-08 |
-| execution/progress-report-3.md | Latest progress narrative. | Contributors, Community, Investors | Includes live testnet link, factory cost-cut plan, and mainnet launch outlook. | 2025-10-08 |
+| execution/sudostake-action-plan-near-mvp.md | Execution plan, step status, and consolidated timeline. | Contributors, Investors | Snapshot + burndown refreshed; track the 2025-11-01 readiness checkpoint. | 2025-10-08 |
 | execution/sudostake-risk-register.md | Identified risks, mitigations, and owners. | Contributors, Investors | Structured table in place; confirm next review cadence. | 2025-10-08 |
 
 ## Systems
@@ -62,16 +59,6 @@ This inventory consolidates the current documentation set, primary audiences, an
 
 | Document | Primary Purpose | Primary Audience(s) | Status / Immediate Notes | Last Updated (Git) |
 | --- | --- | --- | --- | --- |
-| meta/documentation-strategy.md | Refactor goals, audiences, and tone guidance. | Contributors, Internal Stakeholders | Reassess after Phase 2; assign enduring owner. | 2025-10-08 |
+| meta/documentation-program.md | Strategy, IA blueprint, and refactor tracker in one reference. | Contributors, Internal Stakeholders | Update after phase checkpoints or structural decisions. | 2025-10-08 |
 | meta/documentation-inventory.md | Live index of repository documents. | Contributors, Internal Stakeholders | Update after each major doc revision. | 2025-10-08 |
-| meta/information-architecture-plan.md | Navigation and folder blueprint for the refactor. | Contributors, Internal Stakeholders | Refresh as decisions finalize; archive post-migration. | 2025-10-08 |
-| meta/documentation-refactor-tracker.md | Execution tracker for refactor phases, owners, cadence. | Contributors, Internal Stakeholders | Muhammed Ali executing solo; update after each phase checkpoint or owner change. | 2025-10-08 |
 | meta/documentation-templates.md | Standard templates for docs and progress reports. | Contributors | Share during Phase 2 standardization; revise with contributor feedback. | 2025-10-08 |
-
-## Related Documents
-- [Documentation Strategy](./documentation-strategy.md)
-- [Information Architecture Plan](./information-architecture-plan.md)
-- [Documentation Refactor Tracker](./documentation-refactor-tracker.md)
-
-## Next Review
-- Update immediately after each major documentation change and during the quarterly review ceremony.

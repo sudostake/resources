@@ -53,27 +53,3 @@ Note: This report summarizes current status. For authoritative dates, scope, and
 
 ## Next (2 weeks)
 - <Upcoming actions with owners.>
-
-## Related Documents
-- [Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md)
-- [Risk Register](../execution/sudostake-risk-register.md)
-- <Add links as needed.>
-
-## Next Review
-- <Date of the next planned report or checkpoint.>
-```
-
-### Tailoring Guidance
-- Replace relative paths once documents move into the `docs/execution/` tree (Phase 1).
-- Consider adding a KPI snapshot table if the step has quantitative targets.
-- Archive reports in chronological order with ISO-like filenames (e.g., `progress-report-2025-09-26.md`).
-
-## Related Documents
-
-- [Contributing Guide](../team/contributing.md)
-- [Documentation Strategy](./documentation-strategy.md)
-- [Documentation Refactor Tracker](./documentation-refactor-tracker.md)
-
-## Next Review
-
-- Revisit templates during Phase 2 (Standardization) to confirm they meet contributor needs.
