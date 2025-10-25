@@ -13,7 +13,7 @@ _Last updated: 2025-10-08_
 
 | Step | Target | Status | Highlights |
 | --- | --- | --- | --- |
-| Step 1 — Testnet Flow Validation | 2025-09-30 | <span style="color:#15803d;">✅ Complete — 2025-09-23</span> | Full wallet → vault → loan lifecycle live on testnet; counter-offers deferred without blocking scope. |
+| Step 1 — Testnet Flow Validation | 2025-09-30 | ✅ Complete — 2025-09-23 | Full wallet → vault → loan lifecycle live on testnet; counter-offers deferred without blocking scope. |
 | Step 2 — Shared Vault Deployment | 2025-11-15 | 🔄 In design (review 2025-10-14) | Shared code-hash registry, artifact publishing, migration guardrails. |
 | Step 3 — Mainnet Candidate Release | 2025-11-30 | ◻ Planned | Promote optimized contracts to monitored candidate; invite closed beta cohort. |
 | Step 4 — Beta Stabilization | 2025-12-20 | ◻ Planned | Reliability targets, UX polish, support playbooks. |
@@ -59,7 +59,7 @@ _Last updated: 2025-10-08_
 ## Step-by-Step Plan
 
 ### Step 1 — Testnet Flow Validation (Target 2025-09-30)
-- **Status:** <span style="color:#15803d;">Complete — 2025-09-23</span>. Credentialed rehearsal remains a formality before sign-off.
+- **Status:** ✅ Complete — 2025-09-23. Credentialed rehearsal remains a formality before sign-off.
 - **Delivered scope:**
   - Wallet connect, vault dashboard/detail views, deposit/withdraw flows.
   - Staking management (delegate, undelegate, claim) plus deterministic liquidation order (liquid funds → matured unstake → targeted unstake).
