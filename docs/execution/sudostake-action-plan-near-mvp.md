@@ -47,12 +47,3 @@ Primary Audience: Contributors, Investors & VCs, Ecosystem Partners & Builders
 
 ### Step 6 — Mainnet Launch Wave 2 & Scale (Target 2026-06-30)
 - Broader access plus scalability and observability tuning for sustained operation.
-
-## Related Documents
-- [Step 1 Progress Review](./sudostake-m1-progress.md)
-- [Progress Report 3](./progress-report-3.md)
-- [Risk Register](./sudostake-risk-register.md)
-- [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md)
-
-## Next Review
-- Refresh this plan after the 2025-10-14 design review or sooner if sequencing changes.

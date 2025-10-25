@@ -252,11 +252,3 @@ graph TD
 | **Owner** | median mint time; request->accept time; on-time repay rate; % with clear validator sets |
 | **Lender** | fill rate; realized vs quoted APR; median liquidation duration; principal recovery rate |
 | **System** | failed refund rate; automation coverage; revert rate per method |
-
-## Related Documents
-- [SudoStake Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md)
-- [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
-- [Lean Canvas — SudoStake on NEAR](./lean-canvas-sudostake-near.md)
-
-## Next Review
-- Revisit after the 2025-10-15 risk register update or when user flows change materially.

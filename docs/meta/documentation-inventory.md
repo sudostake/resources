@@ -67,11 +67,3 @@ This inventory consolidates the current documentation set, primary audiences, an
 | meta/information-architecture-plan.md | Navigation and folder blueprint for the refactor. | Contributors, Internal Stakeholders | Refresh as decisions finalize; archive post-migration. | 2025-10-08 |
 | meta/documentation-refactor-tracker.md | Execution tracker for refactor phases, owners, cadence. | Contributors, Internal Stakeholders | Muhammed Ali executing solo; update after each phase checkpoint or owner change. | 2025-10-08 |
 | meta/documentation-templates.md | Standard templates for docs and progress reports. | Contributors | Share during Phase 2 standardization; revise with contributor feedback. | 2025-10-08 |
-
-## Related Documents
-- [Documentation Strategy](./documentation-strategy.md)
-- [Information Architecture Plan](./information-architecture-plan.md)
-- [Documentation Refactor Tracker](./documentation-refactor-tracker.md)
-
-## Next Review
-- Update immediately after each major documentation change and during the quarterly review ceremony.

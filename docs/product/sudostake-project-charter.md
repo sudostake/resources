@@ -65,11 +65,3 @@ Primary Audience: Internal Stakeholders, Contributors
 ## Risks & Assumptions
 - **Risks:** User comprehension gaps; limited initial liquidity; manual liquidation requirements; smart-contract vulnerabilities; staking_pool.wasm constraints; AI agent maturity.
 - **Assumptions:** Oracle-less core remains viable; demand for borrow-against-stake exists; web/AI clients serve as launch surfaces; reproducible builds arrive next; NEAR ecosystem support and compatibility persist.
-
-## Related Documents
-- [sudostake-action-plan-near-mvp.md](../execution/sudostake-action-plan-near-mvp.md)
-- [sudostake-core-infra-on-near.md](../systems/sudostake-core-infra-on-near.md)
-- [project-one-pager-sudostake-near.md](../overview/project-one-pager-sudostake-near.md)
-
-## Next Review
-- Revisit during the MVP retrospective or when scope materially changes.

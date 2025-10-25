@@ -69,11 +69,3 @@ Liquidity for NEAR stakers without unbonding. Native borrow/lend on staked NEAR�
 ## Notes
 - Traction: Prior-chain release logged ~231 vaults; NEAR testnet MVP flows completed in Step 1.
 - Next steps: Execute Step 2 optimized factory/global vault rollout with migration planning and metrics.
-
-## Related Documents
-- [Lean Canvas — SudoStake (Chain-Agnostic)](./lean-canvas-sudostake-generic.md)
-- [SudoStake Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md)
-- [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
-
-## Next Review
-- Refresh after the 2025-10-07 roadmap review or when Step 2 scope or assumptions change materially.

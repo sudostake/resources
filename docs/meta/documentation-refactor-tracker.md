@@ -45,13 +45,3 @@ _Current coverage: Muhammed Ali (acting docs lead) owns every phase until collab
 ## Change Log Placeholder
 
 - 2025-09-29 — Initial tracker drafted; awaiting owner confirmations.
-
-## Related Documents
-
-- [Documentation Strategy](./documentation-strategy.md)
-- [Information Architecture Plan](./information-architecture-plan.md)
-- [Documentation Inventory](./documentation-inventory.md)
-
-## Next Review
-
-- Review tracker status in the 2025-10-01 documentation sync or sooner if phase owners change.
