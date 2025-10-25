@@ -50,7 +50,7 @@ This guide is the single reference for partners preparing to integrate with the 
 
 ## Due Diligence Pack
 - Architecture & invariants: [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md)
-- Execution cadence: [SudoStake Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md), [Progress Report 2025-10-07](../execution/progress-report-2025-10-07.md)
+- Execution cadence: [SudoStake Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md), [Execution Timeline & Scope Tracker](../execution/execution-timeline.md)
 - Risk posture: [SudoStake Risk Register](../execution/sudostake-risk-register.md)
 - Integration inventory: [Documentation Inventory](../meta/documentation-inventory.md)
 
@@ -62,4 +62,4 @@ This guide is the single reference for partners preparing to integrate with the 
 ## Support & Contact
 - Email hello@sudostake.com for onboarding.
 - Builders channel (Discord/Telegram TBD) will host API updates and rollout notices.
-- Progress reports: [progress-report-2025-10-07.md](../execution/progress-report-2025-10-07.md), [progress-report-2025-09-23.md](../execution/progress-report-2025-09-23.md).
+- Progress updates: [Execution Timeline & Scope Tracker](../execution/execution-timeline.md).
