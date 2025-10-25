@@ -38,7 +38,7 @@ We track every scope- or deadline-driven artifact separately from concept docs. 
 | Researchers & Technical Reviewers | [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md) · [Risk Register](../execution/sudostake-risk-register.md) · [Personas & Flows](../product/personas-and-flows.md) | Architecture, threat model, lifecycle. |
 | Ecosystem Partners & Builders | [Builder Integration Guide](./builder-integration-guide.md) · [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md) · [Lean Canvas — NEAR](../product/lean-canvas-sudostake-near.md) | Integration scope, APIs, business fit. |
 | Community & Prospective Users | [Community Snapshot](./community-snapshot.md) · [Project One-Pager](./project-one-pager-sudostake-near.md) · [Action Plan — Step 2 Snapshot](../execution/sudostake-action-plan-near-mvp.md#step-2--shared-vault-deployment-target-2025-11-15) | Why it matters, what is live, next updates. |
-| Contributors & Team | [Contributing Guide](../team/contributing.md) · [Documentation Strategy](../meta/documentation-strategy.md) · [Documentation Inventory](../meta/documentation-inventory.md) | Standards, ownership, open work. |
+| Contributors & Team | [Contributing Guide](../team/contributing.md) · [Documentation Program Playbook](../meta/documentation-program.md) · [Documentation Inventory](../meta/documentation-inventory.md) | Standards, ownership, open work. |
 
 ## Concept Kits
 
@@ -67,7 +67,7 @@ We track every scope- or deadline-driven artifact separately from concept docs. 
 | Execution & Status | [Action Plan](../execution/sudostake-action-plan-near-mvp.md) · [Risk Register](../execution/sudostake-risk-register.md) |
 | Product & Users | [Project Charter](../product/sudostake-project-charter.md) · [Lean Canvas — NEAR](../product/lean-canvas-sudostake-near.md) · [Lean Canvas — Generic](../product/lean-canvas-sudostake-generic.md) · [Personas & Flows](../product/personas-and-flows.md) |
 | Systems & Research | [Core Infra Overview](../systems/sudostake-core-infra-on-near.md) · [Builder Integration Guide](./builder-integration-guide.md) · [Expanded Competitive Analysis](../research/expanded-competitive-analysis.md) |
-| Team & Operations | [Team & Org Details](../team/sudostake-team-org-details.md) · [Contributing Guide](../team/contributing.md) · [Documentation Strategy](../meta/documentation-strategy.md) · [Documentation Inventory](../meta/documentation-inventory.md) · [Documentation Refactor Tracker](../meta/documentation-refactor-tracker.md) · [Information Architecture Plan](../meta/information-architecture-plan.md) |
+| Team & Operations | [Team & Org Details](../team/sudostake-team-org-details.md) · [Contributing Guide](../team/contributing.md) · [Documentation Program Playbook](../meta/documentation-program.md) · [Documentation Inventory](../meta/documentation-inventory.md) · [Documentation Templates](../meta/documentation-templates.md) |
 
 ## Maintenance Checklist
 - **Align terms first:** Review the [Contributing Guide](../team/contributing.md) for naming, scope order, and review gates.

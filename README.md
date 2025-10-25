@@ -19,7 +19,7 @@ This repository houses the working documentation set for SudoStake on NEAR: cont
 - `docs/systems/` — Technical deep dives covering architecture, infrastructure, and integration pathways.
 - `docs/research/` — Competitive intelligence and market analysis.
 - `docs/team/` — Org structure, contributor onboarding, and contact paths.
-- `docs/meta/` — How the documentation program operates: strategy, inventories, refactor tracker, templates, and information architecture.
+- `docs/meta/` — Documentation program playbook, living inventory, and reusable templates.
 - `scripts/` — Utility scripts for doc maintenance (`./scripts/check-links.sh` ensures internal links stay valid after restructures).
 
 ## Working in the Docs

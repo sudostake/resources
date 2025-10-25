@@ -59,8 +59,6 @@ This inventory consolidates the current documentation set, primary audiences, an
 
 | Document | Primary Purpose | Primary Audience(s) | Status / Immediate Notes | Last Updated (Git) |
 | --- | --- | --- | --- | --- |
-| meta/documentation-strategy.md | Refactor goals, audiences, and tone guidance. | Contributors, Internal Stakeholders | Reassess after Phase 2; assign enduring owner. | 2025-10-08 |
+| meta/documentation-program.md | Strategy, IA blueprint, and refactor tracker in one reference. | Contributors, Internal Stakeholders | Update after phase checkpoints or structural decisions. | 2025-10-08 |
 | meta/documentation-inventory.md | Live index of repository documents. | Contributors, Internal Stakeholders | Update after each major doc revision. | 2025-10-08 |
-| meta/information-architecture-plan.md | Navigation and folder blueprint for the refactor. | Contributors, Internal Stakeholders | Refresh as decisions finalize; archive post-migration. | 2025-10-08 |
-| meta/documentation-refactor-tracker.md | Execution tracker for refactor phases, owners, cadence. | Contributors, Internal Stakeholders | Muhammed Ali executing solo; update after each phase checkpoint or owner change. | 2025-10-08 |
 | meta/documentation-templates.md | Standard templates for docs and progress reports. | Contributors | Share during Phase 2 standardization; revise with contributor feedback. | 2025-10-08 |
