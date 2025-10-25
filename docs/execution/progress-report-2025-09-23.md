@@ -5,7 +5,7 @@ Last Updated: 2025-10-08
 Primary Audience: Contributors, Investors & VCs, Community & Prospective Users
 ---
 
-# SudoStake — Progress Report 2
+# SudoStake — Progress Report (2025-09-23)
 
 Date: 2025-09-23  •  Source plan: [SudoStake Action Plan — NEAR MVP & Launch](./sudostake-action-plan-near-mvp.md)
 
@@ -31,4 +31,4 @@ Date: 2025-09-23  •  Source plan: [SudoStake Action Plan — NEAR MVP & Launch
 - Confirm the 2025-11-01 readiness checkpoint agenda so the optimized path can be signed off on schedule.
 
 ## Next Update
-- Progress Report 3 will publish on 2025-09-26.
+- Progress Report (2025-10-07) will publish on 2025-09-26.

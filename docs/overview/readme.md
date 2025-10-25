@@ -25,14 +25,14 @@ Use this hub to land in the right document in seconds. Pick your audience view, 
 | Investors & VCs | [Investor & Partner Brief](./investor-partner-brief.md) · [Project One-Pager](./project-one-pager-sudostake-near.md) · [Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md) | Traction, roadmap, capital asks. |
 | Researchers & Technical Reviewers | [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md) · [Risk Register](../execution/sudostake-risk-register.md) · [Personas & Flows](../product/personas-and-flows.md) | Architecture, threat model, lifecycle. |
 | Ecosystem Partners & Builders | [Builder Integration Guide](./builder-integration-guide.md) · [Core Infrastructure Overview](../systems/sudostake-core-infra-on-near.md) · [Lean Canvas — NEAR](../product/lean-canvas-sudostake-near.md) | Integration scope, APIs, business fit. |
-| Community & Prospective Users | [Community Snapshot](./community-snapshot.md) · [Project One-Pager](./project-one-pager-sudostake-near.md) · [Progress Report 3](../execution/progress-report-3.md) | Why it matters, what is live, next updates. |
+| Community & Prospective Users | [Community Snapshot](./community-snapshot.md) · [Project One-Pager](./project-one-pager-sudostake-near.md) · [Progress Report 2025-10-07](../execution/progress-report-2025-10-07.md) | Why it matters, what is live, next updates. |
 | Contributors & Team | [Contributing Guide](../team/contributing.md) · [Documentation Strategy](../meta/documentation-strategy.md) · [Documentation Inventory](../meta/documentation-inventory.md) | Standards, ownership, open work. |
 
 ## Diligence Kits
 
 | Goal | Pull These Docs | Why |
 | --- | --- | --- |
-| Execution readiness | [Action Plan](../execution/sudostake-action-plan-near-mvp.md) · [Progress Report 3](../execution/progress-report-3.md) · [Step 1 Progress](../execution/sudostake-m1-progress.md) | Sequencing, delivered scope, checkpoints. |
+| Execution readiness | [Action Plan](../execution/sudostake-action-plan-near-mvp.md) · [Progress Report 2025-10-07](../execution/progress-report-2025-10-07.md) · [Step 1 Progress](../execution/sudostake-m1-progress.md) | Sequencing, delivered scope, checkpoints. |
 | Product-market fit | [Project One-Pager](./project-one-pager-sudostake-near.md) · [Lean Canvas — NEAR](../product/lean-canvas-sudostake-near.md) · [Community Snapshot](./community-snapshot.md) | Problem, audience, traction signals. |
 | Technical soundness | [Core Infra Overview](../systems/sudostake-core-infra-on-near.md) · [Risk Register](../execution/sudostake-risk-register.md) · [Personas & Flows](../product/personas-and-flows.md) | Contracts, invariants, mitigations. |
 | Integration planning | [Builder Integration Guide](./builder-integration-guide.md) · [Core Infra Overview](../systems/sudostake-core-infra-on-near.md) · [Documentation Inventory](../meta/documentation-inventory.md) | API surface, events, update cadence. |
@@ -53,7 +53,7 @@ Use this hub to land in the right document in seconds. Pick your audience view, 
 | Area | Files |
 | --- | --- |
 | Overview & Narrative | [Project One-Pager](./project-one-pager-sudostake-near.md) · [Pitch Deck (Text)](./pitch-deck-sudostake-near.md) · [Investor & Partner Brief](./investor-partner-brief.md) · [Community Snapshot](./community-snapshot.md) |
-| Execution & Status | [Action Plan](../execution/sudostake-action-plan-near-mvp.md) · [Step 1 Progress Review](../execution/sudostake-m1-progress.md) · [Progress Report 3](../execution/progress-report-3.md) · [Progress Report 2](../execution/progress-report-2.md) · [Risk Register](../execution/sudostake-risk-register.md) |
+| Execution & Status | [Action Plan](../execution/sudostake-action-plan-near-mvp.md) · [Step 1 Progress Review](../execution/sudostake-m1-progress.md) · [Progress Report 2025-10-07](../execution/progress-report-2025-10-07.md) · [Progress Report 2025-09-23](../execution/progress-report-2025-09-23.md) · [Risk Register](../execution/sudostake-risk-register.md) |
 | Product & Users | [Project Charter](../product/sudostake-project-charter.md) · [Lean Canvas — NEAR](../product/lean-canvas-sudostake-near.md) · [Lean Canvas — Generic](../product/lean-canvas-sudostake-generic.md) · [Personas & Flows](../product/personas-and-flows.md) |
 | Systems & Research | [Core Infra Overview](../systems/sudostake-core-infra-on-near.md) · [Builder Integration Guide](./builder-integration-guide.md) · [Expanded Competitive Analysis](../research/expanded-competitive-analysis.md) |
 | Team & Operations | [Team & Org Details](../team/sudostake-team-org-details.md) · [Contributing Guide](../team/contributing.md) · [Documentation Strategy](../meta/documentation-strategy.md) · [Documentation Inventory](../meta/documentation-inventory.md) · [Documentation Refactor Tracker](../meta/documentation-refactor-tracker.md) · [Information Architecture Plan](../meta/information-architecture-plan.md) |

@@ -5,7 +5,7 @@ Last Updated: 2025-10-08
 Primary Audience: Contributors, Investors & VCs, Community & Prospective Users
 ---
 
-# SudoStake — Progress Report 3
+# SudoStake — Progress Report (2025-10-07)
 
 Date: 2025-10-07  •  Source plan: [SudoStake Action Plan — NEAR MVP & Launch](./sudostake-action-plan-near-mvp.md)
 
