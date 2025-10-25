@@ -32,7 +32,7 @@ Use this hub to land in the right document in seconds. Pick your audience view, 
 
 | Goal | Pull These Docs | Why |
 | --- | --- | --- |
-| Execution readiness | [Action Plan](../execution/sudostake-action-plan-near-mvp.md) · [Progress Report 2025-10-07](../execution/progress-report-2025-10-07.md) · [Step 1 Progress](../execution/sudostake-m1-progress.md) | Sequencing, delivered scope, checkpoints. |
+| Execution readiness | [Action Plan](../execution/sudostake-action-plan-near-mvp.md) · [Progress Report 2025-10-07](../execution/progress-report-2025-10-07.md) · [Step 1 Progress](../execution/step-1-progress-2025-09-23.md) | Sequencing, delivered scope, checkpoints. |
 | Product-market fit | [Project One-Pager](./project-one-pager-sudostake-near.md) · [Lean Canvas — NEAR](../product/lean-canvas-sudostake-near.md) · [Community Snapshot](./community-snapshot.md) | Problem, audience, traction signals. |
 | Technical soundness | [Core Infra Overview](../systems/sudostake-core-infra-on-near.md) · [Risk Register](../execution/sudostake-risk-register.md) · [Personas & Flows](../product/personas-and-flows.md) | Contracts, invariants, mitigations. |
 | Integration planning | [Builder Integration Guide](./builder-integration-guide.md) · [Core Infra Overview](../systems/sudostake-core-infra-on-near.md) · [Documentation Inventory](../meta/documentation-inventory.md) | API surface, events, update cadence. |
@@ -43,7 +43,7 @@ Use this hub to land in the right document in seconds. Pick your audience view, 
 | --- | --- | --- |
 | Execution & timelines | [sudostake-action-plan-near-mvp.md](../execution/sudostake-action-plan-near-mvp.md) | Update after each execution review. |
 | Product spec & flows | [personas-and-flows.md](../product/personas-and-flows.md) | Refresh when rules, KPIs, or flows change. |
-| Step retrospectives | [sudostake-m1-progress.md](../execution/sudostake-m1-progress.md) | Lock each step once completed. |
+| Step retrospectives | [step-1-progress-2025-09-23.md](../execution/step-1-progress-2025-09-23.md) | Lock each step once completed. |
 | Infrastructure | [sudostake-core-infra-on-near.md](../systems/sudostake-core-infra-on-near.md) | Review at readiness checkpoints or post-release. |
 | Risk management | [sudostake-risk-register.md](../execution/sudostake-risk-register.md) | Track via weekly sync; formal check biweekly. |
 | Team & org | [sudostake-team-org-details.md](../team/sudostake-team-org-details.md) | Update whenever ownership or staffing shifts. |
@@ -53,7 +53,7 @@ Use this hub to land in the right document in seconds. Pick your audience view, 
 | Area | Files |
 | --- | --- |
 | Overview & Narrative | [Project One-Pager](./project-one-pager-sudostake-near.md) · [Pitch Deck (Text)](./pitch-deck-sudostake-near.md) · [Investor & Partner Brief](./investor-partner-brief.md) · [Community Snapshot](./community-snapshot.md) |
-| Execution & Status | [Action Plan](../execution/sudostake-action-plan-near-mvp.md) · [Step 1 Progress Review](../execution/sudostake-m1-progress.md) · [Progress Report 2025-10-07](../execution/progress-report-2025-10-07.md) · [Progress Report 2025-09-23](../execution/progress-report-2025-09-23.md) · [Risk Register](../execution/sudostake-risk-register.md) |
+| Execution & Status | [Action Plan](../execution/sudostake-action-plan-near-mvp.md) · [Step 1 Progress Review](../execution/step-1-progress-2025-09-23.md) · [Progress Report 2025-10-07](../execution/progress-report-2025-10-07.md) · [Progress Report 2025-09-23](../execution/progress-report-2025-09-23.md) · [Risk Register](../execution/sudostake-risk-register.md) |
 | Product & Users | [Project Charter](../product/sudostake-project-charter.md) · [Lean Canvas — NEAR](../product/lean-canvas-sudostake-near.md) · [Lean Canvas — Generic](../product/lean-canvas-sudostake-generic.md) · [Personas & Flows](../product/personas-and-flows.md) |
 | Systems & Research | [Core Infra Overview](../systems/sudostake-core-infra-on-near.md) · [Builder Integration Guide](./builder-integration-guide.md) · [Expanded Competitive Analysis](../research/expanded-competitive-analysis.md) |
 | Team & Operations | [Team & Org Details](../team/sudostake-team-org-details.md) · [Contributing Guide](../team/contributing.md) · [Documentation Strategy](../meta/documentation-strategy.md) · [Documentation Inventory](../meta/documentation-inventory.md) · [Documentation Refactor Tracker](../meta/documentation-refactor-tracker.md) · [Information Architecture Plan](../meta/information-architecture-plan.md) |

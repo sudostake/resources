@@ -5,9 +5,9 @@ Last Updated: 2025-10-08
 Primary Audience: Contributors, Investors & VCs, Internal Stakeholders
 ---
 
-# SudoStake NEAR MVP — Step 1 Progress
+# Step 1 Progress — Testnet Flow Validation (2025-09-23)
 
-Date: 2025-09-23  •  Definition: Testnet Flow Validation (formerly Milestone 1 — Web Testnet Feature-Complete, Target: 2025-09-30)  •  Reference: [SudoStake Action Plan — NEAR MVP & Launch](./sudostake-action-plan-near-mvp.md)
+Definition: Testnet Flow Validation (formerly Milestone 1 — Web Testnet Feature-Complete, Target: 2025-09-30)  •  Reference: [SudoStake Action Plan — NEAR MVP & Launch](./sudostake-action-plan-near-mvp.md)
 
 ## Summary
 - Step 1 delivered on 2025-09-23, ahead of the September 30 target.

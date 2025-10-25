@@ -34,7 +34,7 @@ This inventory consolidates the current documentation set, primary audiences, an
 | Document | Primary Purpose | Primary Audience(s) | Status / Immediate Notes | Last Updated (Git) |
 | --- | --- | --- | --- | --- |
 | execution/sudostake-action-plan-near-mvp.md | Execution plan and step-by-step sequencing. | Contributors, Investors | Snapshot + burndown refreshed; track the 2025-11-01 readiness checkpoint. | 2025-10-08 |
-| execution/sudostake-m1-progress.md | Step 1 retrospective and metrics. | Contributors, Investors | Template-aligned summary; add Step 2 dependencies as they emerge. | 2025-10-08 |
+| execution/step-1-progress-2025-09-23.md | Step 1 retrospective and metrics. | Contributors, Investors | Template-aligned summary; add Step 2 dependencies as they emerge. | 2025-10-08 |
 | execution/progress-report-2025-09-23.md | Narrative update on earlier execution steps. | Contributors, Community | Simplified language with action-plan link and clearer next steps. | 2025-10-08 |
 | execution/progress-report-2025-10-07.md | Latest progress narrative. | Contributors, Community, Investors | Includes live testnet link, factory cost-cut plan, and mainnet launch outlook. | 2025-10-08 |
 | execution/sudostake-risk-register.md | Identified risks, mitigations, and owners. | Contributors, Investors | Structured table in place; confirm next review cadence. | 2025-10-08 |

@@ -33,7 +33,7 @@ Use this brief when aligning investors and partners on traction, roadmap checkpo
 - Confirm execution alignment and runway assumptions in [SudoStake Action Plan — NEAR MVP & Launch](../execution/sudostake-action-plan-near-mvp.md).
 - Review mitigations and open questions in the [Risk Register](../execution/sudostake-risk-register.md).
 - Assess contract architecture and release plan in [SudoStake Core Infra on NEAR](../systems/sudostake-core-infra-on-near.md).
-- Check latest burndown and delivered scope in [Progress Report 2025-10-07](../execution/progress-report-2025-10-07.md) and [Step 1 Review](../execution/sudostake-m1-progress.md).
+- Check latest burndown and delivered scope in [Progress Report 2025-10-07](../execution/progress-report-2025-10-07.md) and [Step 1 Review](../execution/step-1-progress-2025-09-23.md).
 
 ## Partner Opportunities
 - Security reviewers, indexers, and wallet or agent distribution partners as mainnet launch approaches.
